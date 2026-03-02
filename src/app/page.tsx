@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   TrendingUp,
   FileText,
@@ -9,42 +10,53 @@ import {
   PiggyBank,
   ChevronRight,
   DollarSign,
+  BookOpen,
 } from "lucide-react";
 
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-light via-white to-accent-light py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-primary font-medium mb-4 text-sm tracking-wide">
-            海外積み立て投資をしている方へ
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text leading-tight mb-6">
-            その投資の
-            <br className="sm:hidden" />
-            <span className="text-primary">コントロール</span>を
-            <br />
-            取り戻す
-          </h1>
-          <p className="text-text-light text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            IFAスイッチは、海外積み立て投資のポートフォリオ管理や
-            各種手続きをサポートする定額制サービスです。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2"
-            >
-              無料で相談する
-              <ArrowRight size={18} />
-            </Link>
-            <Link
-              href="/service"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2"
-            >
-              サービスを見る
-            </Link>
+      {/* Hero with background image */}
+      <section className="relative min-h-[520px] sm:min-h-[600px] flex items-center">
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/30" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 w-full">
+          <div className="max-w-xl">
+            <p className="text-primary-light font-medium mb-4 text-sm tracking-wide">
+              海外積み立て投資をしている方へ
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+              その投資の
+              <br />
+              <span className="text-primary">コントロール</span>を
+              <br />
+              取り戻す
+            </h1>
+            <p className="text-slate-300 text-base sm:text-lg mb-10 leading-relaxed">
+              IFAスイッチは、海外積み立て投資のポートフォリオ管理や
+              各種手続きをサポートする定額制サービスです。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/contact"
+                className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2"
+              >
+                無料で相談する
+                <ArrowRight size={18} />
+              </Link>
+              <Link
+                href="/service"
+                className="border-2 border-white/60 text-white hover:bg-white/10 px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2"
+              >
+                サービスを見る
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -104,8 +116,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Before / After with images */}
       <section className="py-16 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
+              IFAスイッチで変わること
+            </h2>
+            <p className="text-text-light">
+              IFAを移管して、お客様がプロバイダーと直接やり取りできる体制へ
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div className="bg-red-50 rounded-2xl p-6 sm:p-8">
+              <h3 className="font-bold text-lg text-red-600 mb-4 text-center">Before（移管前）</h3>
+              <div className="bg-white rounded-xl p-4 flex justify-center">
+                <Image
+                  src="/images/before.png"
+                  alt="IFAスイッチ利用前の構造"
+                  width={500}
+                  height={280}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-text-light text-sm mt-4 text-center">
+                IFAを介してのやり取り。IFAと連絡が取れなくなるとコントロールを失います。
+              </p>
+            </div>
+
+            <div className="bg-primary-light rounded-2xl p-6 sm:p-8">
+              <h3 className="font-bold text-lg text-primary mb-4 text-center">After（移管後）</h3>
+              <div className="bg-white rounded-xl p-4 flex justify-center">
+                <Image
+                  src="/images/after.png"
+                  alt="IFAスイッチ利用後の構造"
+                  width={500}
+                  height={280}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-text-light text-sm mt-4 text-center">
+                IFAスイッチのサポートのもと、お客様がプロバイダーと直接やり取り。コントロールを取り戻します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-16 sm:py-20 bg-bg-gray">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
@@ -117,7 +177,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-primary-light rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-border">
               <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="text-white" size={28} />
               </div>
@@ -139,7 +199,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="bg-accent-light rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-border">
               <div className="w-14 h-14 bg-accent rounded-xl flex items-center justify-center mb-6">
                 <FileText className="text-white" size={28} />
               </div>
@@ -175,7 +235,7 @@ export default function Home() {
       </section>
 
       {/* Cost Merit */}
-      <section className="py-16 sm:py-20 bg-bg-gray">
+      <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
@@ -238,9 +298,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-r from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      {/* eBook / Newsletter CTA */}
+      <section className="py-16 sm:py-20 bg-bg-gray">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="bg-white rounded-2xl shadow-sm border border-border overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+              <div className="flex items-center justify-center p-8 bg-slate-50">
+                <Image
+                  src="/images/ebook.png"
+                  alt="無料eBook: 海外投資における5つの誤解と真相、その対策"
+                  width={280}
+                  height={360}
+                  className="rounded-lg shadow-lg"
+                  unoptimized
+                />
+              </div>
+              <div className="p-8 sm:p-10 flex flex-col justify-center">
+                <div className="flex items-center gap-2 mb-4">
+                  <BookOpen size={20} className="text-primary" />
+                  <span className="text-primary font-medium text-sm">無料eBook</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-text mb-4">
+                  海外投資における5つの誤解と真相、その対策
+                </h3>
+                <ul className="space-y-2 text-text-light text-sm mb-6">
+                  <li>- IFAってすごい能力の持ち主なんでしょ？</li>
+                  <li>- 年利10%はカタイって聞いたけど？</li>
+                  <li>- 英語が分からなくても問題ないんでしょ？</li>
+                  <li>- 積立は数年過ぎれば止められるんでしょ？</li>
+                  <li>- とにかく長く契約すればいいんでしょ？</li>
+                </ul>
+                <p className="text-text-light text-sm mb-6">
+                  無料ニュースレターにご登録いただくと、eBook（PDF）をプレゼント。
+                  最新情報や推奨ポートフォリオなど、毎月お届けします。
+                </p>
+                <Link
+                  href="/contact"
+                  className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2 self-start"
+                >
+                  無料で登録する
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA with background image */}
+      <section className="relative py-20 sm:py-24">
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             まずはお気軽にご相談ください
           </h2>

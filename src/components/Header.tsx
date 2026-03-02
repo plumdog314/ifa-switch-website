@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -21,12 +22,13 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">IF</span>
-            </div>
-            <span className="font-bold text-lg text-text">
-              IFA<span className="text-primary">スイッチ</span>
-            </span>
+            <Image
+              src="/images/logo.svg"
+              alt="IFA Switch"
+              width={140}
+              height={38}
+              priority
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

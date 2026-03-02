@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail } from "lucide-react";
 
 export default function Footer() {
@@ -7,13 +8,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IF</span>
-              </div>
-              <span className="font-bold text-lg text-white">
-                IFA<span className="text-primary">スイッチ</span>
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.svg"
+                alt="IFA Switch"
+                width={140}
+                height={38}
+                className="brightness-0 invert"
+              />
             </div>
             <p className="text-sm leading-relaxed">
               国や言葉の垣根を超え、
