@@ -6,25 +6,17 @@ import {
   Building2,
   AlertTriangle,
 } from "lucide-react";
+import PageHero from "@/components/PageHero";
 
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-light via-white to-accent-light py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-primary font-medium mb-4 text-sm tracking-wide">
-            ABOUT
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text leading-tight mb-6">
-            会社概要
-          </h1>
-          <p className="text-text-light text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            IFAスイッチは、海外積み立て投資をしている方のための
-            サポートサービスを提供しています。
-          </p>
-        </div>
-      </section>
+      <PageHero
+        tag="ABOUT"
+        title="会社概要"
+        description="IFAスイッチは、海外積み立て投資をしている方のためのサポートサービスを提供しています。"
+        illustration="about"
+      />
 
       {/* Mission */}
       <section className="py-16 sm:py-20">

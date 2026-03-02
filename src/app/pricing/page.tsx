@@ -13,6 +13,7 @@ import {
   DollarSign,
   Calculator,
 } from "lucide-react";
+import PageHero from "@/components/PageHero";
 
 const faqItems = [
   {
@@ -72,21 +73,12 @@ function FAQItem({
 export default function PricingPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-light via-white to-accent-light py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-primary font-medium mb-4 text-sm tracking-wide">
-            PRICING
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text leading-tight mb-6">
-            料金プラン
-          </h1>
-          <p className="text-text-light text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            シンプルな定額制。相談回数に制限なく、
-            安心してサポートをご利用いただけます。
-          </p>
-        </div>
-      </section>
+      <PageHero
+        tag="PRICING"
+        title="料金プラン"
+        description="シンプルな定額制。相談回数に制限なく、安心してサポートをご利用いただけます。"
+        illustration="pricing"
+      />
 
       {/* Flat-rate emphasis */}
       <section className="py-16 sm:py-20">

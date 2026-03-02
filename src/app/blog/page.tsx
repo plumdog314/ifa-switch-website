@@ -1,21 +1,17 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { blogPosts } from "@/data/blog";
+import PageHero from "@/components/PageHero";
 
 export default function BlogPage() {
   return (
     <>
-      {/* Page Header */}
-      <section className="bg-gradient-to-br from-primary-light via-white to-accent-light py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-text mb-4">
-            ブログ
-          </h1>
-          <p className="text-text-light text-base sm:text-lg max-w-2xl mx-auto">
-            海外投資やIFAに関するお役立ち情報をお届けします。
-          </p>
-        </div>
-      </section>
+      <PageHero
+        tag="BLOG"
+        title="ブログ"
+        description="海外投資やIFAに関するお役立ち情報をお届けします。"
+        illustration="blog"
+      />
 
       {/* Blog List */}
       <section className="py-16 sm:py-20">

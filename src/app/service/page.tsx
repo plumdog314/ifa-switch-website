@@ -14,25 +14,17 @@ import {
   Languages,
   RefreshCw,
 } from "lucide-react";
+import PageHero from "@/components/PageHero";
 
 export default function ServicePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-light via-white to-accent-light py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-primary font-medium mb-4 text-sm tracking-wide">
-            SERVICE
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text leading-tight mb-6">
-            サービス紹介
-          </h1>
-          <p className="text-text-light text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            IFAスイッチは、海外積み立て投資をしている方のための
-            ポートフォリオサポートとお手続きサポートを提供する定額制サービスです。
-          </p>
-        </div>
-      </section>
+      <PageHero
+        tag="SERVICE"
+        title="サービス紹介"
+        description="IFAスイッチは、海外積み立て投資をしている方のためのポートフォリオサポートとお手続きサポートを提供する定額制サービスです。"
+        illustration="service"
+      />
 
       {/* Portfolio Support */}
       <section className="py-16 sm:py-20">
