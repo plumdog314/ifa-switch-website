@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Send, CheckCircle } from "lucide-react";
+import { Mail, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -10,7 +12,7 @@ export default function ContactPage() {
     subject: "サービスについて",
     message: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -20,9 +22,25 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setStatus("sending");
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -79,7 +97,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              {isSubmitted ? (
+              {status === "success" ? (
                 <div className="bg-accent-light rounded-2xl p-8 sm:p-12 text-center">
                   <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="text-white" size={32} />
@@ -94,7 +112,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     onClick={() => {
-                      setIsSubmitted(false);
+                      setStatus("idle");
                       setFormData({
                         name: "",
                         email: "",
@@ -109,6 +127,16 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {status === "error" && (
+                    <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex items-start gap-3">
+                      <AlertCircle className="text-red-500 shrink-0 mt-0.5" size={18} />
+                      <p className="text-red-700 text-sm">
+                        送信に失敗しました。お手数ですが、もう一度お試しいただくか、
+                        <a href="mailto:admin@ifa-switch.com" className="underline font-medium">admin@ifa-switch.com</a>
+                        まで直接ご連絡ください。
+                      </p>
+                    </div>
+                  )}
                   <div>
                     <label
                       htmlFor="name"
@@ -192,10 +220,20 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center gap-2"
+                    disabled={status === "sending"}
+                    className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <Send size={18} />
-                    送信する
+                    {status === "sending" ? (
+                      <>
+                        <Loader2 size={18} className="animate-spin" />
+                        送信中...
+                      </>
+                    ) : (
+                      <>
+                        <Send size={18} />
+                        送信する
+                      </>
+                    )}
                   </button>
                 </form>
               )}
