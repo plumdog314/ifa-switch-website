@@ -75,10 +75,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs text-text-light">メール</p>
                     <a
-                      href="mailto:admin@ifa-switch.com"
+                      href="mailto:ifa.switch@gmail.com"
                       className="text-primary hover:text-primary-dark font-medium transition-colors text-sm"
                     >
-                      admin@ifa-switch.com
+                      ifa.switch@gmail.com
                     </a>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                       <AlertCircle className="text-red-500 shrink-0 mt-0.5" size={18} />
                       <p className="text-red-700 text-sm">
                         送信に失敗しました。お手数ですが、もう一度お試しいただくか、
-                        <a href="mailto:admin@ifa-switch.com" className="underline font-medium">admin@ifa-switch.com</a>
+                        <a href="mailto:ifa.switch@gmail.com" className="underline font-medium">ifa.switch@gmail.com</a>
                         まで直接ご連絡ください。
                       </p>
                     </div>

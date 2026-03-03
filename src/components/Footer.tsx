@@ -60,10 +60,10 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-sm mb-4">
               <Mail size={16} />
               <a
-                href="mailto:admin@ifa-switch.com"
+                href="mailto:ifa.switch@gmail.com"
                 className="hover:text-primary transition-colors"
               >
-                admin@ifa-switch.com
+                ifa.switch@gmail.com
               </a>
             </div>
             <Link

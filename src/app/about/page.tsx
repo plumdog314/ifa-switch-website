@@ -86,7 +86,7 @@ export default function AboutPage() {
                   },
                   {
                     label: "メールアドレス",
-                    value: "admin@ifa-switch.com",
+                    value: "ifa.switch@gmail.com",
                   },
                   {
                     label: "ウェブサイト",
