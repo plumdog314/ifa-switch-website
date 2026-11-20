@@ -78,6 +78,7 @@ export const articleSchema = (post: Post) => ({
     "@type": "Organization",
     name: SITE.author.name,
     url: absUrl(SITE.author.url),
+    description: SITE.author.description,
   },
   publisher: { "@id": ORG_ID },
   isPartOf: { "@id": SITE_ID },

@@ -15,6 +15,7 @@ export function GET() {
     "",
     `- 運営拠点: 香港（${SITE.address.streetAddress}, ${SITE.address.addressLocality}）`,
     `- サービス開始: ${SITE.foundingYear}年`,
+    `- 実績: ${SITE.credentials.join("、")}`,
     "- 対象: RL360、インベスターズトラスト、フレンズプロビデント、ハンサード、ジェネラリ、スタンダードライフ等の海外積み立て投資プランを保有する日本人投資家",
     "- 提供内容: 長期投資の教育コンテンツ、ポートフォリオ確認、各種手続きのサポート、IFA変更の相談",
     "- 立場: 一般的な情報提供と投資教育。特定商品の勧誘や個別の投資助言は行わない",
