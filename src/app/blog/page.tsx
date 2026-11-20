@@ -1,11 +1,46 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blog";
+import type { Metadata } from "next";
+import { getAllPosts } from "@/lib/blog";
 import PageHero from "@/components/PageHero";
+import PostCard from "@/components/PostCard";
+import CategoryNav from "@/components/CategoryNav";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, graph } from "@/lib/schema";
+import { absUrl } from "@/lib/site";
+
+export const revalidate = 3600;
+
+export const metadata: Metadata = {
+  title: "ブログ｜海外積み立て投資と長期投資の教科書",
+  description:
+    "海外積み立て投資（RL360・インベスターズトラスト等）の仕組み、手続き、暴落に振り回されない長期投資の考え方を、毎日わかりやすく解説します。",
+  alternates: { canonical: "/blog", types: { "application/rss+xml": "/feed.xml" } },
+};
 
 export default function BlogPage() {
+  const posts = getAllPosts();
   return (
     <>
+      <JsonLd
+        data={graph(
+          breadcrumbSchema([
+            { name: "ホーム", path: "/" },
+            { name: "ブログ", path: "/blog" },
+          ]),
+          {
+            "@type": "Blog",
+            "@id": `${absUrl("/blog")}#blog`,
+            name: "IFAスイッチ ブログ",
+            url: absUrl("/blog"),
+            inLanguage: "ja-JP",
+            blogPost: posts.slice(0, 30).map((p) => ({
+              "@type": "BlogPosting",
+              headline: p.title,
+              url: absUrl(`/blog/${p.slug}`),
+              datePublished: p.date,
+            })),
+          }
+        )}
+      />
       <PageHero
         tag="BLOG"
         title="ブログ"
@@ -13,46 +48,12 @@ export default function BlogPage() {
         illustration="blog"
       />
 
-      {/* Blog List */}
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <CategoryNav />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <article
-                key={post.slug}
-                className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md transition-shadow flex flex-col"
-              >
-                <div className="p-6 sm:p-8 flex flex-col flex-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="bg-primary-light text-primary text-xs font-medium px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
-                    <time className="text-text-light text-xs">
-                      {new Date(post.date).toLocaleDateString("ja-JP", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </time>
-                  </div>
-
-                  <h2 className="font-bold text-lg text-text mb-3 leading-snug">
-                    {post.title}
-                  </h2>
-
-                  <p className="text-text-light text-sm leading-relaxed mb-6 flex-1">
-                    {post.excerpt}
-                  </p>
-
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="text-primary hover:text-primary-dark font-medium text-sm inline-flex items-center gap-1 transition-colors"
-                  >
-                    続きを読む
-                    <ArrowRight size={14} />
-                  </Link>
-                </div>
-              </article>
+            {posts.map((post) => (
+              <PostCard key={post.slug} post={post} />
             ))}
           </div>
         </div>
