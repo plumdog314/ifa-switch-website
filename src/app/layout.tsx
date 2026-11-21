@@ -22,6 +22,8 @@ const shippori = Shippori_Mincho_B1({
 });
 
 export const metadata: Metadata = {
+  // Bing Webmaster Tools の所有確認（消さないこと）
+  verification: { other: { "msvalidate.01": "3819411E1052CA8A3FE9FD6D2EBF48E8" } },
   metadataBase: new URL(SITE.url),
   title: {
     default: `${SITE.name} | ${SITE.tagline}`,
