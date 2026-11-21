@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/pricing", label: "料金" },
   { href: "/faq", label: "FAQ" },
   { href: "/blog", label: "ブログ" },
+  { href: "/chat", label: "AIチャット" },
   { href: "/about", label: "会社概要" },
 ];
 

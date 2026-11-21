@@ -76,7 +76,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-700 mt-10 pt-6 text-center text-xs text-slate-400">
-          <p>Copyright &copy; 2015 - {new Date().getFullYear()} IFA Switch All Rights Reserved</p>
+          <nav aria-label="規約" className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-3">
+            <Link href="/legal/tokushoho" className="hover:text-primary transition-colors">特定商取引法に基づく表記</Link>
+            <Link href="/privacy" className="hover:text-primary transition-colors">プライバシーポリシー</Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">利用規約</Link>
+          </nav>
+          <p>Copyright &copy; 2015 - {new Date().getFullYear()} IFA Switch Co., Ltd All Rights Reserved</p>
         </div>
       </div>
     </footer>

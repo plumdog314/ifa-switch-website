@@ -7,6 +7,11 @@ export type Category = {
 // 記事の frontmatter `category` にはここの slug を書く
 export const categories: Category[] = [
   {
+    slug: "market",
+    name: "毎日の市況",
+    description: "その日の株式・為替・債券市場の動きを、長期投資家の目線でやさしく解説。相場に振り回されないための毎日の市況レポート。",
+  },
+  {
     slug: "basics",
     name: "投資の基礎知識",
     description: "海外積み立て投資の仕組み、手数料、為替、税金など、始める前・続ける前に押さえておきたい基礎知識。",

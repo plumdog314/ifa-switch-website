@@ -8,7 +8,7 @@ export const revalidate = 3600;
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
   const latest = posts[0]?.date;
-  const pages = ["", "/service", "/pricing", "/about", "/faq", "/contact", "/blog"].map((p) => ({
+  const pages = ["", "/service", "/pricing", "/about", "/faq", "/contact", "/blog", "/chat", "/legal/tokushoho", "/privacy", "/terms"].map((p) => ({
     url: absUrl(p || "/"),
     lastModified: p === "/blog" ? latest : undefined,
     changeFrequency: (p === "/blog" ? "daily" : "monthly") as "daily" | "monthly",
