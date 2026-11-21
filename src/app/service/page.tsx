@@ -38,11 +38,11 @@ export default function ServicePage() {
             </h2>
             <p className="text-text-light leading-relaxed max-w-3xl">
               現在の運用状況を一緒に確認し、お客様がご自身で投資のコントロールを取り戻せるようサポートします。
-              ファンド資料の読み方やスイッチングの操作方法など、わかりやすくレクチャーいたします。特定のファンドの推奨や配分のご提案は行いません。
+              ファンド資料の読み方やスイッチングの操作方法など、わかりやすくレクチャーいたします。IFAスイッチ自身は特定のファンドの推奨や配分のご提案は行いません。個別のポートフォリオアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーによるアドバイスをご案内します（別料金・料金はお問い合わせください）。
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
               {
                 icon: BarChart3,
@@ -61,6 +61,12 @@ export default function ServicePage() {
                 title: "運用レポートの解説",
                 description:
                   "プロバイダーから届く運用レポートの見方を丁寧に解説し、投資の現状を把握できるようにします。",
+              },
+              {
+                icon: TrendingUp,
+                title: "個別ポートフォリオアドバイスのご案内",
+                description:
+                  "個別のアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーをご案内します（別料金）。",
               },
             ].map((item, i) => (
               <div
