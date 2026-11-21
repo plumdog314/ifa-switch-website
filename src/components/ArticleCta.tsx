@@ -47,7 +47,7 @@ export default function ArticleCta({ category }: { category: string }) {
             ご自身のケースは、AIチャットに聞いてみてください。
           </h2>
           <p className="mt-3 text-[15px] leading-loose text-text-light">
-            記事の内容をもとに、仕組みや手続きの流れを答えます。無料で1日20問まで。手続きガイドと英文レターのひな形まで使えるライトプランは、月{yen(lite?.price.monthly ?? 0)}です。
+            海外積み立ての仕組みや手続きの流れを答えます。無料で1日20問まで。手続きガイドと英文レターのひな形まで使えるライトプランは、月{yen(lite?.price.monthly ?? 0)}です。
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <TrackedLink href="/chat" event="cta_click" data={ev("chat")} className={primary}>

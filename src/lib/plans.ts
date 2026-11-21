@@ -22,7 +22,7 @@ export const PLANS: Plan[] = [
     price: { monthly: 0, yearly: 0 },
     links: { monthly: null, yearly: null },
     includes: [
-      "毎日の市況レポートと、100本以上の解説記事",
+      "毎日の市況レポートと、手続き・仕組みの解説記事",
       "AIチャット（1日20問まで）",
       "毎週土曜のニュースレター",
       "初回のご相談（メール）",
