@@ -1,5 +1,6 @@
 import { SITE, absUrl } from "./site";
 import type { Post, FaqEntry } from "./blog";
+import { PLANS, SPOTS } from "./plans";
 
 const ORG_ID = `${SITE.url}/#organization`;
 const SITE_ID = `${SITE.url}/#website`;
@@ -89,3 +90,59 @@ export const graph = (...nodes: object[]) => ({
   "@context": "https://schema.org",
   "@graph": nodes,
 });
+
+// サービスと料金（料金ページ・サービスページ用）。AIが料金を正確に答えられるよう、金額を構造化して載せる。
+
+export const servicesSchema = () => {
+  const offers = [
+    ...PLANS.filter((p) => p.id !== "free" && p.status === "available").flatMap((p) =>
+      (["monthly", "yearly"] as const)
+        .filter((b) => p.price[b] != null)
+        .map((b) => ({
+          "@type": "Offer",
+          name: `${p.name}プラン（${b === "monthly" ? "月払い" : "年払い"}）`,
+          description: p.includes.join("／"),
+          price: p.price[b],
+          priceCurrency: "JPY",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: p.price[b],
+            priceCurrency: "JPY",
+            unitCode: b === "monthly" ? "MON" : "ANN",
+            valueAddedTaxIncluded: true,
+          },
+          url: absUrl("/pricing"),
+          availability: "https://schema.org/InStock",
+        })),
+    ),
+    ...SPOTS.map((s) => ({
+      "@type": "Offer",
+      name: `スポット手続き：${s.name}`,
+      description: s.examples,
+      price: s.price,
+      priceCurrency: "JPY",
+      url: absUrl("/pricing#spot"),
+      availability: "https://schema.org/InStock",
+    })),
+  ];
+  return {
+    "@type": "Service",
+    "@id": `${SITE.url}/#service`,
+    name: "海外積み立て投資の手続きサポートと投資教育",
+    serviceType: "海外積み立て投資の手続きサポート・投資教育",
+    description:
+      "RL360、インベスターズトラスト、フレンズプロビデント、ハンサード等の海外積み立て投資プランを保有する方向けに、英文の手続き（住所変更、減額・停止、解約、担当IFAの変更など）のサポートと、長期投資の教育コンテンツ、AIチャットを提供します。個別の投資助言は行いません。",
+    provider: { "@id": ORG_ID },
+    areaServed: ["JP", "HK"],
+    availableLanguage: ["ja", "en"],
+    url: absUrl("/service"),
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "JPY",
+      lowPrice: Math.min(...offers.map((o) => o.price as number)),
+      highPrice: Math.max(...offers.map((o) => o.price as number)),
+      offerCount: offers.length,
+      offers,
+    },
+  };
+};
