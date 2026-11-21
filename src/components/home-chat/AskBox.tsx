@@ -6,7 +6,7 @@ import { ArrowUp } from "lucide-react";
 export const EXAMPLE_QUESTIONS = [
   "RL360を解約したら、いくら戻る？",
   "担当のIFAと連絡が取れません",
-  "暴落中も積み立てを続けて大丈夫？",
+  "暴落したとき、積み立てで確認したいことは？",
   "住所変更の書類の書き方",
 ];
 
