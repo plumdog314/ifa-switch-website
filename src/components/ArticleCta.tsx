@@ -7,12 +7,13 @@ import { PLANS, SPOTS, yen } from "@/lib/plans";
 
 const PROCEDURE_CATEGORIES = new Set(["procedures", "ifa"]);
 
-export default function ArticleCta({ category, slug }: { category: string; slug: string }) {
+export default function ArticleCta({ category }: { category: string }) {
   const procedure = PROCEDURE_CATEGORIES.has(category);
   const lite = PLANS.find((p) => p.id === "lite");
   const support = PLANS.find((p) => p.id === "support");
   const minSpot = Math.min(...SPOTS.map((s) => s.price));
-  const ev = (target: string) => ({ from: "article", category, slug, target });
+  // Pro プランのカスタムイベントはプロパティ2つまで。どのページで押されたかは Vercel 側で記録される
+  const ev = (target: string) => ({ from: `article/${category}`, target });
 
   const primary = "flex items-center justify-between gap-3 bg-ink text-paper px-5 py-3.5 text-sm font-bold hover:bg-primary transition-colors";
   const secondary = "flex items-center justify-between gap-3 border border-ink px-5 py-3.5 text-sm font-bold hover:bg-paper-2 transition-colors";

@@ -68,7 +68,7 @@ export default function PricingPage() {
                     <TrackedLink
                       href={s.link}
                       event="checkout_click"
-                      data={{ plan: s.id, price: s.price }}
+                      data={{ plan: s.id, billing: "once" }}
                       className="flex items-center justify-between gap-3 border border-ink px-5 py-3 text-sm font-bold hover:bg-ink hover:text-paper transition-colors"
                     >
                       <span className="whitespace-nowrap">この手続きを依頼する</span>

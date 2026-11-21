@@ -139,7 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
 
-          <ArticleCta category={post.category} slug={post.slug} />
+          <ArticleCta category={post.category} />
 
           {post.faq.length > 0 && (
             <section className="mt-14">

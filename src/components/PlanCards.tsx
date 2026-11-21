@@ -86,7 +86,7 @@ export default function PlanCards() {
                 ) : plan.status === "available" && link ? (
                   <a
                     href={link}
-                    onClick={() => track("checkout_click", { plan: plan.id, billing, price })}
+                    onClick={() => track("checkout_click", { plan: plan.id, billing })}
                     className="flex items-center justify-between gap-3 bg-ink text-paper px-5 py-3.5 text-sm font-bold hover:bg-primary transition-colors"
                   >
                     <span className="whitespace-nowrap">{plan.name}プランに申し込む</span>
