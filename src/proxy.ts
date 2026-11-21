@@ -13,7 +13,9 @@ import {
 // 解約済みならクッキーを消す。Stripe に一時的につながらないときは、そのまま通す。
 export async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  if (pathname.startsWith("/members/activate") || pathname.startsWith("/members/logout")) {
+  if (pathname.startsWith("/members/activate") ||
+    pathname.startsWith("/members/verify") ||
+    pathname.startsWith("/members/logout")) {
     return NextResponse.next();
   }
   const token = req.cookies.get(MEMBER_COOKIE)?.value;

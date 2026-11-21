@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { findLiteCustomerByEmail, membersConfigured } from "@/lib/member-auth";
+import { LOGIN_LINK_MINUTES, findLiteCustomerByEmail, membersConfigured, signLoginToken } from "@/lib/member-auth";
+import { memberMailConfigured, sendLoginLinkEmail } from "@/lib/member-mail";
 import { getCurrentMember } from "@/lib/member-session";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "会員ログイン",
@@ -20,14 +22,11 @@ async function requestLogin(formData: FormData) {
   try {
     const customerId = await findLiteCustomerByEmail(email);
     if (customerId) {
-      // TODO(magic-link): ここでワンタイムのログインリンクをメールで送る。
-      //   1) customerId と有効期限（15分程度）を HMAC で署名したトークンを作る（member-auth の仕組みを流用できる）
-      //   2) https://www.ifa-switch.com/members/verify?token=... をメール送信サービスで送る
-      //   3) /members/verify でトークンを検証し、会員クッキーを発行して /members へ
-      // メールアドレスの入力だけでログインさせると、他人になりすませてしまうので、そうしないこと。
+      const url = `${SITE.url}/members/verify?token=${encodeURIComponent(signLoginToken(customerId))}`;
+      await sendLoginLinkEmail(email, url);
     }
   } catch (e) {
-    console.error("member login lookup failed", e instanceof Error ? e.message : e);
+    console.error("member login link failed", e instanceof Error ? e.message : e);
   }
   // 登録の有無が他人に分からないよう、結果にかかわらず同じ案内を出す
   redirect("/members/login?sent=1");
@@ -36,7 +35,7 @@ async function requestLogin(formData: FormData) {
 export default async function MemberLoginPage({ searchParams }: Props) {
   const { sent, error } = await searchParams;
   const member = await getCurrentMember();
-  const configured = membersConfigured();
+  const configured = membersConfigured() && memberMailConfigured();
 
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -55,7 +54,9 @@ export default async function MemberLoginPage({ searchParams }: Props) {
 
       {sent ? (
         <p role="status" className="mt-8 border-t border-ink border-b border-border py-5 text-[15px] leading-loose">
-          ご登録のメールアドレス宛にログイン用リンクを送る機能は準備中です。お手数ですが ifa.switch@gmail.com までご連絡ください。
+          ご入力のメールアドレスがライトプランにご登録のものであれば、ログイン用リンクをお送りしました。メールのリンクを、ログインしたい端末で開いてください。リンクの有効期限は{LOGIN_LINK_MINUTES}分です。
+          <br />
+          数分たっても届かない場合は、迷惑メールのフォルダもご確認ください。それでも届かないときは ifa.switch@gmail.com までご連絡ください。
         </p>
       ) : !configured ? (
         <p className="mt-8 border-t border-ink border-b border-border py-5 text-[15px] leading-loose">
@@ -73,6 +74,11 @@ export default async function MemberLoginPage({ searchParams }: Props) {
             maxLength={254}
             className="mt-2 w-full border border-ink bg-paper px-4 py-3 text-base"
           />
+          {error === "expired" && (
+            <p role="alert" className="mt-2 text-sm text-primary">
+              ログイン用リンクの有効期限が切れているか、リンクが正しくありません。もう一度メールアドレスを入力してください。
+            </p>
+          )}
           {error === "email" && (
             <p role="alert" className="mt-2 text-sm text-primary">メールアドレスの形式をご確認ください。</p>
           )}

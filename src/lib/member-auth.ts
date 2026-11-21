@@ -158,3 +158,34 @@ export async function findLiteCustomerByEmail(email: string): Promise<string | n
   }
   return null;
 }
+
+// ---- 別の端末でのログイン（メールで送るログイン用リンク） ----
+// クッキーとは別の用途の署名にする（ログイン用リンクの文字列をクッキーとして使えないように）。
+
+export const LOGIN_LINK_MINUTES = 30;
+const loginHmac = (data: string) => createHmac("sha256", secret()).update(`login-link:${data}`).digest();
+
+export function signLoginToken(customerId: string): string {
+  const body = b64url(
+    Buffer.from(JSON.stringify({ c: customerId, e: Date.now() + LOGIN_LINK_MINUTES * 60 * 1000 }), "utf8"),
+  );
+  return `${body}.${b64url(loginHmac(body))}`;
+}
+
+/** ログイン用リンクの文字列が正しく、期限内なら顧客IDを返す */
+export function verifyLoginToken(token: string | undefined | null): string | null {
+  if (!token || !secret()) return null;
+  const [body, sig] = token.split(".");
+  if (!body || !sig) return null;
+  const expected = loginHmac(body);
+  const given = Buffer.from(sig, "base64url");
+  if (given.length !== expected.length || !timingSafeEqual(given, expected)) return null;
+  try {
+    const p = JSON.parse(Buffer.from(body, "base64url").toString("utf8")) as { c?: unknown; e?: unknown };
+    if (typeof p.c !== "string" || !p.c.startsWith("cus_")) return null;
+    if (typeof p.e !== "number" || p.e < Date.now()) return null;
+    return p.c;
+  } catch {
+    return null;
+  }
+}

@@ -42,7 +42,9 @@ export default async function MembersPage({ searchParams }: Props) {
 
           {welcome && member && (
             <p className="mt-8 border-t border-ink border-b border-border py-4 text-[15px] leading-relaxed">
-              ご登録ありがとうございます。この端末でログインしました。35日間アクセスがないとログアウトします。
+              {welcome === "login"
+                ? "この端末でログインしました。35日間アクセスがないとログアウトします。"
+                : "ご登録ありがとうございます。この端末でログインしました。35日間アクセスがないとログアウトします。"}
             </p>
           )}
           {error && ERRORS[error] && (
