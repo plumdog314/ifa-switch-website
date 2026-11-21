@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import NewsletterForm from "@/components/NewsletterForm";
 import {
   TrendingUp,
   FileText,
@@ -370,15 +371,9 @@ export default function Home() {
                 </ul>
                 <p className="text-text-light text-sm mb-6">
                   無料ニュースレターにご登録いただくと、eBook（PDF）をプレゼント。
-                  長期投資の考え方や手続きのポイントなど、毎月お届けします。
+                  1週間の市況のまとめと新しい記事を、毎週お届けします。
                 </p>
-                <Link
-                  href="/contact"
-                  className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-medium transition-colors inline-flex items-center justify-center gap-2 self-start"
-                >
-                  無料で登録する
-                  <ArrowRight size={18} />
-                </Link>
+                <NewsletterForm />
               </div>
             </div>
           </div>

@@ -7,6 +7,7 @@ import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema"
 import { SITE } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import PostCard from "@/components/PostCard";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export const revalidate = 3600;
 
@@ -169,6 +170,14 @@ export default async function BlogPostPage({ params }: Props) {
           <p className="mt-8 text-xs text-text-light leading-relaxed">
             ※本記事は一般的な情報提供・投資教育を目的としたもので、特定の金融商品の勧誘や個別の投資助言を行うものではありません。投資判断はご自身の責任で行ってください。
           </p>
+
+          <div className="mt-12 rounded-2xl border border-border bg-bg-gray p-6 sm:p-8">
+            <h3 className="font-bold text-text mb-2">毎週の市況まとめをメールで受け取る</h3>
+            <p className="text-text-light text-sm mb-4">
+              1週間の市況と新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
+            </p>
+            <NewsletterForm compact />
+          </div>
 
           <div className="mt-12 pt-8 border-t border-border">
             <div className="bg-bg-gray rounded-2xl p-8 text-center">

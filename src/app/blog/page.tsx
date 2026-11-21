@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import PageHero from "@/components/PageHero";
 import PostCard from "@/components/PostCard";
 import CategoryNav from "@/components/CategoryNav";
+import NewsletterForm from "@/components/NewsletterForm";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, graph } from "@/lib/schema";
 import { absUrl } from "@/lib/site";
@@ -56,6 +57,14 @@ export default function BlogPage() {
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
+          <div className="mt-16 rounded-2xl border border-border bg-bg-gray p-6 sm:p-8">
+            <h3 className="font-bold text-text mb-2">毎週の市況まとめをメールで受け取る</h3>
+            <p className="text-text-light text-sm mb-4">
+              1週間の市況と新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
+            </p>
+            <NewsletterForm compact />
+          </div>
+
         </div>
       </section>
     </>
