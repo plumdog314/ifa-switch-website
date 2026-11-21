@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { CHAT_SYSTEM_PROMPT } from "@/lib/chat-prompt";
+import { memberFromCookieHeader } from "@/lib/member-auth";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -8,21 +9,22 @@ const MODEL = "claude-sonnet-5-5"; // コスト優先。有料会員向けに品
 const MAX_TURNS = 20; // 1会話で送れるメッセージ数の上限
 const MAX_CHARS = 4000; // 1メッセージの文字数上限
 const DAILY_LIMIT = 20; // IPごとの1日の質問数（インスタンス単位のベストエフォート）
+const MEMBER_DAILY_LIMIT = 50; // ライトプラン会員（有効な会員クッキーあり）の1日の質問数
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
 // 簡易レート制限。サーバーレスのインスタンスごとに別カウントなので厳密ではない。
 // 会員機能を入れる際に、ユーザー単位の制限（KVやDB）に置き換える。
 const hits = new Map<string, { day: string; count: number }>();
-function overLimit(ip: string): boolean {
+function overLimit(key: string, limit: number): boolean {
   const day = new Date().toISOString().slice(0, 10);
-  const h = hits.get(ip);
+  const h = hits.get(key);
   if (!h || h.day !== day) {
-    hits.set(ip, { day, count: 1 });
+    hits.set(key, { day, count: 1 });
     return false;
   }
   h.count += 1;
-  return h.count > DAILY_LIMIT;
+  return h.count > limit;
 }
 
 function parseMessages(body: unknown): ChatMessage[] | null {
@@ -51,7 +53,12 @@ export async function POST(req: Request) {
   }
 
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
-  if (overLimit(ip)) {
+  // 会員は顧客IDごと、それ以外はIPごとに数える
+  const member = memberFromCookieHeader(req.headers.get("cookie"));
+  const limited = member
+    ? overLimit(`member:${member.customerId}`, MEMBER_DAILY_LIMIT)
+    : overLimit(`ip:${ip}`, DAILY_LIMIT);
+  if (limited) {
     return plain("本日の利用上限に達しました。明日またお試しください。", 429);
   }
 
