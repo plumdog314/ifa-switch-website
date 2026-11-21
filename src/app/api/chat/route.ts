@@ -4,7 +4,7 @@ import { CHAT_SYSTEM_PROMPT } from "@/lib/chat-prompt";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
-const MODEL = "claude-opus-5-5";
+const MODEL = "claude-sonnet-5-5"; // コスト優先。有料会員向けに品質を上げるなら claude-opus-5-5
 const MAX_TURNS = 20; // 1会話で送れるメッセージ数の上限
 const MAX_CHARS = 4000; // 1メッセージの文字数上限
 const DAILY_LIMIT = 20; // IPごとの1日の質問数（インスタンス単位のベストエフォート）
