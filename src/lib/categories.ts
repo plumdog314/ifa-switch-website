@@ -19,7 +19,7 @@ export const categories: Category[] = [
   {
     slug: "portfolio",
     name: "ポートフォリオ",
-    description: "ファンドの選び方、配分の見直し、リバランスのタイミングなど、ポートフォリオ管理の実践。",
+    description: "ファンド資料の読み方、分散やリバランスの一般的な考え方など、ポートフォリオを自分で点検するための基礎。",
   },
   {
     slug: "products",

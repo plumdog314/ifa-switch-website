@@ -7,9 +7,7 @@ import {
   AlertCircle,
   PhoneOff,
   HelpCircle,
-  PiggyBank,
   ChevronRight,
-  DollarSign,
   BookOpen,
   User,
   Building2,
@@ -45,7 +43,7 @@ export default function Home() {
               取り戻す
             </h1>
             <p className="text-slate-300 text-base sm:text-lg mb-10 leading-relaxed">
-              IFAスイッチは、海外積み立て投資のポートフォリオ管理や
+              IFAスイッチは、海外積み立て投資の保有ファンドの見える化や
               各種手続きをサポートする定額制サービスです。
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -290,7 +288,7 @@ export default function Home() {
               <h3 className="font-bold text-xl mb-4">ポートフォリオサポート</h3>
               <ul className="space-y-3 text-text-light">
                 {[
-                  "今のポートフォリオの確認・アドバイス",
+                  "保有ファンドの見える化",
                   "スイッチングのやり方をレクチャー",
                   "運用レポートの見方を解説",
                 ].map((item, i) => (
@@ -340,72 +338,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cost Merit */}
-      <section className="py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
-              コストメリット
-            </h2>
-            <p className="text-text-light">
-              定額制だから、長く続けるほどお得です
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 border border-border text-center">
-              <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="text-slate-400" size={28} />
-              </div>
-              <h3 className="font-bold text-lg mb-2 text-text-light">
-                一般的なIFA
-              </h3>
-              <p className="text-sm text-text-light mb-4">アドバイザリーフィー</p>
-              <p className="text-2xl font-bold text-text">
-                時価評価額の<span className="text-red-500">約1%</span>
-              </p>
-              <p className="text-xs text-text-light mt-2">
-                ※資産が増えるとフィーも増加
-              </p>
-            </div>
-
-            <div className="bg-primary rounded-2xl p-8 text-center text-white relative overflow-hidden">
-              <div className="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-                おすすめ
-              </div>
-              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <PiggyBank className="text-white" size={28} />
-              </div>
-              <h3 className="font-bold text-lg mb-2">IFAスイッチ</h3>
-              <p className="text-sm text-white/80 mb-4">定額制</p>
-              <p className="text-2xl font-bold">
-                年間 <span className="text-3xl">49,800</span>円
-              </p>
-              <p className="text-xs text-white/80 mt-2">
-                ※資産が増えてもずっと定額
-              </p>
-            </div>
-          </div>
-
-          <p className="text-center mt-8 text-text-light text-sm">
-            25年間で<span className="text-primary font-bold text-base">約190万円</span>
-            のコストメリット
-          </p>
-
-          <div className="text-center mt-6">
-            <Link
-              href="/pricing"
-              className="text-primary hover:text-primary-dark font-medium inline-flex items-center gap-1 transition-colors"
-            >
-              料金の詳細を見る
-              <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* eBook / Newsletter CTA */}
-      <section className="py-16 sm:py-20 bg-bg-gray">
+      <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-2xl shadow-sm border border-border overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
@@ -436,7 +370,7 @@ export default function Home() {
                 </ul>
                 <p className="text-text-light text-sm mb-6">
                   無料ニュースレターにご登録いただくと、eBook（PDF）をプレゼント。
-                  最新情報や推奨ポートフォリオなど、毎月お届けします。
+                  長期投資の考え方や手続きのポイントなど、毎月お届けします。
                 </p>
                 <Link
                   href="/contact"

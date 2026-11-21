@@ -9,9 +9,6 @@ import {
   CreditCard,
   ChevronDown,
   TrendingDown,
-  PiggyBank,
-  DollarSign,
-  Calculator,
 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 
@@ -188,123 +185,6 @@ export default function PricingPage() {
             <div className="inline-flex items-center gap-2 text-text-light text-sm">
               <CreditCard size={16} />
               お支払いはStripeによるクレジットカード決済です
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cost Merit Simulation */}
-      <section className="py-16 sm:py-20 bg-bg-gray">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary-light text-primary-dark px-5 py-2 rounded-full text-sm font-medium mb-6">
-              <Calculator size={16} />
-              コストシミュレーション
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
-              25年間のコスト比較
-            </h2>
-            <p className="text-text-light max-w-2xl mx-auto">
-              一般的なIFAのアドバイザリーフィーとIFAスイッチの料金を
-              25年間で比較してみましょう。
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              {/* General IFA */}
-              <div className="bg-white rounded-2xl p-8 border border-border">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center">
-                    <DollarSign className="text-slate-400" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-text">一般的なIFA</h3>
-                    <p className="text-text-light text-xs">アドバイザリーフィー</p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-border">
-                    <span className="text-text-light text-sm">料金体系</span>
-                    <span className="font-medium text-sm">時価評価額の約1%/年</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-border">
-                    <span className="text-text-light text-sm">計算例</span>
-                    <span className="font-medium text-sm">
-                      平均資産500万円の場合
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-border">
-                    <span className="text-text-light text-sm">年間コスト</span>
-                    <span className="font-medium text-sm">約5万円〜</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-text-light text-sm">
-                      25年間の合計
-                    </span>
-                    <span className="font-bold text-lg text-red-500">
-                      約315万円
-                    </span>
-                  </div>
-                </div>
-                <p className="text-text-light text-xs mt-4 leading-relaxed">
-                  ※資産の増加に伴いフィーも増加するため、実際の負担はさらに大きくなる可能性があります。
-                </p>
-              </div>
-
-              {/* IFA Switch */}
-              <div className="bg-primary rounded-2xl p-8 text-white relative overflow-hidden">
-                <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-                  コスト削減
-                </div>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                    <PiggyBank className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold">IFAスイッチ</h3>
-                    <p className="text-white/70 text-xs">定額制</p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-white/20">
-                    <span className="text-white/80 text-sm">料金体系</span>
-                    <span className="font-medium text-sm">年額 49,800円（定額）</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-white/20">
-                    <span className="text-white/80 text-sm">計算式</span>
-                    <span className="font-medium text-sm">
-                      49,800円 x 25年
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-white/20">
-                    <span className="text-white/80 text-sm">年間コスト</span>
-                    <span className="font-medium text-sm">49,800円（固定）</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-white/80 text-sm">
-                      25年間の合計
-                    </span>
-                    <span className="font-bold text-lg">約125万円</span>
-                  </div>
-                </div>
-                <p className="text-white/60 text-xs mt-4 leading-relaxed">
-                  ※資産がいくら増えても料金は変わりません。
-                </p>
-              </div>
-            </div>
-
-            {/* Savings highlight */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-border text-center">
-              <p className="text-text-light text-sm mb-2">
-                25年間のコストメリット
-              </p>
-              <p className="text-3xl sm:text-4xl font-bold text-primary mb-2">
-                約190万円
-              </p>
-              <p className="text-text-light text-sm">
-                の節約が見込めます（上記シミュレーションの場合）
-              </p>
             </div>
           </div>
         </div>

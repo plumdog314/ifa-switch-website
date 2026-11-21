@@ -6,7 +6,7 @@ import { breadcrumbSchema, graph } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "サービス内容",
   description:
-    "海外積み立て投資のポートフォリオ確認、ファンド入れ替えの考え方、IFA変更・減額・解約などの各種手続きを、IFAスイッチが中立の立場でサポートします。",
+    "海外積み立て投資の保有ファンドの見える化、運用レポートの読み方の解説、IFA変更・減額・解約などの各種手続きを、IFAスイッチがサポートします。特定のファンドの推奨は行いません。",
   alternates: { canonical: "/service" },
 };
 
