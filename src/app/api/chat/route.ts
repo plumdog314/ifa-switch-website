@@ -59,7 +59,14 @@ export async function POST(req: Request) {
     ? overLimit(`member:${member.customerId}`, MEMBER_DAILY_LIMIT)
     : overLimit(`ip:${ip}`, DAILY_LIMIT);
   if (limited) {
-    return plain("本日の利用上限に達しました。明日またお試しください。", 429);
+    return plain(
+      member
+        ? `本日の利用上限（1日${MEMBER_DAILY_LIMIT}問）に達しました。明日またお試しください。`
+        : `本日の無料枠（1日${DAILY_LIMIT}問）を使い切りました。明日になるとまた使えます。\n\n` +
+            `続けて聞きたい方は、**ライトプラン（月980円）**なら1日${MEMBER_DAILY_LIMIT}問まで使えます。保険会社別の手続きガイドと、そのまま使える英文レターのひな形も読めます。\n\n` +
+            `[ライトプランを見る →](/pricing)`,
+      429,
+    );
   }
 
   let messages: ChatMessage[] | null = null;

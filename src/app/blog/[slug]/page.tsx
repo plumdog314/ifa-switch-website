@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, CheckCircle2, Clock, RefreshCw } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Clock, RefreshCw } from "lucide-react";
 import { getAllPosts, getPost, getRelatedPosts, formatDateJa } from "@/lib/blog";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 import { SITE } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import PostCard from "@/components/PostCard";
 import NewsletterForm from "@/components/NewsletterForm";
+import ArticleCta from "@/components/ArticleCta";
 
 export const revalidate = 3600;
 
@@ -138,6 +139,8 @@ export default async function BlogPostPage({ params }: Props) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
 
+          <ArticleCta category={post.category} slug={post.slug} />
+
           {post.faq.length > 0 && (
             <section className="mt-14">
               <h2 className="text-xl font-bold text-text mb-6 pb-2 border-b border-border">
@@ -177,22 +180,6 @@ export default async function BlogPostPage({ params }: Props) {
               1週間の市況と新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
             </p>
             <NewsletterForm compact />
-          </div>
-
-          <div className="mt-12 pt-8 border-t border-border">
-            <div className="bg-bg-gray rounded-2xl p-8 text-center">
-              <h3 className="font-bold text-lg text-text mb-3">投資についてお悩みですか？</h3>
-              <p className="text-text-light text-sm mb-6">
-                IFAスイッチでは、海外積み立て投資に関するご相談を無料で承っております。
-              </p>
-              <Link
-                href="/contact"
-                className="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-medium transition-colors inline-flex items-center gap-2 text-sm"
-              >
-                無料で相談する
-                <ArrowRight size={16} />
-              </Link>
-            </div>
           </div>
 
           {related.length > 0 && (

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import PlanCards from "@/components/PlanCards";
+import TrackedLink from "@/components/TrackedLink";
 import { SPOTS, BILLING_PORTAL_URL, yen } from "@/lib/plans";
 
 const FAQ = [
@@ -45,7 +46,7 @@ export default function PricingPage() {
       </section>
 
       {/* スポット手続き */}
-      <section className="border-b border-border">
+      <section id="spot" className="border-b border-border scroll-mt-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
           <h2 className="font-display font-extrabold text-2xl sm:text-3xl">スポット手続き（1回ごと）</h2>
           <p className="mt-2 text-sm text-text-light leading-relaxed">
@@ -64,13 +65,15 @@ export default function PricingPage() {
                 </p>
                 <div className="md:col-span-3">
                   {s.link ? (
-                    <a
+                    <TrackedLink
                       href={s.link}
+                      event="checkout_click"
+                      data={{ plan: s.id, price: s.price }}
                       className="flex items-center justify-between gap-3 border border-ink px-5 py-3 text-sm font-bold hover:bg-ink hover:text-paper transition-colors"
                     >
                       <span className="whitespace-nowrap">この手続きを依頼する</span>
                       <ArrowRight size={16} />
-                    </a>
+                    </TrackedLink>
                   ) : (
                     <span className="flex items-center justify-center border border-border px-5 py-3 text-sm text-text-light">
                       まもなく受付開始

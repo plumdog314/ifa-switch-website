@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { PLANS, yen, type Billing } from "@/lib/plans";
 
 export default function PlanCards() {
@@ -85,6 +86,7 @@ export default function PlanCards() {
                 ) : plan.status === "available" && link ? (
                   <a
                     href={link}
+                    onClick={() => track("checkout_click", { plan: plan.id, billing, price })}
                     className="flex items-center justify-between gap-3 bg-ink text-paper px-5 py-3.5 text-sm font-bold hover:bg-primary transition-colors"
                   >
                     <span className="whitespace-nowrap">{plan.name}プランに申し込む</span>

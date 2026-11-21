@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { marked } from "marked";
+import { track } from "@vercel/analytics";
 import { Send, Sparkles, RotateCcw } from "lucide-react";
 
 type Msg = { role: "user" | "assistant"; content: string };
@@ -38,6 +39,7 @@ export default function ChatClient() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: next }),
       });
+      if (res.status === 429) track("chat_limit_reached");
       if (!res.body) throw new Error("no body");
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -88,6 +90,12 @@ export default function ChatClient() {
           <div key={i} className="self-start max-w-full w-full bg-white border border-border rounded-2xl rounded-bl-sm px-5 py-4">
             {m.content ? (
               <div
+                onClick={(e) => {
+                  const a = (e.target as HTMLElement).closest("a");
+                  if (a?.getAttribute("href")?.startsWith("/pricing")) {
+                    track("cta_click", { from: "chat", target: "pricing" });
+                  }
+                }}
                 className="prose prose-sm prose-slate max-w-none prose-table:text-xs"
                 dangerouslySetInnerHTML={{ __html: render(m.content) }}
               />
