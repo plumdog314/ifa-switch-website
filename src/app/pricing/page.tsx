@@ -1,234 +1,137 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
-import {
-  ArrowRight,
-  Check,
-  Star,
-  CreditCard,
-  ChevronDown,
-  TrendingDown,
-} from "lucide-react";
-import PageHero from "@/components/PageHero";
+import { ArrowRight } from "lucide-react";
+import PlanCards from "@/components/PlanCards";
+import { SPOTS, BILLING_PORTAL_URL, yen } from "@/lib/plans";
 
-const faqItems = [
+const FAQ = [
   {
-    question: "途中で解約できますか？",
-    answer:
-      "はい、いつでも解約可能です。月額プランは、お申し出いただいた月の翌月末で終了します。年額プランは、年度途中で解約された場合の日割り返金はございませんが、次回以降の自動更新を停止いたします。違約金はかかりません。解約はメールまたはお問い合わせフォームからお申し出ください。",
+    q: "サポートプランの「メール回答」では、どこまで相談できますか？",
+    a: "保険会社の手続きの進め方、届いた英文書類の意味、オンライン口座の見方、記入する書類の確認などをお手伝いします。特定のファンドの売買・乗り換え・配分・解約の判断はお伝えしていません。個別のポートフォリオアドバイスをご希望の場合は、提携するライセンス保有アドバイザーをご案内します（別料金）。",
   },
   {
-    question: "相談回数に制限はありますか？",
-    answer:
-      "ありません。定額制なので、何度でもお気軽にご相談いただけます。メールでのご質問はもちろん、オンラインミーティングでの相談も回数制限なくご利用いただけます。",
+    q: "スポット手続きでは、何をしてもらえますか？",
+    a: "お申し込み後、担当者からご連絡し、手続きに必要な書類の確認、英文の記入方法、提出先と提出の流れを、完了までご案内します。書類への署名と提出はご本人にお願いしています。",
   },
   {
-    question: "支払い方法は何がありますか？",
-    answer:
-      "クレジットカード（Visa、Mastercard、American Express、JCB）でのお支払いとなります。決済にはStripeを使用しており、安全にお支払いいただけます。",
+    q: "途中で解約できますか？",
+    a: "いつでも解約できます。月払いは、お申し出いただいた月の翌月末で終了します。年払いは、途中で解約された場合の日割り返金はございませんが、次回以降の自動更新を停止します。違約金はかかりません。",
   },
   {
-    question: "月額と年額、どちらがおすすめですか？",
-    answer:
-      "年額プランがおすすめです。月額プランと比較して年間で約10,000円お得になります。海外積み立て投資は長期的なサポートが重要ですので、年額プランでじっくりサポートをご利用いただくことをおすすめしています。",
+    q: "支払い方法は何がありますか？",
+    a: "クレジットカード（Visa、Mastercard、American Express、JCB）です。決済はStripeで行い、カード情報が当社に保存されることはありません。",
+  },
+  {
+    q: "今、年額49,800円で契約しています。どうなりますか？",
+    a: "次回の更新時に、サポートプランの年払い（29,800円）へ切り替えます。移行の特典として、スポット手続き2回分を無料にします。切り替えの方法は、更新前に個別にご案内します。",
   },
 ];
 
-function FAQItem({
-  question,
-  answer,
-}: {
-  question: string;
-  answer: string;
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="bg-white rounded-2xl border border-border overflow-hidden">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-6 text-left hover:bg-bg-gray transition-colors"
-      >
-        <span className="font-medium text-text pr-4">{question}</span>
-        <ChevronDown
-          size={20}
-          className={`text-text-light shrink-0 transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-      {isOpen && (
-        <div className="px-6 pb-6">
-          <p className="text-text-light text-sm leading-relaxed">{answer}</p>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function PricingPage() {
   return (
-    <>
-      <PageHero
-        tag="PRICING"
-        title="料金プラン"
-        description="シンプルな定額制。相談回数に制限なく、安心してサポートをご利用いただけます。"
-        illustration="pricing"
-      />
-
-      {/* Flat-rate emphasis */}
-      <section className="py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-accent-light text-accent-dark px-5 py-2 rounded-full text-sm font-medium mb-6">
-              <Check size={16} />
-              相談回数に制限なし、定額制
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
-              わかりやすい料金体系
-            </h2>
-            <p className="text-text-light max-w-2xl mx-auto">
-              月額・年額のどちらかをお選びいただけます。
-              どちらのプランでも、すべてのサポートをご利用いただけます。
-            </p>
-          </div>
-
-          {/* Pricing Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Monthly */}
-            <div className="bg-white rounded-2xl p-8 sm:p-10 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-center">
-                <h3 className="font-bold text-lg text-text mb-2">月額プラン</h3>
-                <p className="text-text-light text-sm mb-6">
-                  まずはお試しで始めたい方に
-                </p>
-                <div className="mb-6">
-                  <span className="text-4xl sm:text-5xl font-bold text-text">
-                    4,980
-                  </span>
-                  <span className="text-text-light text-lg ml-1">円/月</span>
-                </div>
-                <p className="text-text-light text-xs mb-8">（税込）</p>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "ポートフォリオサポート",
-                  "お手続きサポート",
-                  "相談回数無制限",
-                  "メール・オンライン対応",
-                  "いつでも解約可能",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm">
-                    <Check size={16} className="text-accent shrink-0" />
-                    <span className="text-text-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/contact"
-                className="block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-medium transition-colors"
-              >
-                お問い合わせ
-              </Link>
-            </div>
-
-            {/* Yearly */}
-            <div className="bg-primary rounded-2xl p-8 sm:p-10 text-white relative overflow-hidden shadow-lg">
-              <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
-                <Star size={12} />
-                おすすめ
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold text-lg mb-2">年額プラン</h3>
-                <p className="text-white/80 text-sm mb-6">
-                  長期的にサポートを受けたい方に
-                </p>
-                <div className="mb-2">
-                  <span className="text-4xl sm:text-5xl font-bold">49,800</span>
-                  <span className="text-white/80 text-lg ml-1">円/年</span>
-                </div>
-                <p className="text-white/60 text-sm mb-2">
-                  月あたり <span className="text-white font-bold">4,150</span>円
-                </p>
-                <div className="inline-flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full text-xs font-medium mb-6">
-                  <TrendingDown size={12} />
-                  月額より年間 約10,000円お得
-                </div>
-                <p className="text-white/60 text-xs mb-8">（税込）</p>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "ポートフォリオサポート",
-                  "お手続きサポート",
-                  "相談回数無制限",
-                  "メール・オンライン対応",
-                  "いつでも解約可能",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm">
-                    <Check size={16} className="text-accent-light shrink-0" />
-                    <span className="text-white/90">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/contact"
-                className="block text-center bg-white text-primary hover:bg-slate-50 px-8 py-3 rounded-full font-medium transition-colors"
-              >
-                お問い合わせ
-              </Link>
-            </div>
-          </div>
-
-          {/* Payment method */}
-          <div className="text-center mt-8">
-            <div className="inline-flex items-center gap-2 text-text-light text-sm">
-              <CreditCard size={16} />
-              お支払いはStripeによるクレジットカード決済です
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-text mb-4">
-              料金に関するよくあるご質問
-            </h2>
-            <p className="text-text-light">
-              お客様からよくいただくご質問をまとめました
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqItems.map((item, i) => (
-              <FAQItem key={i} question={item.question} answer={item.answer} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-r from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            まずはお気軽にご相談ください
-          </h2>
-          <p className="text-white/80 mb-8 leading-relaxed">
-            料金プランについてのご質問や、サービスについて詳しく知りたい方は、
-            お気軽にお問い合わせください。初回のご相談は無料です。
+    <div className="bg-paper text-ink">
+      <section className="border-b border-ink">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <p className="text-sm font-bold text-primary">料金</p>
+          <h1 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl leading-snug">
+            必要なときに、必要な分だけ。
+          </h1>
+          <p className="mt-4 max-w-2xl text-[15px] leading-loose text-text-light">
+            記事とAIチャットは無料でお使いいただけます。英語の手続きを人に相談しながら進めたいときは、月額のサポートプランか、1回ごとのスポット手続きをお選びください。
           </p>
-          <Link
-            href="/contact"
-            className="bg-white text-primary hover:bg-slate-50 px-8 py-3.5 rounded-full font-medium transition-colors inline-flex items-center gap-2"
-          >
-            無料で相談する
-            <ArrowRight size={18} />
-          </Link>
+          <div className="mt-10">
+            <PlanCards />
+          </div>
         </div>
       </section>
-    </>
+
+      {/* スポット手続き */}
+      <section className="border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl">スポット手続き（1回ごと）</h2>
+          <p className="mt-2 text-sm text-text-light leading-relaxed">
+            会員にならなくても、手続き1件からご依頼いただけます。書類の確認から提出までを、日本語でご案内します。サポート会員の方は30%引きです（会員向けのクーポンコードをお送りします）。
+          </p>
+          <ul className="mt-8 border-t border-ink">
+            {SPOTS.map((s) => (
+              <li key={s.id} className="py-6 border-b border-border grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+                <div className="md:col-span-7 min-w-0">
+                  <h3 className="font-bold text-lg">{s.name}</h3>
+                  <p className="mt-1 text-sm text-text-light leading-relaxed">{s.examples}</p>
+                </div>
+                <p className="md:col-span-2 font-display font-extrabold text-2xl tabular whitespace-nowrap">
+                  {yen(s.price)}
+                  <span className="ml-1 text-xs font-sans font-normal text-text-light">税込</span>
+                </p>
+                <div className="md:col-span-3">
+                  {s.link ? (
+                    <a
+                      href={s.link}
+                      className="flex items-center justify-between gap-3 border border-ink px-5 py-3 text-sm font-bold hover:bg-ink hover:text-paper transition-colors"
+                    >
+                      <span className="whitespace-nowrap">この手続きを依頼する</span>
+                      <ArrowRight size={16} />
+                    </a>
+                  ) : (
+                    <span className="flex items-center justify-center border border-border px-5 py-3 text-sm text-text-light">
+                      まもなく受付開始
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-xs text-text-light leading-relaxed">
+            どちらに当てはまるか分からない場合は、<Link href="/contact" className="underline">お問い合わせ</Link>
+            からご相談ください。お申し込み後、2営業日以内に担当者からメールでご連絡します。
+          </p>
+        </div>
+      </section>
+
+      {/* 個別アドバイス */}
+      <section className="border-b border-border bg-paper-2">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="lg:col-span-5 min-w-0">
+            <h2 className="font-display font-extrabold text-2xl sm:text-3xl leading-snug">個別のポートフォリオアドバイス</h2>
+          </div>
+          <div className="lg:col-span-7 min-w-0 text-[15px] leading-loose text-text-light">
+            <p>
+              IFAスイッチ自身は、特定のファンドの売買・乗り換え・配分・解約の判断はお伝えしていません。個別のアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーをご案内します。料金は内容によって異なりますので、お問い合わせください。
+            </p>
+            <Link href="/contact" className="mt-4 inline-flex items-center gap-2 font-bold text-primary hover:underline">
+              個別アドバイスについて問い合わせる <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* よくある質問 */}
+      <section className="border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl">料金についてのよくある質問</h2>
+          <dl className="mt-8 border-t border-ink">
+            {FAQ.map((f) => (
+              <div key={f.q} className="py-6 border-b border-border grid grid-cols-1 lg:grid-cols-12 gap-3">
+                <dt className="lg:col-span-5 font-bold leading-relaxed">{f.q}</dt>
+                <dd className="lg:col-span-7 text-[15px] leading-loose text-text-light">{f.a}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-6 text-sm text-text-light leading-relaxed">
+            お支払いと解約の条件は
+            <Link href="/legal/tokushoho" className="underline">特定商取引法に基づく表記</Link>
+            をご覧ください。
+            {BILLING_PORTAL_URL && (
+              <>
+                ご契約中の方は、
+                <a href={BILLING_PORTAL_URL} className="underline">
+                  こちらから契約内容の確認・カードの変更・解約
+                </a>
+                ができます。
+              </>
+            )}
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }

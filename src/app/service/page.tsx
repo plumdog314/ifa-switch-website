@@ -22,7 +22,7 @@ export default function ServicePage() {
       <PageHero
         tag="SERVICE"
         title="サービス紹介"
-        description="IFAスイッチは、海外積み立て投資をしている方のためのポートフォリオサポートとお手続きサポートを提供する定額制サービスです。"
+        description="IFAスイッチは、海外積み立て投資をしている方のために、保有ファンドの見える化と各種手続きのサポートを提供しています。"
         illustration="service"
       />
 
