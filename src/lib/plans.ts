@@ -34,7 +34,12 @@ export const PLANS: Plan[] = [
     name: "ライト",
     lead: "AIと手続きガイドで、自分で進めたい方に",
     price: { monthly: 980, yearly: 9800 },
-    links: { monthly: null, yearly: null },
+    // 決済リンクは作成済み。Vercel の環境変数（docs/members-setup.md）を設定してから status を "available" にする。
+    // 価格ID: 月 price_1Ue8ovA8BpLOBDx9QbiwXUzq ／ 年 price_1Ue8pVA8BpLOBDx96ygSvYvX
+    links: {
+      monthly: "https://buy.stripe.com/6oUaEWcbz3qEcK8dNu8bS05",
+      yearly: "https://buy.stripe.com/8x2aEW1wV4uIaC038Q8bS06",
+    },
     includes: [
       "AIチャットを会員枠で利用（1日50問まで）",
       "保険会社別の詳しい手続きガイド",

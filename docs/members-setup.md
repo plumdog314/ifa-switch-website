@@ -4,7 +4,7 @@
 今は環境変数が未設定のため、会員ページは「準備中」の表示で、本文はだれにも表示されません。
 次の手順で、Stripe と Vercel の設定をしてから公開してください。
 
-## 1. Stripe でライトプランの商品と価格を作る
+## 1. Stripe でライトプランの商品と価格を作る（2026-11-21 済み：月 `price_1Ue8ovA8BpLOBDx9QbiwXUzq`／年 `price_1Ue8pVA8BpLOBDx96ygSvYvX`）
 
 1. Stripe ダッシュボードの「商品カタログ」で、商品「ライトプラン」を作ります。
 2. その商品に、次の2つの価格（継続課金）を作ります。
@@ -12,7 +12,7 @@
    - 年額 9,800円（税込）
 3. それぞれの価格ID（`price_` で始まる文字列）を控えておきます。
 
-## 2. Payment Link を作り、完了後の戻り先を設定する
+## 2. Payment Link を作り、完了後の戻り先を設定する（2026-11-21 済み：リンクは src/lib/plans.ts に記録）
 
 1. 月払い・年払いそれぞれの価格で Payment Link を作ります。
 2. 各 Payment Link の「支払い後」の設定で「顧客をウェブサイトにリダイレクトする」を選び、次のURLを入れます。
@@ -44,7 +44,7 @@ Vercel のプロジェクトの「Settings」→「Environment Variables」で�
 | --- | --- |
 | `MEMBER_COOKIE_SECRET` | 32文字以上のランダムな文字列。ターミナルで `openssl rand -base64 48` を実行して作れます |
 | `STRIPE_SECRET_KEY` | 手順3の制限付きキー（`rk_live_...`） |
-| `LITE_PRICE_IDS` | 手順1の価格IDを、カンマ区切りで（例：`price_aaa,price_bbb`） |
+| `LITE_PRICE_IDS` | `price_1Ue8ovA8BpLOBDx9QbiwXUzq,price_1Ue8pVA8BpLOBDx96ygSvYvX`（このまま貼り付け） |
 
 `ANTHROPIC_API_KEY`（AIチャット用）はすでに設定済みのはずです。
 
