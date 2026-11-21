@@ -2,72 +2,72 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "ホーム" },
+  { href: "/blog", label: "記事" },
+  { href: "/blog/category/market", label: "毎日の市況" },
+  { href: "/chat", label: "AIチャット" },
   { href: "/service", label: "サービス" },
   { href: "/pricing", label: "料金" },
   { href: "/faq", label: "FAQ" },
-  { href: "/blog", label: "ブログ" },
-  { href: "/chat", label: "AIチャット" },
   { href: "/about", label: "会社概要" },
 ];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href || (href !== "/blog" && pathname.startsWith(href + "/"));
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
+    <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/images/logo.svg"
-              alt="IFA Switch"
-              width={140}
-              height={38}
-              priority
-            />
+        <div className="flex items-center justify-between h-16 gap-6">
+          <Link href="/" className="flex items-center shrink-0" aria-label="IFAスイッチ ホーム">
+            <Image src="/images/logo.svg" alt="IFA Switch" width={132} height={36} priority />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav aria-label="メインメニュー" className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-text-light hover:text-primary transition-colors"
+                className={`text-sm whitespace-nowrap transition-colors ${
+                  isActive(link.href) ? "text-ink font-bold" : "text-text-light hover:text-ink"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-full text-sm font-medium transition-colors"
+              className="whitespace-nowrap border border-ink text-ink hover:bg-ink hover:text-paper px-4 py-1.5 text-sm transition-colors"
             >
-              お問い合わせ
+              無料で相談する
             </Link>
           </nav>
 
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2 -mr-2 text-ink"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="メニューを開く"
+            aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
+            aria-expanded={isOpen}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-white">
-          <nav className="flex flex-col px-4 py-4 gap-3">
+        <div className="lg:hidden border-t border-border bg-paper">
+          <nav aria-label="メインメニュー" className="flex flex-col px-4 py-3">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-text-light hover:text-primary transition-colors py-2"
+                className="py-3 border-b border-border text-ink"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -75,10 +75,10 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-medium text-center transition-colors mt-2"
+              className="mt-4 mb-2 bg-ink text-paper px-5 py-3 text-sm text-center"
               onClick={() => setIsOpen(false)}
             >
-              お問い合わせ
+              無料で相談する
             </Link>
           </nav>
         </div>

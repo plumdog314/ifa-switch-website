@@ -22,7 +22,7 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
         required
         autoComplete="email"
         placeholder="メールアドレス"
-        className="flex-1 min-w-0 rounded-full border border-border bg-white px-5 py-3 text-sm text-text outline-none focus:border-primary"
+        className="flex-1 min-w-0 border border-ink bg-white px-4 py-3 text-sm text-text outline-none focus:border-primary"
       />
       {/* ボット対策（Mailchimp 標準のハニーポット） */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-5000px" }}>
@@ -30,7 +30,7 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
       </div>
       <button
         type="submit"
-        className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-medium text-sm transition-colors whitespace-nowrap"
+        className="bg-ink hover:bg-primary text-paper px-6 py-3 font-bold text-sm transition-colors whitespace-nowrap"
       >
         無料で登録する
       </button>

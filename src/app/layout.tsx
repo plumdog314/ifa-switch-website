@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
+import { Noto_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,6 +11,13 @@ const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-noto-sans-jp",
+});
+
+const shippori = Shippori_Mincho_B1({
+  subsets: ["latin"],
+  weight: ["600", "800"],
+  variable: "--font-shippori",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -45,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSansJP.variable} font-sans antialiased`}>
+      <body className={`${notoSansJP.variable} ${shippori.variable} font-sans antialiased`}>
         <JsonLd data={graph(organizationSchema(), websiteSchema())} />
         <Header />
         <main>{children}</main>

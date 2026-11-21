@@ -4,7 +4,7 @@ import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 text-slate-300">
+    <footer className="bg-ink text-paper/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-700 mt-10 pt-6 text-center text-xs text-slate-400">
+        <div className="border-t border-paper/20 mt-10 pt-6 text-center text-xs text-paper/60">
           <nav aria-label="規約" className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-3">
             <Link href="/legal/tokushoho" className="hover:text-primary transition-colors">特定商取引法に基づく表記</Link>
             <Link href="/privacy" className="hover:text-primary transition-colors">プライバシーポリシー</Link>

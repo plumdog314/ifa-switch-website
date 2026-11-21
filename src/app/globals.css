@@ -1,18 +1,37 @@
+/* Hallmark · macrostructure: Ecosystem Index (newspaper front page) · tone: editorial, calm · anchor hue: indigo 255
+ * theme: custom (vibe: "calm financial broadsheet, paper and ink") · paper oklch(98.5% 0.006 85) · accent oklch(42% 0.11 255)
+ * display: Shippori Mincho B1 · body: Noto Sans JP · axes: light / high-contrast-serif / cool
+ */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* 既存のトークン名（primary / accent / text / bg / border）は残し、値だけ新しい紙とインクの配色に置き換える。
+   全ページがこのトークンを参照しているので、サイト全体のトーンが一緒に変わる。 */
 @theme inline {
-  --color-primary: #0ea5e9;
-  --color-primary-dark: #0284c7;
-  --color-primary-light: #e0f2fe;
-  --color-accent: #10b981;
-  --color-accent-dark: #059669;
-  --color-accent-light: #d1fae5;
-  --color-text: #1e293b;
-  --color-text-light: #64748b;
-  --color-bg: #ffffff;
-  --color-bg-gray: #f8fafc;
-  --color-border: #e2e8f0;
+  --color-primary: oklch(42% 0.11 255);
+  --color-primary-dark: oklch(34% 0.1 255);
+  --color-primary-light: oklch(95% 0.02 255);
+  --color-accent: oklch(52% 0.08 170);
+  --color-accent-dark: oklch(42% 0.07 170);
+  --color-accent-light: oklch(95% 0.025 170);
+  --color-text: oklch(22% 0.02 255);
+  --color-text-light: oklch(45% 0.015 255);
+  --color-bg: oklch(98.5% 0.006 85);
+  --color-bg-gray: oklch(96% 0.01 85);
+  --color-border: oklch(88% 0.012 85);
+  --color-ink: oklch(22% 0.02 255);
+  --color-paper: oklch(98.5% 0.006 85);
+  --color-paper-2: oklch(96% 0.01 85);
+  --color-rule-strong: oklch(22% 0.02 255);
+  --color-focus: oklch(55% 0.15 255);
+  --font-display: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-sans: var(--font-noto-sans-jp), "Hiragino Sans", "Yu Gothic", sans-serif;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+html,
+body {
+  overflow-x: clip;
 }
 
 html {
@@ -26,4 +45,25 @@ body {
 
 h2[id] {
   scroll-margin-top: 5rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* 数字は桁がそろうように */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
 }
