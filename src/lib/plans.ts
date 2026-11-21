@@ -36,7 +36,7 @@ export const PLANS: Plan[] = [
     price: { monthly: 980, yearly: 9800 },
     links: { monthly: null, yearly: null },
     includes: [
-      "AIチャットを会員枠で利用（月50回まで）",
+      "AIチャットを会員枠で利用（1日50問まで）",
       "保険会社別の詳しい手続きガイド",
       "英文レターのひな形集（住所変更・明細の請求など）",
     ],
