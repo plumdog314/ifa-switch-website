@@ -26,6 +26,23 @@ export default function ChatClient() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [messages]);
 
+  // トップの質問ボックスから来たとき（/chat?q=...）は、その質問を1回だけ自動で送る。
+  // 送ったら URL から q を消し、再読み込みで同じ質問が再送されないようにする。
+  // useSearchParams を使わず location から読むのは、/chat を静的ページのまま保つため。
+  const initialSent = useRef(false);
+  useEffect(() => {
+    if (initialSent.current) return;
+    initialSent.current = true;
+    const url = new URL(window.location.href);
+    const q = url.searchParams.get("q")?.trim().slice(0, 4000);
+    if (!q) return;
+    url.searchParams.delete("q");
+    window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+    track("chat_from_home");
+    send(q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   async function send(text: string) {
     const q = text.trim();
     if (!q || loading) return;
