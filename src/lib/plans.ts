@@ -49,8 +49,8 @@ export const PLANS: Plan[] = [
     lead: "英語の手続きを、人に相談しながら進めたい方に",
     price: { monthly: 2980, yearly: 29800 },
     links: {
-      monthly: process.env.NEXT_PUBLIC_PAYLINK_SUPPORT_MONTHLY ?? null,
-      yearly: process.env.NEXT_PUBLIC_PAYLINK_SUPPORT_YEARLY ?? null,
+      monthly: "https://buy.stripe.com/4gM3cu6RfgdqbG45gY8bS01",
+      yearly: "https://buy.stripe.com/aFaeVcb7vaT69xW24M8bS02",
     },
     includes: [
       "担当者によるメール回答（月3件まで・原則2営業日以内）",
@@ -71,18 +71,18 @@ export const SPOTS: Spot[] = [
     name: "かんたんな手続き",
     price: 9800,
     examples: "住所・連絡先の変更、クレジットカードの更新、運用明細や証券の取り寄せ など",
-    link: process.env.NEXT_PUBLIC_PAYLINK_SPOT_BASIC ?? null,
+    link: "https://buy.stripe.com/6oU28qdfDe5i5hGdNu8bS03",
   },
   {
     id: "spot-complex",
     name: "複雑な手続き",
     price: 19800,
     examples: "減額・一時停止、一部引き出し、解約、満期の受け取り、担当IFAの変更 など",
-    link: process.env.NEXT_PUBLIC_PAYLINK_SPOT_COMPLEX ?? null,
+    link: "https://buy.stripe.com/8x2bJ0fnL9P26lKgZG8bS04",
   },
 ];
 
 // Stripe のカスタマーポータル（契約の確認・カード変更・解約）
-export const BILLING_PORTAL_URL = process.env.NEXT_PUBLIC_BILLING_PORTAL_URL ?? null;
+export const BILLING_PORTAL_URL: string | null = "https://billing.stripe.com/p/login/00w6oGdfDd1edOc7p68bS00";
 
 export const yen = (n: number) => `${n.toLocaleString("ja-JP")}円`;
