@@ -34,7 +34,7 @@ export const PLANS: Plan[] = [
     name: "ライト",
     lead: "AIと手続きガイドで、自分で進めたい方に",
     price: { monthly: 980, yearly: 9800 },
-    // 決済リンクは作成済み。Vercel の環境変数（docs/members-setup.md）を設定してから status を "available" にする。
+    // 会員機能は Vercel の環境変数（docs/members-setup.md）に依存する。
     // 価格ID: 月 price_1Ue8ovA8BpLOBDx9QbiwXUzq ／ 年 price_1Ue8pVA8BpLOBDx96ygSvYvX
     links: {
       monthly: "https://buy.stripe.com/6oUaEWcbz3qEcK8dNu8bS05",
@@ -45,8 +45,8 @@ export const PLANS: Plan[] = [
       "保険会社別の詳しい手続きガイド",
       "英文レターのひな形集（住所変更・明細の請求など）",
     ],
-    status: "coming-soon",
-    note: "会員ログインとガイドを準備しています。公開したらニュースレターでお知らせします。",
+    status: "available",
+    note: "お支払いが終わると、そのまま会員ページが開きます。別の端末で読みたいときは ifa.switch@gmail.com までご連絡ください。",
   },
   {
     id: "support",
