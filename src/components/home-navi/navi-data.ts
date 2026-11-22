@@ -2,6 +2,8 @@
 // slug は content/blog/ にあるものだけを使う（page.tsx で存在を確かめてから渡し、無いものは出さない）。
 // 記事が1本もない「会社 × 手続き」の組み合わせは、手続きのボタン自体を出さない。
 
+import { companyName } from "@/lib/company-names";
+
 export type SpotId = "spot-basic" | "spot-complex";
 export type Task = { id: string; name: string; spot?: SpotId };
 export type Provider = { id: string; name: string };
@@ -38,16 +40,16 @@ const PLAN: Domain = {
     { id: "maturity", name: "満期の受け取り", spot: "spot-complex" },
   ],
   providers: [
-    { id: "rl360", name: "RL360" },
-    { id: "hansard", name: "ハンサード" },
-    { id: "friends", name: "フレンズプロビデント" },
-    { id: "investors", name: "インベスターズトラスト" },
-    { id: "standard-life", name: "スタンダードライフ" },
-    { id: "zurich", name: "チューリッヒ" },
-    { id: "utmost", name: "ユートモスト（旧ジェネラリ等）" },
-    { id: "sun-life", name: "サンライフ（香港）" },
-    { id: "ftlife", name: "周大福人壽（旧FTLife）" },
-    { id: "hsbc-life", name: "HSBC Life" },
+    { id: "rl360", name: companyName("rl360") },
+    { id: "hansard", name: companyName("hansard") },
+    { id: "friends", name: companyName("friends") },
+    { id: "investors", name: companyName("investors") },
+    { id: "standard-life", name: companyName("standard-life") },
+    { id: "zurich", name: companyName("zurich") },
+    { id: "utmost", name: companyName("utmost") },
+    { id: "sun-life", name: companyName("sun-life") },
+    { id: "ftlife", name: companyName("ftlife") },
+    { id: "hsbc-life", name: companyName("hsbc-life") },
   ],
   common: {
     surrender: ["before-surrender", "surrender-within-2-years", "want-to-quit-options", "tax-on-surrender"],
@@ -146,14 +148,14 @@ const PLAN: Domain = {
 
 // 銀行は、各行とも「口座開設・手数料」「休眠・ログイン」「日本への送金」「口座を閉じる・相続」の記事がある。
 const BANKS: { id: string; name: string; prefix: string }[] = [
-  { id: "standard-chartered-hk", name: "スタンダードチャータード（香港）", prefix: "standard-chartered-hk" },
-  { id: "hang-seng", name: "ハンセン銀行", prefix: "hang-seng" },
-  { id: "bochk", name: "中国銀行（香港）", prefix: "bochk" },
-  { id: "citibank-hk", name: "シティバンク（香港）", prefix: "citibank-hk" },
-  { id: "dbs-sg", name: "DBS（シンガポール）", prefix: "dbs-sg" },
-  { id: "ocbc-sg", name: "OCBC（シンガポール）", prefix: "ocbc-sg" },
-  { id: "uob-sg", name: "UOB（シンガポール）", prefix: "uob-sg" },
-  { id: "citibank-sg", name: "シティバンク（シンガポール）", prefix: "citibank-sg" },
+  { id: "standard-chartered-hk", name: companyName("standard-chartered-hk"), prefix: "standard-chartered-hk" },
+  { id: "hang-seng", name: companyName("hang-seng"), prefix: "hang-seng" },
+  { id: "bochk", name: companyName("bochk"), prefix: "bochk" },
+  { id: "citibank-hk", name: companyName("citibank-hk"), prefix: "citibank-hk" },
+  { id: "dbs-sg", name: companyName("dbs-sg"), prefix: "dbs-sg" },
+  { id: "ocbc-sg", name: companyName("ocbc-sg"), prefix: "ocbc-sg" },
+  { id: "uob-sg", name: companyName("uob-sg"), prefix: "uob-sg" },
+  { id: "citibank-sg", name: companyName("citibank-sg"), prefix: "citibank-sg" },
 ];
 
 const bankOwn = (p: string) => ({
@@ -184,7 +186,7 @@ const BANK: Domain = {
     { id: "death", name: "名義人が亡くなった" },
     { id: "tax", name: "利息の税金" },
   ],
-  providers: [{ id: "hsbc", name: "HSBC（香港）" }, ...BANKS.map((b) => ({ id: b.id, name: b.name }))],
+  providers: [{ id: "hsbc", name: companyName("hsbc") }, ...BANKS.map((b) => ({ id: b.id, name: b.name }))],
   common: {
     tax: ["hsbc-hk-tax-japan", "crs-explained"],
   },

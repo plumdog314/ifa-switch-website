@@ -2,40 +2,39 @@
 
 import { useEffect, useRef, useState } from "react";
 import { MapPin } from "lucide-react";
-import { PLACES, JAPAN, FINDER_SELECT, type FinderSelect, type Place } from "./places";
+import { PLACES, JAPAN, FINDER_SELECT, type FinderSelect, type PlaceEntry } from "./places";
 
 // トップの地球儀。日本から、記事で扱っている保険会社・銀行のある場所へ線を引く。
 // - WebGL の描画（cobe）は、画面に入ってから読み込む（最初の表示を遅くしない）
 // - 「視差効果を減らす」設定の人には回転させない
-// - 地球儀の上の地名も、下の地名のボタンも押せる。押すと、その場所の会社が並び、会社を押すと下のナビで選ばれる
+// - 地球儀の上の札も、下のボタンも押せる（どちらも会社の名前）。押すと、その場所の会社が並び、会社を押すと下のナビで選ばれる
 
 const NAVY: [number, number, number] = [0.07, 0.19, 0.35];
 const GOLD: [number, number, number] = [0.78, 0.6, 0.18];
 
-// 地球儀の上の地名。英国周辺の3か所は近すぎて重なるので、1つの札にまとめる
-const LABELS: { anchor: string; name: string; places: string[] }[] = [
-  { anchor: "iom", name: "マン島・ガーンジー・ダブリン", places: ["iom", "guernsey", "dublin"] },
-  { anchor: "cayman", name: "ケイマン諸島", places: ["cayman"] },
-  { anchor: "hk", name: "香港", places: ["hk"] },
-  { anchor: "sg", name: "シンガポール", places: ["sg"] },
+// 地球儀の上の札と、下のボタン。地名は読む人に伝わらないので、そこにある会社の名前を出す。
+// 英国周辺の3か所（マン島・ガーンジー島・ダブリン）は近すぎて重なるので、1つにまとめる。
+type Group = { id: string; anchor: string; label: string; area: string; places: string[] };
+const GROUPS: Group[] = [
+  { id: "europe", anchor: "iom", label: "RL360・Hansardなど", area: "イギリス周辺の島（マン島・ガーンジー島）とアイルランド", places: ["iom", "guernsey", "dublin"] },
+  { id: "cayman", anchor: "cayman", label: "Investors Trust", area: "カリブ海のケイマン諸島", places: ["cayman"] },
+  { id: "hk", anchor: "hk", label: "HSBC・Sun Lifeなど", area: "香港", places: ["hk"] },
+  { id: "sg", anchor: "sg", label: "DBS・OCBC・UOBなど", area: "シンガポール", places: ["sg"] },
 ];
 
-// 複数の場所をまとめて1つの「場所」として扱う（会社の重複は除く）
-const mergePlaces = (ids: string[]): Place => {
-  const ps = PLACES.filter((p) => ids.includes(p.id));
+// グループに入る会社（重複は除く）
+const entriesOf = (g: Group): PlaceEntry[] => {
   const seen = new Set<string>();
-  return {
-    id: ids.join("+"),
-    name: ps.map((p) => p.name).join("・"),
-    location: ps[0].location,
-    entries: ps.flatMap((p) => p.entries).filter((e) => {
+  return PLACES.filter((p) => g.places.includes(p.id))
+    .flatMap((p) => p.entries)
+    .filter((e) => {
       const k = `${e.domain}:${e.provider}`;
       if (seen.has(k)) return false;
       seen.add(k);
       return true;
-    }),
-  };
+    });
 };
+const locationOf = (g: Group) => PLACES.find((p) => p.id === g.anchor)!.location;
 
 const toRad = (d: number) => (d * Math.PI) / 180;
 // 経度から、その場所を正面に向ける回転角（cobe の phi）
@@ -47,7 +46,7 @@ export default function GlobeHero() {
   const targetPhi = useRef<number | null>(null);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
-  const [place, setPlace] = useState<Place | null>(null);
+  const [group, setGroup] = useState<Group | null>(null);
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -155,9 +154,9 @@ export default function GlobeHero() {
     };
   }, []);
 
-  const pickPlace = (p: Place) => {
-    setPlace(p);
-    targetPhi.current = phiFor(p.location[1]);
+  const pickGroup = (g: Group) => {
+    setGroup(g);
+    targetPhi.current = phiFor(locationOf(g)[1]);
   };
   const pickEntry = (sel: FinderSelect) => {
     window.dispatchEvent(new CustomEvent<FinderSelect>(FINDER_SELECT, { detail: sel }));
@@ -182,13 +181,13 @@ export default function GlobeHero() {
         />
         {/* 地球儀の上の地名（対応するブラウザだけ。押せる） */}
         {ready &&
-          LABELS.map((l) => (
+          GROUPS.map((l) => (
             <button
-              key={l.anchor}
+              key={l.id}
               type="button"
               tabIndex={-1}
               aria-hidden
-              onClick={() => pickPlace(l.places.length === 1 ? PLACES.find((p) => p.id === l.places[0])! : mergePlaces(l.places))}
+              onClick={() => pickGroup(l)}
               className="globe-label whitespace-nowrap rounded-full border border-[var(--nv-line-strong)] bg-white/90 px-2 py-0.5 text-[11px] font-bold text-[var(--nv-navy)] shadow-sm hover:bg-[var(--nv-navy)] hover:text-white"
               style={
                 {
@@ -198,39 +197,39 @@ export default function GlobeHero() {
                 } as React.CSSProperties
               }
             >
-              {l.name}
+              {l.label}
             </button>
           ))}
       </div>
-      {failed && <p className="mt-2 text-center text-xs text-[var(--nv-muted)]">地球儀を表示できませんでした。下の地名から選べます。</p>}
+      {failed && <p className="mt-2 text-center text-xs text-[var(--nv-muted)]">地球儀を表示できませんでした。下のボタンから選べます。</p>}
 
-      {/* 場所のボタン（どのブラウザでも使える入り口） */}
+      {/* 会社のボタン（どのブラウザでも使える入り口） */}
       <div className="mt-3">
-        <p className="text-center text-xs font-bold text-[var(--nv-muted)]">契約先・口座のある場所から探す</p>
+        <p className="text-center text-xs font-bold text-[var(--nv-muted)]">契約先の会社・銀行から探す</p>
         <ul className="mt-2 flex flex-wrap justify-center gap-1.5">
-          {PLACES.map((p) => (
-            <li key={p.id}>
+          {GROUPS.map((g) => (
+            <li key={g.id}>
               <button
                 type="button"
-                aria-pressed={place?.id === p.id}
-                onClick={() => pickPlace(p)}
+                aria-pressed={group?.id === g.id}
+                onClick={() => pickGroup(g)}
                 className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-bold ${
-                  place?.id === p.id
+                  group?.id === g.id
                     ? "border-[var(--nv-navy)] bg-[var(--nv-navy)] text-white"
                     : "border-[var(--nv-line-strong)] bg-white text-[var(--nv-navy)] hover:border-[var(--nv-navy)]"
                 }`}
               >
                 <MapPin size={12} aria-hidden />
-                {p.name}
+                {g.label}
               </button>
             </li>
           ))}
         </ul>
-        {place && (
+        {group && (
           <div aria-live="polite" className="mt-3 rounded-lg border border-[var(--nv-line)] bg-white p-3">
-            <p className="text-xs font-bold text-[var(--nv-muted)]">{place.name}にある会社・銀行（押すと下の手続きナビで選ばれます）</p>
+            <p className="text-xs font-bold text-[var(--nv-muted)]">{group.area}にある会社・銀行（押すと下の手続きナビで選ばれます）</p>
             <ul className="mt-2 flex flex-wrap gap-1.5">
-              {place.entries.map((e) => (
+              {entriesOf(group).map((e) => (
                 <li key={`${e.domain}-${e.provider}-${e.name}`}>
                   <button
                     type="button"

@@ -3,6 +3,7 @@
 // 2. 持っているもの（会社・銀行・金）… 契約先や口座から入る入り口
 // どちらも記事の slug・カテゴリから決める。1本の記事が複数のテーマに入ってよい。
 import type { PostMeta } from "./blog";
+import { companyName } from "./company-names";
 
 export type ThemeId = "procedures" | "ifa" | "tax" | "family" | "market" | "portfolio" | "trouble" | "basics";
 
@@ -124,25 +125,25 @@ export const HOLDING_GROUPS: { id: HoldingGroup; name: string }[] = [
 ];
 
 export const HOLDINGS: Holding[] = [
-  { id: "rl360", name: "RL360", group: "plan", match: /^(what-is-)?rl360/ },
-  { id: "hansard", name: "ハンサード", group: "plan", match: /^(what-is-)?hansard/ },
-  { id: "friends-provident", name: "フレンズプロビデント", group: "plan", match: /^(what-is-)?friends/ },
-  { id: "investors-trust", name: "インベスターズトラスト", group: "plan", match: /^(what-is-)?investors-trust/ },
-  { id: "standard-life", name: "スタンダードライフ", group: "plan", match: /^(what-is-)?standard-life/ },
-  { id: "zurich", name: "チューリッヒ", group: "plan", match: /^(what-is-)?zurich/ },
-  { id: "utmost", name: "ユートモスト（旧ジェネラリ等）", group: "plan", match: /^(what-is-)?(utmost|generali)/ },
-  { id: "sun-life", name: "サンライフ（香港）", group: "plan", match: /^(what-is-)?sun-life/ },
-  { id: "ftlife", name: "周大福人壽（旧FTLife）", group: "plan", match: /^(what-is-)?ftlife/ },
-  { id: "hsbc-life", name: "HSBC Life", group: "plan", match: /^hsbc-life/ },
-  { id: "hsbc", name: "HSBC（香港）", group: "bank", match: /^hsbc-hk/ },
-  { id: "standard-chartered-hk", name: "スタンダードチャータード（香港）", group: "bank", match: /^standard-chartered-hk/ },
-  { id: "hang-seng", name: "ハンセン銀行", group: "bank", match: /^hang-seng/ },
-  { id: "bochk", name: "中国銀行（香港）", group: "bank", match: /^bochk/ },
-  { id: "citibank-hk", name: "シティバンク（香港）", group: "bank", match: /^citibank-hk/ },
-  { id: "dbs-sg", name: "DBS（シンガポール）", group: "bank", match: /^dbs-sg/ },
-  { id: "ocbc-sg", name: "OCBC（シンガポール）", group: "bank", match: /^ocbc-sg/ },
-  { id: "uob-sg", name: "UOB（シンガポール）", group: "bank", match: /^uob-sg/ },
-  { id: "citibank-sg", name: "シティバンク（シンガポール）", group: "bank", match: /^citibank-sg/ },
+  { id: "rl360", name: companyName("rl360"), group: "plan", match: /^(what-is-)?rl360/ },
+  { id: "hansard", name: companyName("hansard"), group: "plan", match: /^(what-is-)?hansard/ },
+  { id: "friends-provident", name: companyName("friends"), group: "plan", match: /^(what-is-)?friends/ },
+  { id: "investors-trust", name: companyName("investors"), group: "plan", match: /^(what-is-)?investors-trust/ },
+  { id: "standard-life", name: companyName("standard-life"), group: "plan", match: /^(what-is-)?standard-life/ },
+  { id: "zurich", name: companyName("zurich"), group: "plan", match: /^(what-is-)?zurich/ },
+  { id: "utmost", name: companyName("utmost"), group: "plan", match: /^(what-is-)?(utmost|generali)/ },
+  { id: "sun-life", name: companyName("sun-life"), group: "plan", match: /^(what-is-)?sun-life/ },
+  { id: "ftlife", name: companyName("ftlife"), group: "plan", match: /^(what-is-)?ftlife/ },
+  { id: "hsbc-life", name: companyName("hsbc-life"), group: "plan", match: /^hsbc-life/ },
+  { id: "hsbc", name: companyName("hsbc"), group: "bank", match: /^hsbc-hk/ },
+  { id: "standard-chartered-hk", name: companyName("standard-chartered-hk"), group: "bank", match: /^standard-chartered-hk/ },
+  { id: "hang-seng", name: companyName("hang-seng"), group: "bank", match: /^hang-seng/ },
+  { id: "bochk", name: companyName("bochk"), group: "bank", match: /^bochk/ },
+  { id: "citibank-hk", name: companyName("citibank-hk"), group: "bank", match: /^citibank-hk/ },
+  { id: "dbs-sg", name: companyName("dbs-sg"), group: "bank", match: /^dbs-sg/ },
+  { id: "ocbc-sg", name: companyName("ocbc-sg"), group: "bank", match: /^ocbc-sg/ },
+  { id: "uob-sg", name: companyName("uob-sg"), group: "bank", match: /^uob-sg/ },
+  { id: "citibank-sg", name: companyName("citibank-sg"), group: "bank", match: /^citibank-sg/ },
   { id: "gold", name: "金（ゴールド）", group: "gold", match: /gold/ },
 ];
 
