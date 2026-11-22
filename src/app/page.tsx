@@ -1,24 +1,15 @@
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import { ArrowRight, Mail } from "lucide-react";
 import { getAllPosts, getPost, formatDateJa } from "@/lib/blog";
 import { PLANS, SPOTS, yen } from "@/lib/plans";
 import NewsletterForm from "@/components/NewsletterForm";
-import ProcedureNavigator from "@/components/home-navi/ProcedureNavigator";
+import HomeFinder from "@/components/finder/HomeFinder";
+import { NAVI_VARS } from "@/lib/navi-style";
+import { THEMES, postsForTheme } from "@/lib/themes";
 import { allNaviSlugs, type ArticleMap } from "@/components/home-navi/navi-data";
 
 export const revalidate = 3600;
 
-// このページだけの配色（手続きナビ型）。globals.css のトークンは変えない。
-const NAVI_VARS = {
-  "--nv-bg": "#eef2f7",
-  "--nv-soft": "#e3eaf3",
-  "--nv-line": "#d3dce7",
-  "--nv-line-strong": "#9fb0c4",
-  "--nv-navy": "#12305a",
-  "--nv-navy-2": "#1d4479",
-  "--nv-muted": "#4a5b70",
-} as CSSProperties;
 
 export default function Home() {
   const posts = getAllPosts();
@@ -29,6 +20,24 @@ export default function Home() {
     const p = getPost(slug);
     if (p) articles[slug] = { title: p.title, description: p.description };
   }
+
+  // 困っていることごとの記事（トップでは先頭の数本だけ出し、残りはテーマ別の一覧へ）
+  const themeArticles = THEMES.map((t) => {
+    const all = postsForTheme(posts, t.id);
+    const featured = t.featured.filter((s) => all.some((p) => p.slug === s));
+    const rest = all.filter((p) => !featured.includes(p.slug)).map((p) => p.slug);
+    const slugs = [...featured, ...rest].slice(0, 6);
+    return {
+      id: t.id,
+      name: t.name,
+      lead: t.lead,
+      count: all.length,
+      items: slugs.map((s) => {
+        const p = all.find((x) => x.slug === s)!;
+        return { slug: s, title: p.title };
+      }),
+    };
+  });
 
   const lite = PLANS.find((p) => p.id === "lite");
   const support = PLANS.find((p) => p.id === "support");
@@ -75,19 +84,16 @@ export default function Home() {
       {/* 1画面目：手続きナビ */}
       <section className="border-b border-[var(--nv-line)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12 sm:pt-12 sm:pb-16">
-          <p className="inline-flex items-center gap-2 rounded-full bg-white border border-[var(--nv-line)] px-3 py-1 text-xs font-bold whitespace-nowrap">
-            手続きナビ
-          </p>
-          <h1 className="mt-4 text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
-            海外積み立て・海外の銀行口座・金の手続きを、
+          <h1 className="text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
+            海外の積み立て・保険・銀行口座・金のことで
             <br className="hidden sm:block" />
-            選ぶだけで確認できます。
+            困ったら、ここから探せます。
           </h1>
           <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--nv-muted)]">
-            分野、会社、手続きの順に選ぶと、流れと必要書類を説明した記事をご案内します。記事はすべて無料で読めます。
+            困っていることを選ぶと、関係する解説記事をご案内します。手続きは、持っている会社や銀行からも絞り込めます。記事はすべて無料で読めます。
           </p>
           <div className="mt-8">
-            <ProcedureNavigator articles={articles} />
+            <HomeFinder articles={articles} themes={themeArticles} />
           </div>
         </div>
       </section>

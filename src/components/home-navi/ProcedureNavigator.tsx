@@ -98,7 +98,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
     <div className="rounded-xl border border-[var(--nv-line)] bg-white shadow-[0_1px_2px_rgba(15,42,74,0.06)]">
       {/* 進み具合 */}
       {/* 分野 */}
-      <div role="group" aria-label="分野を選ぶ" className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)]">
+      <div role="group" aria-label="持っているものを選ぶ" className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)]">
         {DOMAINS.map((d, i) => (
           <button
             key={d.id}

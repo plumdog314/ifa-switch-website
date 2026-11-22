@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { categories } from "@/lib/categories";
+import { THEMES, HOLDINGS } from "@/lib/themes";
 import { absUrl } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -21,11 +22,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.6,
     }));
+  const finder = [
+    ...THEMES.map((t) => `/blog/theme/${t.id}`),
+    ...HOLDINGS.filter((h) => posts.some((p) => h.match.test(p.slug))).map((h) => `/blog/company/${h.id}`),
+  ].map((u) => ({ url: absUrl(u), changeFrequency: "weekly" as const, priority: 0.7 }));
   const articles = posts.map((p) => ({
     url: absUrl(`/blog/${p.slug}`),
     lastModified: p.updated ?? p.date,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
-  return [...pages, ...cats, ...articles];
+  return [...pages, ...finder, ...cats, ...articles];
 }
