@@ -67,7 +67,7 @@ export default function HomeFinder({ articles, themes }: { articles: ArticleMap;
             {theme.name}
           </h2>
           <p aria-live="polite" className="mt-1 text-sm text-[var(--nv-muted)]">
-            {theme.lead}。関係する記事は{theme.count}本あります。
+            {theme.lead}。
           </p>
           <div className="mt-5 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)] gap-5">
             <div className="min-w-0">

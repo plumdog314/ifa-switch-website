@@ -56,7 +56,7 @@ export default async function CompanyPage({ params }: Props) {
         </nav>
         <h1 className="mt-3 text-2xl sm:text-3xl font-bold leading-snug [overflow-wrap:anywhere]">{h.name}の記事</h1>
         <p className="mt-2 text-[15px] leading-relaxed text-[var(--nv-muted)]">
-          {h.name}についての記事は{posts.length}本です。
+          {h.name}の会社の概要と、手続き・税金などの解説記事です。
         </p>
         <div className="mt-6">
           <PostRows posts={posts} />

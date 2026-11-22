@@ -60,7 +60,7 @@ export default async function ThemePage({ params }: Props) {
         </nav>
         <h1 className="mt-3 text-2xl sm:text-3xl font-bold leading-snug">{t.name}</h1>
         <p className="mt-2 text-[15px] leading-relaxed text-[var(--nv-muted)]">
-          {t.lead}。関係する記事は{posts.length}本です。
+          {t.lead}。
         </p>
 
         {groups.length > 1 && (

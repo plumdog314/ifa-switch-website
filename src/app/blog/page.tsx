@@ -62,7 +62,7 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-10 sm:pt-12">
           <h1 className="text-2xl sm:text-3xl font-bold leading-snug">記事を探す</h1>
           <p className="mt-2 text-[15px] leading-relaxed text-[var(--nv-muted)]">
-            解説記事は{posts.length}本あります。言葉で検索するか、困っていること・契約先の会社から探してください。
+            言葉で検索するか、困っていること・契約先の会社から探してください。
           </p>
           <div className="mt-6 rounded-xl border border-[var(--nv-line)] bg-white p-4 sm:p-6">
             <BlogSearch items={searchItems} />
