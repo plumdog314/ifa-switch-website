@@ -71,7 +71,7 @@ RL360の[書式集のページ](https://rl360.com/row/downloads/forms.htm)にあ
 
 ## 申請書はどこに送るの？IFAを通す必要はある？
 
-申請書はRL360にメールか郵送で送ります。2024年10月版の申請書では、送り先は servicing@rl360.com で、スキャンしたコピーでも全員の署名があれば受け付けるとされています。ただし原本の提出を求められる場合があるため、原本は手元に保管しておきます。
+申請書はRL360にメールか郵送で送ります。最新の申請書（RL293b、2025年9月版）では、送り先は servicing@rl360.com で、スキャンしたコピーでも全員の署名があれば受け付けるとされています。ただし原本の提出を求められる場合があるため、原本は手元に保管しておきます。
 
 IFAを通す必要はありません。RL360の案内資料「[Do you really need to surrender?](https://www.rl360.com/generic/downloads/rl149-Is-surrendering-the-most-suitable-option-for-you.pdf)」には、アドバイザーがいない場合は直接RL360に指示を送れると書かれています。問い合わせ先は、RL360の[連絡先のページ](https://rl360.com/row/contactus/)に載っています。IFAなしでのやり取り全般は[IFAなしで保険会社と直接やり取りできる？](/blog/without-ifa)を参考にしてください。
 

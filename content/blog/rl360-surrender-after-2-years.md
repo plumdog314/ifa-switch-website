@@ -22,7 +22,7 @@ faq:
 
 理由は、契約初期の積立金が初期口座に充てられ、そこに大きな解約控除がかかる仕組みだからです。
 
-RL360の[クォンタムの重要事項説明書（2016年頃の版）](https://tailormadepensions.eu/wp-content/uploads/2017/01/RL360-Quantum-Savings-Plan-Key-Features.pdf)では、次のように説明されています。
+RL360の[クォンタムの重要事項説明書（2016年頃の版）](https://www.rl360.com/generic/downloads/rl360-quantum-key-features-review.pdf)では、次のように説明されています。
 
 - 初期口座期間中に解約すると返戻金はなく、実質100％の解約控除になる
 - 初期口座期間の後も、積立期間の終わりまでは、初期口座の価値に解約控除がかかる
