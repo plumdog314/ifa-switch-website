@@ -2,6 +2,7 @@
 title: "ハンサードってどんな会社？沿革・拠点・主な商品"
 description: "ハンサードは、マン島に本社を置くハンサード・グローバル社のグループで、ロンドン証券取引所に上場する長期貯蓄商品の会社です。沿革、グループ会社と監督当局、日本人契約者に多い積み立てプランの特徴を、公式情報をもとに整理します。"
 date: "2026-04-13"
+updated: "2026-11-22"
 category: "products"
 tags: ["ハンサード", "マン島", "保険会社", "海外積み立て"]
 summary:
@@ -32,7 +33,7 @@ faq:
 
 | 会社名 | 監督当局（公式サイトの記載） | 主な対象地域 |
 | --- | --- | --- |
-| Hansard International Limited | ラブアン金融サービス庁（LFSA、マレーシア） | 東アジア・東南アジア |
+| Hansard International Limited | マン島金融サービス庁（Isle of Man FSA）。極東支店（Far East Branch、ラブアン）はラブアン金融サービス庁（LFSA、マレーシア）（[同社の書式の記載](https://cdn.hansard.com/app/uploads/2024/03/HO2428O.pdf)） | 東アジア・東南アジア |
 | Hansard Worldwide Limited | バハマ保険委員会（ICB） | 中南米・中東・アフリカ・アジア |
 | Hansard Europe dac | 記載なし（アイルランドの会社） | 欧州 |
 
