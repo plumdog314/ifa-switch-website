@@ -79,12 +79,12 @@ export default function Home() {
             手続きナビ
           </p>
           <h1 className="mt-4 text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
-            海外積み立ての手続きを、
+            海外積み立て・海外の銀行口座・金の手続きを、
             <br className="hidden sm:block" />
-            3つのステップで確認できます。
+            選ぶだけで確認できます。
           </h1>
           <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--nv-muted)]">
-            保険会社と手続きを選ぶと、流れと必要書類を説明した記事をご案内します。記事はすべて無料で読めます。
+            分野、会社、手続きの順に選ぶと、流れと必要書類を説明した記事をご案内します。記事はすべて無料で読めます。
           </p>
           <div className="mt-8">
             <ProcedureNavigator articles={articles} />

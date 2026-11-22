@@ -4,17 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, FileText, MessageSquare, RotateCcw, Check } from "lucide-react";
 import { SPOTS, yen } from "@/lib/plans";
-import {
-  INSURERS,
-  TASKS,
-  DEFAULT_ARTICLES,
-  INSURER_BACKGROUND,
-  KYC_SLUG,
-  resolveArticles,
-  type ArticleMap,
-  type InsurerId,
-  type TaskId,
-} from "./navi-data";
+import { DOMAINS, KYC_SLUG, resolveArticles, availableTasks, type ArticleMap, type Domain } from "./navi-data";
 
 // 手続きナビ本体。選択はページ内の状態だけで切り替える（再読み込みなし）。
 // JavaScript が動かないときは、選択前の「手続きごとの基本の記事」がそのままリンクとして読める。
@@ -51,41 +41,86 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
 }
 
 export default function ProcedureNavigator({ articles }: { articles: ArticleMap }) {
-  const [insurer, setInsurer] = useState<InsurerId | null>(null);
-  const [task, setTask] = useState<TaskId | null>(null);
+  const [domainId, setDomainId] = useState<Domain["id"]>("plan");
+  const [insurer, setInsurer] = useState<string | null>(null);
+  const [task, setTask] = useState<string | null>(null);
 
-  const insurerName = INSURERS.find((i) => i.id === insurer)?.name;
-  const taskDef = TASKS.find((t) => t.id === task);
-  const slugs = resolveArticles(insurer, task).filter((s) => articles[s]);
+  const domain = DOMAINS.find((d) => d.id === domainId)!;
+  const has = (s: string) => !!articles[s];
+  const hasProviders = domain.providers.length > 0;
+  const tasks = availableTasks(domain, insurer, has);
+  const insurerName = domain.providers.find((i) => i.id === insurer)?.name;
+  const taskDef = domain.tasks.find((t) => t.id === task);
+  const slugs = resolveArticles(domain, insurer, task).filter(has);
   const background =
-    insurer && task ? INSURER_BACKGROUND[insurer].filter((s) => articles[s] && !slugs.includes(s)) : [];
-  const defaultLabels = Object.fromEntries(DEFAULT_ARTICLES.map((d) => [d.slug, d.task]));
+    insurer && task ? (domain.background[insurer] ?? []).filter((s) => has(s) && !slugs.includes(s)) : [];
+  const defaultLabels = Object.fromEntries(domain.defaults.map((d) => [d.slug, d.label]));
   const isDefault = !insurer && !task;
-  const recommendedSpot = taskDef?.spot;
+  const recommendedSpot = domain.spot ? taskDef?.spot : undefined;
+  const pickDomain = (id: Domain["id"]) => {
+    setDomainId(id);
+    setInsurer(null);
+    setTask(null);
+  };
+  const pickInsurer = (id: string) => {
+    const next = insurer === id ? null : id;
+    setInsurer(next);
+    if (task && !availableTasks(domain, next, has).some((t) => t.id === task)) setTask(null);
+  };
 
   const heading = insurer && taskDef
     ? `${insurerName}の${taskDef.name}`
     : insurerName
       ? `${insurerName}の手続き`
       : taskDef
-        ? `${taskDef.name}の手続き（保険会社共通）`
-        : "手続きごとの基本の記事";
+        ? hasProviders
+          ? `${taskDef.name}（${domain.providerLabel}共通）`
+          : taskDef.name
+        : `${domain.name}の基本の記事`;
 
   const status = isDefault
-    ? "保険会社と手続きを選ぶと、関係する記事に絞り込みます。"
+    ? hasProviders
+      ? `${domain.providerLabel}と手続きを選ぶと、関係する記事に絞り込みます。`
+      : "知りたいことを選ぶと、関係する記事に絞り込みます。"
     : `${heading}に関係する記事を${slugs.length}本表示しています。`;
+  const steps = hasProviders
+    ? [
+        { label: domain.providerLabel!, done: !!insurer },
+        { label: "手続き", done: !!task },
+        { label: "読む記事", done: !!insurer && !!task },
+      ]
+    : [
+        { label: "知りたいこと", done: !!task },
+        { label: "読む記事", done: !!task },
+      ];
 
   return (
     <div className="rounded-xl border border-[var(--nv-line)] bg-white shadow-[0_1px_2px_rgba(15,42,74,0.06)]">
       {/* 進み具合 */}
-      <ol className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)] text-xs sm:text-sm">
-        {[
-          { n: 1, label: "保険会社", done: !!insurer },
-          { n: 2, label: "手続き", done: !!task },
-          { n: 3, label: "読む記事", done: !!insurer && !!task },
-        ].map((s, i) => (
+      {/* 分野 */}
+      <div role="group" aria-label="分野を選ぶ" className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)]">
+        {DOMAINS.map((d, i) => (
+          <button
+            key={d.id}
+            type="button"
+            aria-pressed={domainId === d.id}
+            onClick={() => pickDomain(d.id)}
+            className={`px-1 sm:px-2 py-3.5 text-[12px] min-[375px]:text-[13px] sm:text-base font-bold whitespace-nowrap ${i > 0 ? "border-l border-[var(--nv-line)]" : ""} ${
+              domainId === d.id
+                ? "bg-[var(--nv-navy)] text-white"
+                : "bg-white text-[var(--nv-navy)] hover:bg-[var(--nv-soft)]"
+            } ${i === 0 ? "rounded-tl-xl" : ""} ${i === DOMAINS.length - 1 ? "rounded-tr-xl" : ""}`}
+          >
+            {d.name}
+          </button>
+        ))}
+      </div>
+      <ol
+        className={`grid ${steps.length === 3 ? "grid-cols-[repeat(3,minmax(0,1fr))]" : "grid-cols-[repeat(2,minmax(0,1fr))]"} border-b border-[var(--nv-line)] text-xs sm:text-sm`}
+      >
+        {steps.map((s, i) => (
           <li
-            key={s.n}
+            key={s.label}
             className={`flex items-center justify-center gap-2 px-2 py-3 ${i > 0 ? "border-l border-[var(--nv-line)]" : ""} ${
               s.done ? "bg-[var(--nv-soft)] text-[var(--nv-navy)] font-bold" : "text-[var(--nv-muted)]"
             }`}
@@ -98,29 +133,31 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
       </ol>
 
       <div className="p-4 sm:p-6 lg:p-8 space-y-8">
-        {/* ① 保険会社 */}
-        <section role="group" aria-labelledby="navi-step1">
-          <h2 id="navi-step1" className="flex items-center gap-3 text-lg font-bold text-[var(--nv-navy)]">
-            <StepBadge n={1} done={!!insurer} />
-            保険会社を選ぶ
-          </h2>
-          <div className="mt-4 flex flex-wrap gap-2 sm:pl-10">
-            {INSURERS.map((i) => (
-              <Chip key={i.id} pressed={insurer === i.id} onClick={() => setInsurer(insurer === i.id ? null : i.id)}>
-                {i.name}
-              </Chip>
-            ))}
-          </div>
-        </section>
+        {/* ① 会社 */}
+        {hasProviders && (
+          <section role="group" aria-labelledby="navi-step1">
+            <h2 id="navi-step1" className="flex items-center gap-3 text-lg font-bold text-[var(--nv-navy)]">
+              <StepBadge n={1} done={!!insurer} />
+              {domain.providerLabel}を選ぶ
+            </h2>
+            <div className="mt-4 flex flex-wrap gap-2 sm:pl-10">
+              {domain.providers.map((i) => (
+                <Chip key={i.id} pressed={insurer === i.id} onClick={() => pickInsurer(i.id)}>
+                  {i.name}
+                </Chip>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ② 手続き */}
         <section role="group" aria-labelledby="navi-step2">
           <h2 id="navi-step2" className="flex items-center gap-3 text-lg font-bold text-[var(--nv-navy)]">
-            <StepBadge n={2} done={!!task} />
-            手続きを選ぶ
+            <StepBadge n={hasProviders ? 2 : 1} done={!!task} />
+            {hasProviders ? "手続きを選ぶ" : "知りたいことを選ぶ"}
           </h2>
           <div className="mt-4 flex flex-wrap gap-2 sm:pl-10">
-            {TASKS.map((t) => (
+            {tasks.map((t) => (
               <Chip key={t.id} pressed={task === t.id} onClick={() => setTask(task === t.id ? null : t.id)}>
                 {t.name}
               </Chip>
@@ -132,7 +169,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
         <section aria-labelledby="navi-step3" className="rounded-lg bg-[var(--nv-bg)] p-4 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 id="navi-step3" className="flex items-center gap-3 text-lg font-bold text-[var(--nv-navy)] min-w-0">
-              <StepBadge n={3} done={!!insurer && !!task} />
+              <StepBadge n={hasProviders ? 3 : 2} done={hasProviders ? !!insurer && !!task : !!task} />
               <span className="min-w-0 [overflow-wrap:anywhere]">{heading}</span>
             </h2>
             {!isDefault && (
@@ -155,7 +192,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
           <div className="mt-5 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)] gap-5">
             {/* 記事 */}
             <div className="min-w-0">
-              <p className="text-xs font-bold tracking-wide text-[var(--nv-muted)]">手続きの解説記事</p>
+              <p className="text-xs font-bold tracking-wide text-[var(--nv-muted)]">解説記事</p>
               <ul className="mt-2 divide-y divide-[var(--nv-line)] rounded-md border border-[var(--nv-line)] bg-white">
                 {slugs.map((s) => (
                   <li key={s}>
@@ -193,7 +230,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
                 </>
               )}
 
-              {articles[KYC_SLUG] && (
+              {domain.id === "plan" && articles[KYC_SLUG] && (
                 <Link
                   href={`/blog/${KYC_SLUG}`}
                   className="mt-5 flex items-start gap-3 rounded-md border border-dashed border-[var(--nv-line-strong)] bg-white px-4 py-3.5 hover:border-[var(--nv-navy)]"
@@ -212,6 +249,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
             {/* 有料・無料の手助け */}
             <aside className="min-w-0 flex flex-col gap-3" aria-label="手続きの手伝い">
               <p className="text-xs font-bold tracking-wide text-[var(--nv-muted)]">自分で進めるのが難しいとき</p>
+              {domain.spot && (
               <div className="rounded-md border border-[var(--nv-line)] bg-white p-4">
                 <p className="font-bold text-[var(--nv-navy)]">スポット手続き</p>
                 <p className="mt-1 text-xs leading-relaxed text-[var(--nv-muted)]">
@@ -244,6 +282,7 @@ export default function ProcedureNavigator({ articles }: { articles: ArticleMap 
                   内容と申し込み方法 <ArrowRight size={14} aria-hidden />
                 </Link>
               </div>
+              )}
               <Link
                 href="/chat"
                 className="flex items-center gap-3 rounded-md bg-[var(--nv-navy)] px-4 py-3.5 text-white hover:bg-[var(--nv-navy-2)]"
