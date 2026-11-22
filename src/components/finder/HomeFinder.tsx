@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, FileText, MessageSquare, Check } from "lucide-react";
 import ProcedureNavigator from "@/components/home-navi/ProcedureNavigator";
 import type { ArticleMap } from "@/components/home-navi/navi-data";
+import { FINDER_SELECT, type FinderSelect } from "./places";
 
 export type ThemeBlock = {
   id: string;
@@ -18,10 +19,24 @@ export type ThemeBlock = {
 // 「手続きをしたい」のときだけ、持っているもの（会社・銀行・金）と手続きで絞り込むナビを出す。
 export default function HomeFinder({ articles, themes }: { articles: ArticleMap; themes: ThemeBlock[] }) {
   const [themeId, setThemeId] = useState<string>("procedures");
+  const [preset, setPreset] = useState<(FinderSelect & { n: number }) | null>(null);
+  const naviRef = useRef<HTMLDivElement>(null);
   const theme = themes.find((t) => t.id === themeId)!;
 
+  // 地球儀で会社を選んだら、「手続きをしたい」に切り替えて、その会社を選んだ状態のナビへ移る
+  useEffect(() => {
+    const on = (e: Event) => {
+      const d = (e as CustomEvent<FinderSelect>).detail;
+      setThemeId("procedures");
+      setPreset({ ...d, n: Date.now() });
+      requestAnimationFrame(() => naviRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    };
+    window.addEventListener(FINDER_SELECT, on);
+    return () => window.removeEventListener(FINDER_SELECT, on);
+  }, []);
+
   return (
-    <div className="space-y-6">
+    <div ref={naviRef} className="space-y-6 scroll-mt-20">
       <section role="group" aria-labelledby="finder-themes">
         <h2 id="finder-themes" className="text-lg font-bold text-[var(--nv-navy)]">
           困っていることを選ぶ
@@ -57,7 +72,7 @@ export default function HomeFinder({ articles, themes }: { articles: ArticleMap;
       </section>
 
       {themeId === "procedures" ? (
-        <ProcedureNavigator articles={articles} />
+        <ProcedureNavigator articles={articles} preset={preset} />
       ) : (
         <section
           aria-labelledby="finder-result"

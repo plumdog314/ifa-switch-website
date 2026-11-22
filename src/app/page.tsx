@@ -4,6 +4,7 @@ import { getAllPosts, getPost, formatDateJa } from "@/lib/blog";
 import { PLANS, SPOTS, yen } from "@/lib/plans";
 import NewsletterForm from "@/components/NewsletterForm";
 import HomeFinder from "@/components/finder/HomeFinder";
+import GlobeHero from "@/components/finder/GlobeHero";
 import { NAVI_VARS } from "@/lib/navi-style";
 import { THEMES, postsForTheme } from "@/lib/themes";
 import { allNaviSlugs, type ArticleMap } from "@/components/home-navi/navi-data";
@@ -84,14 +85,21 @@ export default function Home() {
       {/* 1画面目：手続きナビ */}
       <section className="border-b border-[var(--nv-line)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12 sm:pt-12 sm:pb-16">
-          <h1 className="text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
-            海外の積み立て・保険・銀行口座・金のことで
-            <br className="hidden sm:block" />
-            困ったら、ここから探せます。
-          </h1>
-          <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--nv-muted)]">
-            困っていることを選ぶと、関係する解説記事をご案内します。手続きは、持っている会社や銀行からも絞り込めます。記事はすべて無料で読めます。
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] gap-6 lg:gap-10 items-center">
+            <div className="min-w-0">
+            <h1 className="text-[1.3rem] min-[375px]:text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
+              海外の積み立て、保険、
+              <br />
+              銀行口座、金のこと。
+              <br />
+              困ったら、ここから探せます。
+            </h1>
+            <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--nv-muted)]">
+              困っていることを選ぶと、関係する解説記事をご案内します。手続きは、持っている会社や銀行からも絞り込めます。記事はすべて無料で読めます。
+            </p>
+            </div>
+            <GlobeHero />
+          </div>
           <div className="mt-8">
             <HomeFinder articles={articles} themes={themeArticles} />
           </div>

@@ -40,10 +40,25 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
   );
 }
 
-export default function ProcedureNavigator({ articles }: { articles: ArticleMap }) {
+export default function ProcedureNavigator({
+  articles,
+  preset,
+}: {
+  articles: ArticleMap;
+  preset?: { domain: Domain["id"]; provider: string; n: number } | null;
+}) {
   const [domainId, setDomainId] = useState<Domain["id"]>("plan");
   const [insurer, setInsurer] = useState<string | null>(null);
   const [task, setTask] = useState<string | null>(null);
+
+  // 地球儀などから会社を指定されたとき（描画中に一度だけ反映する）
+  const [seenPreset, setSeenPreset] = useState<number | null>(null);
+  if (preset && preset.n !== seenPreset) {
+    setSeenPreset(preset.n);
+    setDomainId(preset.domain);
+    setInsurer(preset.provider);
+    setTask(null);
+  }
 
   const domain = DOMAINS.find((d) => d.id === domainId)!;
   const has = (s: string) => !!articles[s];

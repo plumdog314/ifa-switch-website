@@ -67,3 +67,17 @@ h2[id] {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* トップの地球儀の地名（CSS Anchor Positioning に対応するブラウザだけ表示） */
+.globe-label {
+  position: absolute;
+  bottom: anchor(top);
+  left: anchor(center);
+  translate: -50% -6px;
+  transition: opacity 0.3s, scale 0.3s;
+}
+@supports not (position-anchor: --x) {
+  .globe-label {
+    display: none;
+  }
+}
