@@ -2,6 +2,7 @@
 title: "スタンダードライフの各種手続きまとめ：住所変更・引き出し・IFA変更"
 description: "結論から言うと、スタンダードライフの手続きは、まず契約している会社（アイルランドの会社か香港の会社か）を証券で確かめ、その会社の窓口に、証券番号を添えた署名入りの依頼と本人確認書類を出すのが基本です。住所変更・引き出し・IFA変更の流れを解説します。"
 date: "2026-09-13"
+updated: "2026-11-22"
 category: "products"
 tags: ["スタンダードライフ", "住所変更", "引き出し", "IFA変更", "手続き"]
 summary:
@@ -27,7 +28,7 @@ faq:
 | Standard Life International dac | アイルランド（ダブリン） | 国際ボンドなどを提供。アイルランドの規則に従う |
 | Heng An Standard Life (Asia) Limited | 香港 | 旧Standard Life (Asia)。香港の保険業監管局の監督を受ける |
 
-香港の会社は、もともと英国スタンダードライフ・グループの子会社でしたが、中国の合弁相手である恒安標準人寿（Heng An Standard Life）への売却が完了し、名称が変わっています（[Insurance Business Asia](https://www.insurancebusinessmag.com/asia/news/breaking-news/heng-an-standard-life-completes-acquisition-of-standard-life-asia-226946.aspx)）。証券や年次報告書の発行元、レターヘッドの会社名と住所を見て、ご自身の契約先を確認してください。
+香港の会社は、もともとStandard Life (Asia) Limitedという名前で、英国のスタンダードライフ・グループ（現在のAberdeen Group）の子会社でした。2020年6月に、Aberdeenと中国の天津TEDAが半分ずつ出資する合弁会社、恒安標準人寿（Heng An Standard Life Insurance Company Limited）に買収され、今の名前になっています（[同社の会社概要](https://www.hengansl.com.hk/en/who-we-are/company-background)）。証券や年次報告書の発行元、レターヘッドの会社名と住所を見て、ご自身の契約先を確認してください。
 
 以下では、公開情報で確認できたアイルランドのStandard Life Internationalの国際ボンドの手続きを例に、一般的な流れを説明します。香港の会社の契約は、同社の公式サイトや窓口で最新の手続きを確認してください。
 

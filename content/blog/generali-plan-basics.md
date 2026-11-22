@@ -2,10 +2,11 @@
 title: "ジェネラリの積み立てプランを持っている人が知っておくこと"
 description: "ジェネラリ（Generali Worldwide）のガーンジー島の事業は2019年に売却され、現在はUtmost Worldwideとして運営されています。手続きの窓口が変わっている可能性、確認すべき書類、IFAと連絡が取れない場合の進め方を整理します。"
 date: "2026-09-28"
+updated: "2026-11-22"
 category: "products"
 tags: ["ジェネラリ", "Utmost", "ガーンジー島", "海外積み立て", "手続き"]
 summary:
-  - "ジェネラリ・グループはガーンジー島のGenerali Worldwide Insurance Company Limitedを売却し、2019年3月に売却が完了、会社はUtmost Worldwideとして運営されている。"
+  - "ジェネラリ・グループはガーンジー島のGenerali Worldwide Insurance Company Limitedを売却し、2019年2月末に売却が完了（ジェネラリの発表は3月1日）、会社はUtmost Worldwideとして運営されている。"
   - "会社名が変わっても契約そのものが自動的に消えるわけではないため、証券番号と契約書類をもとに、現在の窓口がどこかを確認することが最初の一歩になる。"
   - "手続きの前に、契約している会社の正式名称・証券番号・担当IFA（代理店）・積み立ての状況の4点を手元で整理しておくと、問い合わせがスムーズになる。"
 faq:
@@ -26,7 +27,7 @@ faq:
 | --- | --- |
 | 元の会社 | Generali Worldwide Insurance Company Limited（ガーンジー島） |
 | 売却先 | Life Company Consolidation Group（現在のUtmostグループ） |
-| 売却完了 | 2019年3月 |
+| 売却完了 | 2019年2月28日（ジェネラリの発表は3月1日） |
 | 現在の名称 | Utmost Worldwide |
 
 なお、ジェネラリの名前で販売された商品はほかの拠点にもありえます。ご自身の契約がどの会社と結ばれたものかは、必ず手元の証券（契約書）で確認してください。
