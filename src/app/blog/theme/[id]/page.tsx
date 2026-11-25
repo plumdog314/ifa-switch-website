@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!t) return {};
   return {
     title: `${t.name}｜記事を探す`,
-    description: `${t.lead}。海外積み立て・保険、海外の銀行口座、金（ゴールド）について、関係する解説記事をまとめています。`,
+    description: `${t.lead}。海外積み立て・保険、海外の銀行口座、ゴールドについて、関係する解説記事をまとめています。`,
     alternates: { canonical: `/blog/theme/${t.id}` },
   };
 }

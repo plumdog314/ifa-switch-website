@@ -16,7 +16,7 @@ export type ThemeBlock = {
 };
 
 // トップページの入り口。まず「困っていること」を選び、
-// 「手続きをしたい」のときだけ、持っているもの（会社・銀行・金）と手続きで絞り込むナビを出す。
+// 「手続きをしたい」のときだけ、持っているもの（会社・銀行・ゴールド）と手続きで絞り込むナビを出す。
 export default function HomeFinder({ articles, themes }: { articles: ArticleMap; themes: ThemeBlock[] }) {
   const [themeId, setThemeId] = useState<string>("procedures");
   const [preset, setPreset] = useState<(FinderSelect & { n: number }) | null>(null);

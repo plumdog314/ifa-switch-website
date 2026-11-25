@@ -117,7 +117,7 @@ export const servicesSchema = () => {
     ),
     ...SPOTS.map((s) => ({
       "@type": "Offer",
-      name: `スポット手続き：${s.name}`,
+      name: `1回ごとの手続きサポート：${s.name}`,
       description: s.examples,
       price: s.price,
       priceCurrency: "JPY",

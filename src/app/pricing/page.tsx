@@ -7,10 +7,10 @@ import { SPOTS, BILLING_PORTAL_URL, yen } from "@/lib/plans";
 const FAQ = [
   {
     q: "サポートプランの「メール回答」では、どこまで相談できますか？",
-    a: "保険会社の手続きの進め方、届いた英文書類の意味、オンライン口座の見方、記入する書類の確認などをお手伝いします。特定のファンドの売買・乗り換え・配分・解約の判断はお伝えしていません。個別のポートフォリオアドバイスをご希望の場合は、提携するライセンス保有アドバイザーをご案内します（別料金）。",
+    a: "保険会社の手続きの進め方、届いた英文書類の意味、オンライン口座の見方、記入する書類の確認などをお手伝いします。特定のファンドの売買・乗り換え・配分・解約の判断はお伝えしていません。個別の資産配分のアドバイスをご希望の場合は、提携するライセンス保有アドバイザーをご案内します（別料金）。",
   },
   {
-    q: "スポット手続きでは、何をしてもらえますか？",
+    q: "1回ごとの手続きサポートでは、何をしてもらえますか？",
     a: "お申し込み後、担当者からご連絡し、手続きに必要な書類の確認、英文の記入方法、提出先と提出の流れを、完了までご案内します。書類への署名と提出はご本人にお願いしています。",
   },
   {
@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "今、年額49,800円で契約しています。どうなりますか？",
-    a: "次回の更新時に、サポートプランの年払い（29,800円）へ切り替えます。移行の特典として、スポット手続き2回分を無料にします。切り替えの方法は、更新前に個別にご案内します。",
+    a: "次回の更新時に、サポートプランの年払い（29,800円）へ切り替えます。移行の特典として、1回ごとの手続きサポート2回分を無料にします。切り替えの方法は、更新前に個別にご案内します。",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function PricingPage() {
             必要なときに、必要な分だけ。
           </h1>
           <p className="mt-4 max-w-2xl text-[15px] leading-loose text-text-light">
-            記事とAIチャットは無料でお使いいただけます。英語の手続きを人に相談しながら進めたいときは、月額のサポートプランか、1回ごとのスポット手続きをお選びください。
+            記事とAIチャットは無料でお使いいただけます。英語の手続きを人に相談しながら進めたいときは、月額のサポートプランか、1回ごとの手続きサポートをお選びください。
           </p>
           <div className="mt-10">
             <PlanCards />
@@ -45,10 +45,10 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* スポット手続き */}
+      {/* 1回ごとの手続きサポート */}
       <section id="spot" className="border-b border-border scroll-mt-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <h2 className="font-display font-extrabold text-2xl sm:text-3xl">スポット手続き（1回ごと）</h2>
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl">1回ごとの手続きサポート</h2>
           <p className="mt-2 text-sm text-text-light leading-relaxed">
             会員にならなくても、手続き1件からご依頼いただけます。書類の確認から提出までを、日本語でご案内します。サポート会員の方は30%引きです（会員向けのクーポンコードをお送りします）。
           </p>
@@ -94,7 +94,7 @@ export default function PricingPage() {
       <section className="border-b border-border bg-paper-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-5 min-w-0">
-            <h2 className="font-display font-extrabold text-2xl sm:text-3xl leading-snug">個別のポートフォリオアドバイス</h2>
+            <h2 className="font-display font-extrabold text-2xl sm:text-3xl leading-snug">個別の資産配分のアドバイス</h2>
           </div>
           <div className="lg:col-span-7 min-w-0 text-[15px] leading-loose text-text-light">
             <p>

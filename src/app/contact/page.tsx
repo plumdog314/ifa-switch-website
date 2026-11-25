@@ -178,7 +178,7 @@ export default function ContactPage() {
                   >
                     <option value="サービスについて">サービスについて</option>
                     <option value="料金について">料金について</option>
-                    <option value="ポートフォリオについて">ポートフォリオについて</option>
+                    <option value="資産の配分について">資産の配分について</option>
                     <option value="その他">その他</option>
                   </select>
                 </div>

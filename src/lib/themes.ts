@@ -1,6 +1,6 @@
 // 記事の探し方の2つの軸。
 // 1. 困っていること（テーマ）… 読む人の状況から入る入り口
-// 2. 持っているもの（会社・銀行・金）… 契約先や口座から入る入り口
+// 2. 持っているもの（会社・銀行・ゴールド）… 契約先や口座から入る入り口
 // どちらも記事の slug・カテゴリから決める。1本の記事が複数のテーマに入ってよい。
 import type { PostMeta } from "./blog";
 import { companyName } from "./company-names";
@@ -81,14 +81,14 @@ export const THEMES: Theme[] = [
   {
     id: "market",
     name: "相場が下がって不安",
-    lead: "暴落したら続けるか、長期投資の考え方、毎日の市況",
+    lead: "暴落したら続けるか、長期投資の考え方、毎日の相場",
     featured: ["stop-saving-in-crash", "down-30-percent-what-to-do", "real-risk-is-quitting", "lehman-covid-recovery", "dollar-cost-averaging-crash", "ignore-market-noise"],
     match: (p) => p.category === "long-term" || p.category === "market",
   },
   {
     id: "portfolio",
     name: "資産の持ち方を見直したい",
-    lead: "ファンドの選び方・配分・分散、金（ゴールド）の持ち方",
+    lead: "ファンドの選び方・配分・分散、ゴールドの持ち方",
     featured: ["how-to-choose-funds", "stock-bond-allocation", "geographic-diversification", "rebalancing", "gold-as-an-asset", "portfolio-review-timing"],
     match: (p) => p.category === "portfolio" || inList(p, PORTFOLIO_EXTRA),
   },
@@ -102,7 +102,7 @@ export const THEMES: Theme[] = [
   {
     id: "basics",
     name: "そもそもの仕組み",
-    lead: "海外積み立ての仕組みと手数料、保険会社や銀行の安全性、金の基本",
+    lead: "海外積み立ての仕組みと手数料、保険会社や銀行の安全性、ゴールドの基本",
     featured: ["offshore-plan-fees-explained", "initial-vs-accumulation-units", "offshore-pros-cons", "provider-comparison", "provider-insolvency-protection", "isle-of-man"],
     match: (p) => p.category === "basics" || p.category === "products",
   },
@@ -114,14 +114,14 @@ export const postsForTheme = (posts: PostMeta[], id: ThemeId) => {
   return posts.filter(t.match);
 };
 
-// ---- 持っているもの（会社・銀行・金） ----
+// ---- 持っているもの（会社・銀行・ゴールド） ----
 export type HoldingGroup = "plan" | "bank" | "gold";
 export type Holding = { id: string; name: string; group: HoldingGroup; match: RegExp };
 
 export const HOLDING_GROUPS: { id: HoldingGroup; name: string }[] = [
   { id: "plan", name: "海外積み立て・保険の会社" },
   { id: "bank", name: "海外の銀行" },
-  { id: "gold", name: "金（ゴールド）" },
+  { id: "gold", name: "ゴールド" },
 ];
 
 export const HOLDINGS: Holding[] = [
@@ -144,7 +144,7 @@ export const HOLDINGS: Holding[] = [
   { id: "ocbc-sg", name: companyName("ocbc-sg"), group: "bank", match: /^ocbc-sg/ },
   { id: "uob-sg", name: companyName("uob-sg"), group: "bank", match: /^uob-sg/ },
   { id: "citibank-sg", name: companyName("citibank-sg"), group: "bank", match: /^citibank-sg/ },
-  { id: "gold", name: "金（ゴールド）", group: "gold", match: /gold/ },
+  { id: "gold", name: "ゴールド", group: "gold", match: /gold/ },
 ];
 
 export const getHolding = (id: string) => HOLDINGS.find((h) => h.id === id);

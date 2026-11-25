@@ -11,7 +11,7 @@ export type Provider = { id: string; name: string };
 export type Domain = {
   id: "plan" | "bank" | "gold";
   name: string; // 分野のボタン
-  providerLabel: string | null; // 「保険会社」「銀行」。金は会社を選ばないので null
+  providerLabel: string | null; // 「保険会社」「銀行」。ゴールドは会社を選ばないので null
   tasks: Task[];
   providers: Provider[];
   // どの会社でも共通の記事（会社を選んでいないとき・会社別の記事の後ろに出す）
@@ -22,7 +22,7 @@ export type Domain = {
   background: Record<string, string[]>;
   // 何も選んでいないときの記事
   defaults: { label: string; slug: string }[];
-  spot: boolean; // スポット手続きの料金を出すか（保険の手続きだけ）
+  spot: boolean; // 1回ごとの手続きサポートの料金を出すか（保険の手続きだけ）
 };
 
 const PLAN: Domain = {
@@ -220,19 +220,19 @@ const BANK: Domain = {
 
 const GOLD: Domain = {
   id: "gold",
-  name: "金（ゴールド）",
+  name: "ゴールド",
   providerLabel: null,
   spot: false,
   tasks: [
-    { id: "basics", name: "金の特徴・値動き" },
-    { id: "buy", name: "現物を買う" },
+    { id: "basics", name: "ゴールドの特徴・値動き" },
+    { id: "buy", name: "現物（延べ棒・金貨）を買う" },
     { id: "accumulate", name: "純金積立" },
     { id: "etf", name: "ETF・投資信託との違い" },
-    { id: "storage", name: "保管" },
+    { id: "storage", name: "保管する場所" },
     { id: "sell", name: "売るときの税金" },
-    { id: "import", name: "海外から持ち込む" },
+    { id: "import", name: "海外から日本へ持ち込む" },
     { id: "scam", name: "詐欺・トラブル" },
-    { id: "fund", name: "積み立てのファンドで持つ" },
+    { id: "fund", name: "積み立て保険のファンドで持つ" },
   ],
   providers: [],
   common: {
@@ -249,7 +249,7 @@ const GOLD: Domain = {
   own: {},
   background: {},
   defaults: [
-    { label: "金の特徴", slug: "gold-as-an-asset" },
+    { label: "ゴールドの特徴", slug: "gold-as-an-asset" },
     { label: "現物を買う", slug: "buy-physical-gold" },
     { label: "純金積立", slug: "gold-accumulation-plan" },
     { label: "売るときの税金", slug: "tax-on-selling-gold" },

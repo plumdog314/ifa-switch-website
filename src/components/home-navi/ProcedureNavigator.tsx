@@ -113,7 +113,7 @@ export default function ProcedureNavigator({
     <div className="rounded-xl border border-[var(--nv-line)] bg-white shadow-[0_1px_2px_rgba(15,42,74,0.06)]">
       {/* 進み具合 */}
       {/* 分野 */}
-      <div role="group" aria-label="持っているものを選ぶ" className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)]">
+      <div role="group" aria-label="何についての手続きかを選ぶ" className="grid grid-cols-[repeat(3,minmax(0,1fr))] border-b border-[var(--nv-line)]">
         {DOMAINS.map((d, i) => (
           <button
             key={d.id}
@@ -266,7 +266,7 @@ export default function ProcedureNavigator({
               <p className="text-xs font-bold tracking-wide text-[var(--nv-muted)]">自分で進めるのが難しいとき</p>
               {domain.spot && (
               <div className="rounded-md border border-[var(--nv-line)] bg-white p-4">
-                <p className="font-bold text-[var(--nv-navy)]">スポット手続き</p>
+                <p className="font-bold text-[var(--nv-navy)]">1回ごとの手続きサポート</p>
                 <p className="mt-1 text-xs leading-relaxed text-[var(--nv-muted)]">
                   書類の書き方から提出まで、1件ずつ日本語でお手伝いします。
                 </p>

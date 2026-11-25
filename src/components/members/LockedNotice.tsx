@@ -16,12 +16,12 @@ export default function LockedNotice({ configured, compact = false }: { configur
       {lite?.price.monthly != null && lite.price.yearly != null && (
         <p className="mt-3 text-[15px] leading-loose text-text-light">
           ライトプランは月額<span className="tabular">{yen(lite.price.monthly)}</span>、年額
-          <span className="tabular">{yen(lite.price.yearly)}</span>（税込）です。手続きガイドと英文レターのひな形をすべて読めるほか、AIチャットを会員枠でお使いいただけます。
+          <span className="tabular">{yen(lite.price.yearly)}</span>（税込）です。手続きガイドと英語の手紙のひな形をすべて読めるほか、AIチャットを会員枠でお使いいただけます。
         </p>
       )}
       {!open && (
         <p className="mt-3 text-sm leading-relaxed text-text-light">
-          準備中：ライトプランは現在お申し込みの準備をしています。公開したらニュースレターでお知らせします。
+          準備中：ライトプランは現在お申し込みの準備をしています。公開したらメールでお知らせします。
         </p>
       )}
       <div className="mt-6 flex flex-col sm:flex-row gap-3">

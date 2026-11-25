@@ -8,11 +8,11 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/blog", label: "記事" },
-  { href: "/blog/category/market", label: "毎日の市況" },
+  { href: "/blog/category/market", label: "毎日の相場" },
   { href: "/chat", label: "AIチャット" },
   { href: "/service", label: "サービス" },
   { href: "/pricing", label: "料金" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/faq", label: "よくある質問" },
   { href: "/about", label: "会社概要" },
 ];
 

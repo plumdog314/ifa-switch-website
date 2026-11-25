@@ -8,8 +8,8 @@ export type Category = {
 export const categories: Category[] = [
   {
     slug: "market",
-    name: "毎日の市況",
-    description: "その日の株式・為替・債券市場の動きを、長期投資家の目線でやさしく解説。相場に振り回されないための毎日の市況レポート。",
+    name: "毎日の相場",
+    description: "その日の株式・為替・債券市場の動きを、長期投資家の目線でやさしく解説。相場に振り回されないための毎日の相場レポート。",
   },
   {
     slug: "basics",
@@ -23,8 +23,8 @@ export const categories: Category[] = [
   },
   {
     slug: "portfolio",
-    name: "ポートフォリオ",
-    description: "ファンド資料の読み方、分散やリバランスの一般的な考え方など、ポートフォリオを自分で点検するための基礎。",
+    name: "資産の持ち方",
+    description: "ファンド資料の読み方、分散やリバランスの一般的な考え方など、資産の持ち方を自分で点検するための基礎。",
   },
   {
     slug: "products",

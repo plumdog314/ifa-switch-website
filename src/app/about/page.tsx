@@ -21,7 +21,7 @@ const DISCLAIMER = [
   },
   {
     title: "投資助言について",
-    body: "IFAスイッチ自身は投資助言業を行っておらず、投資判断に関する助言は行いません。個別のポートフォリオアドバイスは、提携するライセンス保有アドバイザーが提供します。投資に関する最終的な判断は、お客様ご自身の責任において行ってください。",
+    body: "IFAスイッチ自身は投資助言業を行っておらず、投資判断に関する助言は行いません。個別の資産配分のアドバイスは、提携するライセンス保有アドバイザーが提供します。投資に関する最終的な判断は、お客様ご自身の責任において行ってください。",
   },
   {
     title: "過去の実績について",
@@ -44,7 +44,7 @@ export default function AboutPage() {
             <h1 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl leading-snug">
               国や言葉の垣根を超え、
               <br />
-              誰もが自立してオカネを運用できる時代を創る
+              誰もが自立してお金を運用できる時代を創る
             </h1>
           </div>
           <div className="lg:col-span-7 min-w-0 lg:border-l lg:border-border lg:pl-12 text-[15px] leading-loose text-text-light">

@@ -1,4 +1,4 @@
-// 会員向けコンテンツ（手続きガイド・英文レターのひな形）の読み込み。
+// 会員向けコンテンツ（手続きガイド・英語の手紙のひな形）の読み込み。
 // ブログと同じく gray-matter + marked で Markdown を HTML にする。
 import fs from "node:fs";
 import path from "node:path";
@@ -13,8 +13,8 @@ export const MEMBER_KINDS: Record<MemberKind, { name: string; lead: string }> = 
     lead: "よくある手続きの流れ、準備するもの、つまずきやすい点をまとめています。",
   },
   letters: {
-    name: "英文レターのひな形",
-    lead: "保険会社に送る英文レターのひな形です。［ ］の部分を書き換えてお使いください。",
+    name: "英語の手紙のひな形",
+    lead: "保険会社に送る英語の手紙のひな形です。［ ］の部分を書き換えてお使いください。",
   },
 };
 

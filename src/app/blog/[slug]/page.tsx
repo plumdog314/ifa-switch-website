@@ -175,9 +175,9 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
 
           <div className="mt-12 rounded-2xl border border-border bg-bg-gray p-6 sm:p-8">
-            <h3 className="font-bold text-text mb-2">毎週の市況まとめをメールで受け取る</h3>
+            <h3 className="font-bold text-text mb-2">毎週の相場まとめをメールで受け取る</h3>
             <p className="text-text-light text-sm mb-4">
-              1週間の市況と新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
+              1週間の相場の動きと新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
             </p>
             <NewsletterForm compact />
           </div>

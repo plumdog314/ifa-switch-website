@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import ChatClient from "@/components/ChatClient";
 
 export const metadata: Metadata = {
-  title: "AIチャット｜海外積み立て投資のポートフォリオ見える化",
+  title: "AIチャット｜海外積み立ての保有ファンドの見える化",
   description:
     "RL360・ハンサード・インベスターズトラストなど海外積み立て投資の保有ファンドを、AIが整理して偏りや費用の考え方を解説します。各種手続きの流れもすぐに確認できます。",
   alternates: { canonical: "/chat" },
@@ -15,7 +15,7 @@ export default function ChatPage() {
     <>
       <PageHero
         tag="AI CHAT"
-        title="ポートフォリオ見える化AIチャット"
+        title="保有ファンドの見える化AIチャット"
         description="保有しているファンドと配分を書くだけで、AIが構成や偏りを整理して解説します。手続きの疑問にもお答えします。"
         illustration="faq"
       />

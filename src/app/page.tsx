@@ -72,7 +72,7 @@ export default function Home() {
     },
     {
       label: "1件ごと",
-      name: "スポット手続き",
+      name: "1回ごとの手続きサポート",
       price: `${yen(spotMin)}から`,
       body: "解約や住所変更など、1件の手続きを書類の準備から提出まで日本語でお手伝いします。",
       href: "/pricing#spot",
@@ -87,10 +87,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12 sm:pt-12 sm:pb-16">
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] gap-6 lg:gap-10 items-center">
             <div className="min-w-0">
-            <h1 className="text-[1.3rem] min-[375px]:text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
+            <h1 className="text-[1.2rem] min-[375px]:text-2xl sm:text-3xl lg:text-[2.25rem] font-bold leading-snug [overflow-wrap:anywhere]">
               海外の積み立て、保険、
               <br />
-              銀行口座、金のこと。
+              銀行口座、ゴールドのこと。
               <br />
               困ったら、ここから探せます。
             </h1>
@@ -130,7 +130,7 @@ export default function Home() {
             ))}
           </ol>
           <p className="mt-4 text-xs leading-relaxed text-[var(--nv-muted)]">
-            サポートプランの方は、スポット手続きが30%引きになります。料金は税込みです。
+            サポートプランの方は、1回ごとの手続きサポートが30%引きになります。料金は税込みです。
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function Home() {
           {market && (
             <div className="min-w-0">
               <p className="text-xs font-bold text-[var(--nv-muted)] flex flex-wrap gap-x-3">
-                <span>毎日の市況</span>
+                <span>毎日の相場</span>
                 <time dateTime={market.date} className="tabular font-normal">{formatDateJa(market.date)}</time>
               </p>
               <h2 className="mt-2 text-lg font-bold leading-relaxed [overflow-wrap:anywhere]">
@@ -154,12 +154,12 @@ export default function Home() {
                 href="/blog/category/market"
                 className="mt-3 inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-bold underline underline-offset-4 hover:no-underline"
               >
-                市況の記事一覧 <ArrowRight size={14} aria-hidden />
+                毎日の相場の記事一覧 <ArrowRight size={14} aria-hidden />
               </Link>
             </div>
           )}
           <div className="min-w-0 lg:border-l lg:border-[var(--nv-line)] lg:pl-10">
-            <h2 className="text-lg font-bold">ニュースレター（毎週土曜）</h2>
+            <h2 className="text-lg font-bold">毎週土曜の相場まとめメール</h2>
             <p className="mt-2 text-sm leading-relaxed text-[var(--nv-muted)]">
               1週間の相場の動きと新しい記事をメールでお届けします。登録は無料で、いつでも解除できます。
             </p>

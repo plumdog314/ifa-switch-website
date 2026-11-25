@@ -9,7 +9,7 @@ import LockedNotice from "@/components/members/LockedNotice";
 
 export const metadata: Metadata = {
   title: "会員ページ（ライトプラン）",
-  description: "海外積み立て投資のよくある手続きのガイドと、保険会社に送る英文レターのひな形。",
+  description: "海外積み立て投資のよくある手続きのガイドと、保険会社に送る英語の手紙のひな形。",
 };
 
 type Props = { searchParams: Promise<{ welcome?: string; error?: string; logout?: string }> };
@@ -37,7 +37,7 @@ export default async function MembersPage({ searchParams }: Props) {
             英語の手続きを、自分で進めるために。
           </h1>
           <p className="mt-4 max-w-2xl text-[15px] leading-loose text-text-light">
-            海外の保険会社でよくある手続きの流れと、そのまま使える英文レターのひな形をまとめています。保険会社によって書式・手順は異なりますので、最新の書式は各社のサイトまたはサポート窓口でご確認ください。
+            海外の保険会社でよくある手続きの流れと、そのまま使える英語の手紙のひな形をまとめています。保険会社によって書式・手順は異なりますので、最新の書式は各社のサイトまたはサポート窓口でご確認ください。
           </p>
 
           {welcome && member && (

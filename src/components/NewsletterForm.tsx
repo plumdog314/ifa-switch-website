@@ -1,4 +1,4 @@
-// Mailchimp の「IFAスイッチ | ニュースレター」リストへの登録フォーム。
+// Mailchimp の「IFAスイッチ | お知らせメール」リストへの登録フォーム。
 // 送信すると Mailchimp の確認ページが新しいタブで開き、確認メール（ダブルオプトイン）が届く。
 const MC_ACTION =
   "https://ifa-switch.us11.list-manage.com/subscribe/post?u=555444b9d34031a53fe5b2dd9&id=ddea2989eb";

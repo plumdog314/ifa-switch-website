@@ -14,9 +14,9 @@ import { THEMES, HOLDINGS, HOLDING_GROUPS } from "@/lib/themes";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "記事を探す｜海外積み立て・海外の銀行口座・金の解説",
+  title: "記事を探す｜海外積み立て・海外の銀行口座・ゴールドの解説",
   description:
-    "海外積み立て・保険、香港やシンガポールの銀行口座、金（ゴールド）について、手続き・税金・相続・トラブルの解説記事を、困っていることや契約先の会社から探せます。",
+    "海外積み立て・保険、香港やシンガポールの銀行口座、ゴールドについて、手続き・税金・相続・トラブルの解説記事を、困っていることや契約先の会社から探せます。",
   alternates: { canonical: "/blog", types: { "application/rss+xml": "/feed.xml" } },
 };
 
@@ -94,7 +94,7 @@ export default function BlogPage() {
 
       <section className="border-b border-[var(--nv-line)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-          <h2 className="text-lg font-bold">持っているものから探す</h2>
+          <h2 className="text-lg font-bold">会社・銀行・ゴールドから探す</h2>
           <div className="mt-3 grid grid-cols-1 lg:grid-cols-[repeat(3,minmax(0,1fr))] gap-4">
             {HOLDING_GROUPS.map((g) => (
               <div key={g.id} className="min-w-0 rounded-lg border border-[var(--nv-line)] bg-white p-4">
@@ -134,16 +134,16 @@ export default function BlogPage() {
             <PostRows posts={posts.slice(0, 20)} />
           </div>
           <p className="mt-3 text-sm text-[var(--nv-muted)]">
-            もっと前の記事は、上の「困っていること」「持っているもの」か、検索から探せます。
+            もっと前の記事は、上の「困っていること」「会社・銀行・ゴールド」か、検索から探せます。
             <Link href="/blog/theme/market" className="ml-1 inline-flex items-center gap-1 font-bold text-[var(--nv-navy)] underline underline-offset-4 hover:no-underline whitespace-nowrap">
-              毎日の市況はこちら <ArrowRight size={14} aria-hidden />
+              毎日の相場はこちら <ArrowRight size={14} aria-hidden />
             </Link>
           </p>
 
           <div className="mt-12 rounded-xl border border-[var(--nv-line)] bg-white p-6 sm:p-8">
-            <h3 className="font-bold mb-2">毎週の市況まとめをメールで受け取る</h3>
+            <h3 className="font-bold mb-2">毎週の相場まとめをメールで受け取る</h3>
             <p className="text-[var(--nv-muted)] text-sm mb-4">
-              1週間の市況と新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
+              1週間の相場の動きと新しい記事を、毎週メールでお届けします。登録は無料で、いつでも解除できます。
             </p>
             <NewsletterForm compact />
           </div>

@@ -11,24 +11,24 @@ const PORTFOLIO = [
       "現在のファンド構成・費用・リスク区分を一覧にし、それぞれの意味を解説します。どのファンドを選ぶかはお客様ご自身で判断していただきます。",
   },
   {
-    title: "スイッチングのレクチャー",
+    title: "ファンドの入れ替え方の説明",
     description:
       "ファンドの入れ替え（スイッチング）の操作方法をわかりやすくお伝えし、お客様自身で操作できるようサポートします。どのファンドに切り替えるかの判断はお伝えしません。",
   },
   {
     title: "運用レポートの解説",
     description:
-      "プロバイダーから届く運用レポートの見方を丁寧に解説し、投資の現状を把握できるようにします。",
+      "保険会社から届く運用レポートの見方を丁寧に解説し、投資の現状を把握できるようにします。",
   },
   {
-    title: "個別ポートフォリオアドバイスのご案内",
+    title: "個別の資産配分のアドバイスのご案内",
     description:
       "個別のアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーをご案内します（別料金）。",
   },
 ];
 
 const PORTFOLIO_FOR = [
-  "自分のポートフォリオが今どうなっているか分からない",
+  "自分の資産の配分が今どうなっているか分からない",
   "スイッチングの操作方法が分からない",
   "運用レポートが届いても、内容が理解できない",
   "IFAに任せきりだったが、自分で状況を把握できるようになりたい",
@@ -38,22 +38,22 @@ const PORTFOLIO_FOR = [
 const ADMIN = [
   {
     title: "クレジットカードの変更手続き",
-    description: "カードの有効期限切れや変更に伴う、プロバイダーへの届出手続きをサポートします。",
+    description: "カードの有効期限切れや変更に伴う、保険会社への届出手続きをサポートします。",
   },
   {
     title: "住所変更などの各種変更手続き",
     description: "住所・連絡先・受取人など、各種変更手続きのやり方をご案内します。",
   },
   {
-    title: "プロバイダーからのレターの解説",
-    description: "英語で届くレターやメールの内容を日本語でわかりやすく解説し、必要な手続きをお伝えします。",
+    title: "保険会社から届いた英語の手紙の解説",
+    description: "英語で届く手紙やメールの内容を日本語でわかりやすく解説し、必要な手続きをお伝えします。",
   },
 ];
 
 const ADMIN_FOR = [
   "クレジットカードの有効期限が切れて更新が必要",
   "住所や連絡先が変わったが、変更手続きの仕方が分からない",
-  "プロバイダーから英語のレターが届いたが、内容が分からない",
+  "保険会社から英語の手紙が届いたが、内容が分からない",
   "紹介者やIFAと連絡が取れず、手続きを頼める人がいない",
   "減額や停止の手続きをしたいが、どうすればいいか分からない",
 ];
@@ -65,7 +65,7 @@ const FLOW = [
       "お問い合わせフォームまたはメールでお気軽にご連絡ください。現在の状況やお悩みをお聞かせください。",
   },
   {
-    title: "ヒアリング",
+    title: "お話を伺う",
     description: "オンラインミーティングで、お客様の投資プランの詳細や現在の状況を詳しくお伺いします。",
   },
   {
@@ -150,7 +150,7 @@ export default function ServicePage() {
             IFAスイッチは、海外積み立て投資をしている方のために、保有ファンドの見える化と各種手続きのサポートを提供しています。
           </p>
           <nav aria-label="このページの内容" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold">
-            <a href="#portfolio" className="text-primary hover:underline whitespace-nowrap">ポートフォリオサポート →</a>
+            <a href="#portfolio" className="text-primary hover:underline whitespace-nowrap">保有ファンドの点検サポート →</a>
             <a href="#admin" className="text-primary hover:underline whitespace-nowrap">お手続きサポート →</a>
             <a href="#flow" className="text-primary hover:underline whitespace-nowrap">ご利用の流れ →</a>
           </nav>
@@ -160,14 +160,14 @@ export default function ServicePage() {
       <div id="portfolio" className="scroll-mt-20">
         <ServiceBlock
           label="01"
-          title="ポートフォリオサポート"
+          title="保有ファンドの点検サポート"
           lead={
             <>
               <p>
                 現在の運用状況を一緒に確認し、お客様がご自身で投資の状況を把握し、コントロールできるようサポートします。ファンド資料の読み方やスイッチングの操作方法など、わかりやすくレクチャーいたします。
               </p>
               <p className="mt-4">
-                IFAスイッチ自身は、特定のファンドの推奨や配分のご提案は行いません。個別のポートフォリオアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーによるアドバイスをご案内します（別料金・料金はお問い合わせください）。
+                IFAスイッチ自身は、特定のファンドの推奨や配分のご提案は行いません。個別の資産配分のアドバイスをご希望の方には、IFAスイッチが窓口となり、提携するライセンス保有アドバイザーによるアドバイスをご案内します（別料金・料金はお問い合わせください）。
               </p>
             </>
           }
@@ -197,7 +197,7 @@ export default function ServicePage() {
           <div className="lg:col-span-4 min-w-0">
             <h2 className="font-display font-extrabold text-2xl sm:text-3xl leading-snug">料金</h2>
             <p className="mt-4 text-[15px] leading-loose text-text-light">
-              記事とAIチャットは無料です。手続きは、月額のサポートプランか、1回ごとのスポット手続きでお受けしています（いずれも税込）。
+              記事とAIチャットは無料です。手続きは、月額のサポートプランか、1回ごとの手続きサポートでお受けしています（いずれも税込）。
             </p>
           </div>
           <div className="lg:col-span-8 min-w-0">
@@ -221,7 +221,7 @@ export default function ServicePage() {
                   className="py-5 border-b border-border grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_auto] gap-x-6 gap-y-1"
                 >
                   <dt className="min-w-0">
-                    <span className="font-bold">スポット手続き：{s.name}</span>
+                    <span className="font-bold">1回ごとの手続きサポート：{s.name}</span>
                     <span className="block mt-1 text-sm text-text-light leading-relaxed">{s.examples}</span>
                   </dt>
                   <dd className="font-display font-extrabold text-xl tabular whitespace-nowrap">

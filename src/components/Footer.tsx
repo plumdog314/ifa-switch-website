@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed">
               国や言葉の垣根を超え、
               <br />
-              誰もが自立してオカネを運用できる時代を創る
+              誰もが自立してお金を運用できる時代を創る
             </p>
           </div>
 

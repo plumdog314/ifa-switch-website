@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const doc = getMemberDoc("letters", slug);
   if (!doc) return {};
-  return { title: `${doc.title}｜英文レターのひな形`, description: doc.description };
+  return { title: `${doc.title}｜英語の手紙のひな形`, description: doc.description };
 }
 
 export default async function LetterPage({ params }: Props) {
