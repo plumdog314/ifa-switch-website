@@ -1,13 +1,14 @@
 ---
 title: "ハンサードの契約で担当IFAを変えるには、どんな書類が必要？"
-description: "ハンサードの担当IFAの変更は、公式の書式「Appointment of New Independent Financial Advisor and/or Investment Advisor」に契約者と新しいIFAが署名して出すのが基本です。新しいIFAに与えられる権限や手数料の上限、送り先を公式資料で整理します。"
+description: "ハンサードの担当IFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）の変更は、公式の書式「Appointment of New Independent Financial Advisor and/or Investment Advisor」（新しいIFA・投資アドバイザーの指名）に契約者と新しいIFAが署名して出すのが基本です。新しいIFAに与えられる権限や手数料の上限、送り先を公式資料で整理します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["ハンサード", "IFA変更", "手続き", "アドバイザー", "ハンサード・インターナショナル"]
 summary:
-  - "ハンサードの担当IFAの変更には、公式サイトの書式集にある「Appointment of New Independent Financial Advisor and/or Investment Advisor」を使い、契約者と新しいIFAの両方が署名する。"
+  - "ハンサードの担当IFA（契約の窓口になる独立系の担当者）の変更には、公式サイトの書式集にある「Appointment of New Independent Financial Advisor and/or Investment Advisor」を使い、契約者と新しいIFAの両方が署名する。"
   - "書式では、新しく指名したIFAは、契約者の追加の確認なしに、オンライン口座から登録口座への引き出しや解約を指示できる権限を持つと説明されている。"
-  - "IFAへの報酬を契約から払う場合の上限は、書式の記載では年1%（Global Select・Ascend・Future Focusは年1.5%）で、四半期ごとに差し引かれる。"
+  - "IFAへの報酬を契約から払う場合の上限は、書式の記載では年1%（Global Select・Ascend・Future Focusは年1.5%）で、3か月ごとに差し引かれる。"
 faq:
   - q: "前のIFAの同意がないと、担当を変えられませんか？"
     a: "確認した書式に署名するのは、契約者と新しいIFA（または投資アドバイザー）で、前のIFAの署名欄はありません。書式には、契約者・IFAのどちらからでも書面で通知すれば指名を終了できると書かれています。細かい扱いはハンサードのカスタマーサービスに確認してください。"
@@ -16,20 +17,20 @@ faq:
   - q: "書類は郵送しないといけませんか？"
     a: "書式では、マン島の管理センターへの郵送のほか、オンライン口座からスキャンしたものを出す方法も受け付けると書かれています。契約している会社によって送り先が違うことがあるため、証券の会社名を確かめてから送ってください。"
 ---
-「ハンサードの担当IFAと連絡が取れないので、別のIFAに担当してもらいたい」。こうした相談は少なくありません。結論から言うと、ハンサードの担当IFAの変更は、公式の書式に契約者と新しいIFAが署名して、保険会社に出すのが基本です。この記事では、書式の中身と、署名する前に知っておきたい点を公式資料に沿って整理します。担当を変えるかどうかを勧めるものではありません。
+「ハンサードの担当IFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）と連絡が取れないので、別のIFAに担当してもらいたい」。こうした相談は少なくありません。結論から言うと、ハンサードの担当IFAの変更は、公式の書式に契約者と新しいIFAが署名して、保険会社に出すのが基本です。この記事では、書式の中身と、署名する前に知っておきたい点を公式資料に沿って整理します。担当を変えるかどうかを勧めるものではありません。
 
-IFA変更の一般的な流れは[IFA（担当アドバイザー）を変更する方法](/blog/how-to-change-ifa)で、変更の時期の考え方は[IFAを変えるのはどんなタイミング？](/blog/when-to-change-ifa)で解説しています。
+IFA変更の一般的な流れは[IFA（担当アドバイザー）を変更する方法](/blog/how-to-change-ifa)で、変更の時期の考え方は[IFAを変えるのはどんな時期？](/blog/when-to-change-ifa)で解説しています。
 
 ## どの書式を使えばいいの？
 
-ハンサードの[ドキュメントライブラリ](https://www.hansard.com/document-library/)の「Adviser Forms」にある、「Appointment of New Independent Financial Advisor and/or Investment Advisor」という書式を使います。契約している会社ごとに版が分かれています。
+ハンサードの[書類の一覧ページ（Document Library）](https://www.hansard.com/document-library/)の「Adviser Forms」（アドバイザーに関する書式）にある、「Appointment of New Independent Financial Advisor and/or Investment Advisor」という書式を使います。契約している会社ごとに版が分かれています。
 
 | 契約している会社 | 書式（本記事の確認時点の版） |
 | --- | --- |
 | Hansard International Limited | [HO1660O](https://cdn.hansard.com/app/uploads/2024/03/HO1660O.pdf)（2024年10月版） |
 | Hansard Worldwide Limited | [HWL25](https://cdn.hansard.com/app/uploads/2024/03/HWL25.pdf)（2024年10月版） |
 
-どちらの会社の契約かは、証券（Contract Certificate）に書かれた会社名で確認できます。グループの会社の違いは[ハンサードってどんな会社？](/blog/what-is-hansard)をご覧ください。書式は改訂されることがあるため、最新版をライブラリから入手してください。
+どちらの会社の契約かは、証券（Contract Certificate）に書かれた会社名で確認できます。グループの会社の違いは[ハンサードってどんな会社？](/blog/what-is-hansard)をご覧ください。書式は改訂されることがあるため、最新版を書類の一覧ページから入手してください。
 
 ## 書式には何を書くの？
 
@@ -58,12 +59,12 @@ IFA変更の一般的な流れは[IFA（担当アドバイザー）を変更す�
 | 項目 | 書式の記載 |
 | --- | --- |
 | 上限 | 契約の評価額の年1%まで（Global Select・Ascend・Future Focusは年1.5%まで） |
-| 差し引き | 四半期ごと |
+| 差し引き | 3か月ごと（四半期ごと） |
 | 対象 | IFAか投資アドバイザーのどちらか一方だけ |
-| AscendとVantage Platinum II | アキュムレーション口座から差し引く。初期期間がある契約では、その期間が終わるまで計算されない |
+| AscendとVantage Platinum II | 積立口座（アキュムレーションユニット：初期口座の後に払った分）から差し引く。初期期間（契約の最初の決められた期間）がある契約では、その期間が終わるまで計算されない |
 | 権限 | 報酬を設定すると、IFAには自動でスイッチと取引の権限が付く |
 
-初期口座とアキュムレーション口座の違いは[初期口座と積立口座の違い](/blog/initial-vs-accumulation-units)で解説しています。報酬の割合は、書式に自分で記入する欄があります。
+初期口座（イニシャルユニット：最初の期間に払った分。手数料が重い）と積立口座の違いは[初期口座と積立口座の違い](/blog/initial-vs-accumulation-units)で解説しています。報酬の割合は、書式に自分で記入する欄があります。
 
 ## 書類はどこに送るの？
 
@@ -73,7 +74,7 @@ IFA変更の一般的な流れは[IFA（担当アドバイザー）を変更す�
 
 書式の注意事項では、契約者、IFA、投資アドバイザーのいずれかから書面の通知が届いた時点で、指名はすぐに終了するとされています。IFAが亡くなった場合や破産した場合も、自動で終了します。
 
-一方、IFAの変更そのものにかかる手数料の記載は、書式には見当たりませんでした。変更に伴う解約控除などとの関係は[IFAを変えると解約手数料がかかる？](/blog/ifa-transfer-penalty)で、IFAなしで保険会社とやり取りする方法は[IFAなしで保険会社と直接やり取りできる？](/blog/without-ifa)で整理しています。
+一方、IFAの変更そのものにかかる手数料の記載は、書式には見当たりませんでした。変更に伴う解約控除（早く解約したときに差し引かれる費用）などとの関係は[IFAを変えると解約手数料がかかる？](/blog/ifa-transfer-penalty)で、IFAなしで保険会社とやり取りする方法は[IFAなしで保険会社と直接やり取りできる？](/blog/without-ifa)で整理しています。
 
 ## まとめ
 

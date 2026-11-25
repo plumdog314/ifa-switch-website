@@ -2,15 +2,16 @@
 title: "香港HSBCの登録住所・電話番号・メールを変えるには？日本からの手続き"
 description: "香港HSBCの住所・携帯電話番号・メールは、HSBC HKアプリ、オンラインバンキング、電話、郵送の書面で変更できます。日本からの手順、必要なもの、反映までの日数、2026年11月のログイン方式の変更との関係、住所の国を変えたときの税務の届出をHSBCの公式資料に沿って解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["HSBC", "香港", "住所変更", "手続き", "海外口座"]
 summary:
   - "香港HSBCの住所・携帯電話番号・メールは、日本からでもHSBC HKアプリ、オンラインバンキング、電話バンキング、郵送の書面で変更できるとHSBCのFAQに書かれている。"
   - "アプリで住所を変えるには有効な携帯電話番号かメールが登録されている必要があり、2026年11月からのログイン方式の変更でも、これらを最新にしておくようHSBCは案内している。"
-  - "HSBCの変更届の書面には、住所の国・地域を変える場合は「税務居住者の自己証明書」を別に出すよう書かれている。"
+  - "HSBCの変更届の書面には、住所の国・地域を変える場合は「税務居住者の自己証明書」（どの国で税金を納める居住者かを自分で申告する書類）を別に出すよう書かれている。"
 faq:
   - q: "日本の携帯電話番号を、香港HSBCに登録できますか？"
-    a: "HSBCの書面では、海外の番号は国番号を付けて書くよう案内されています。アプリのFAQでは、今いる国・地域でSMSを受け取れる番号なら、海外の番号でもMobile Security Keyの有効化に使えるとされています。"
+    a: "HSBCの書面では、海外の番号は国番号を付けて書くよう案内されています。アプリのFAQでは、今いる国・地域でSMSを受け取れる番号なら、海外の番号でもMobile Security Key（アプリの中の本人確認の機能）の有効化に使えるとされています。"
   - q: "郵送で住所変更を申し込むと、どのくらいかかりますか？"
     a: "HSBCのFAQでは、書面を受け取り、署名が登録のものと一致することを確認してから、通常7営業日以内とされています。署名が一致しないと手続きが進まないため、登録した署名を覚えていない場合は海外のHSBC支店で署名の確認を受ける方法が案内されています。"
   - q: "住所変更のときに、住所を証明する書類は必要ですか？"
@@ -29,19 +30,19 @@ HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)の「海外に
 | 方法 | 必要なもの | 反映までの目安 |
 | --- | --- | --- |
 | HSBC HKアプリ | アプリへのログイン | 携帯番号・メールはすぐ。住所は営業時間内なら当日、時間外なら翌営業日 |
-| オンラインバンキング | セキュリティデバイスかアプリで作るセキュリティコード | 月〜金 9:00〜20:00、土 9:00〜17:30の変更はすぐ |
+| オンラインバンキング | 確認用の番号を出す小さな機器（セキュリティデバイス）かアプリで作るセキュリティコード | 月〜金 9:00〜20:00、土 9:00〜17:30の変更はすぐ |
 | 電話バンキング | 電話バンキングのPIN（暗証番号） | 記載なし |
 | 郵送の書面 | 登録と同じ署名 | 受け取りと署名の確認後、通常7営業日以内 |
 
 アプリの営業時間は、香港時間で月〜金 9:00〜19:55、土 9:00〜17:25（日曜・祝日を除く）です。通信先住所（郵便物を送る住所）の変更は、電子明細やカード、MPF（香港の強制積立年金）に反映されるまで最大4営業日かかることがあるとされています。
 
-電話番号は、Premier Eliteとプライベートバンキングの方が (852) 2233 3033、Premierの方が (852) 2233 3322、それ以外の方が (852) 2233 3000 です（[HSBCの電話番号一覧](https://www.hsbc.com.hk/help/contact/phone-numbers/)）。
+電話番号は口座の種類によって分かれていて、Premier Eliteとプライベートバンキングの方が (852) 2233 3033、Premierの方が (852) 2233 3322、それ以外の方が (852) 2233 3000 です（[HSBCの電話番号一覧](https://www.hsbc.com.hk/help/contact/phone-numbers/)）。
 
 ## アプリで変更するときの条件は？
 
 アプリでの変更には、有効な携帯電話番号かメールのどちらかが登録されている必要があります。住所の変更も同じ条件です。
 
-HSBCの[モバイルバンキングのFAQ](https://www.hsbc.com.hk/help/faq/mobile-banking/)によると、手順はアプリにログインし、メニュー、プロフィールのアイコン、「Update contact details」の順に選びます。
+HSBCの[モバイルバンキングのFAQ](https://www.hsbc.com.hk/help/faq/mobile-banking/)によると、手順はアプリにログインし、メニュー、プロフィールのアイコン、「Update contact details」（連絡先の更新）の順に選びます。
 
 [口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)には、次の条件も書かれています。
 
@@ -54,7 +55,7 @@ HSBCの[モバイルバンキングのFAQ](https://www.hsbc.com.hk/help/faq/mobi
 
 ## 郵送の書面は、どれを使うの？
 
-HSBCは「Change of Address and/or Customer Information Instruction Form (For Personal Customer)」と「Change of Address/Telephone Number/Fax Number/Email Address Instruction Form (For Personal Customer)」の2つの書面を公開しています。
+HSBCは「Change of Address and/or Customer Information Instruction Form (For Personal Customer)」（個人の住所・顧客情報の変更届）と「Change of Address/Telephone Number/Fax Number/Email Address Instruction Form (For Personal Customer)」（個人の住所・電話番号・FAX番号・メールの変更届）の2つの書面を公開しています。
 
 | 書面 | 主な内容 |
 | --- | --- |
@@ -67,10 +68,10 @@ HSBCは「Change of Address and/or Customer Information Instruction Form (For Pe
 - 海外の電話番号は、国番号（日本なら81）を付けて書く
 - 住居の住所（Residential）に私書箱は使えない
 - 海外の住所は、住所の詳細・市町村・国を必ず書く
-- MPFやHSBC Lifeの保険の情報は、別の書面で変更する
+- MPFやHSBC Life（HSBCグループの保険会社）の保険の情報は、別の書面で変更する
 - 携帯番号やメールを変えると、古い番号・メールで登録したFPS（香港の即時送金サービス）は翌営業日までに自動で解除される
 
-署名は登録しているものと一致している必要があります。登録した署名を覚えていない場合、FAQでは「[Customer Information Sheet for Requesting Personal Account Document Authentication at HSBC Overseas Branch](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/customer-information-sheet.pdf)」を使い、海外のHSBC支店で身分証の原本の確認と署名の立ち会いを受ける方法が案内されています。日本国内で対応できる窓口があるかは確認できませんでした。
+署名は登録しているものと一致している必要があります。登録した署名を覚えていない場合、FAQでは「[Customer Information Sheet for Requesting Personal Account Document Authentication at HSBC Overseas Branch](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/customer-information-sheet.pdf)」（海外のHSBC支店で書類の確認を頼むための案内用紙）を使い、海外のHSBC支店で身分証の原本の確認と署名の立ち会いを受ける方法が案内されています。日本国内で対応できる窓口があるかは確認できませんでした。
 
 住所証明の書類を出す必要があるかは、FAQと書面のどちらにも書かれていませんでした。一般的な住所証明の考え方は[本人確認・住所証明の提出を求められたら](/blog/kyc-documents)で整理しています。
 
@@ -92,7 +93,7 @@ HSBCの書面では、住居や通信先の住所の国・地域を変える場�
 
 [住所・電話番号などの変更届](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/change-customer-contact.pdf)の注意書きでは、個人用の書面「CRS-I (HK)」はHSBCのCRSのウェブサイトから入手できるとされています。CRSは、各国の税務当局が金融口座の情報を交換する国際的な仕組みです。詳しくは[CRS（共通報告基準）とは？](/blog/crs-explained)で解説しています。
 
-また、変更届には、住所を米国やカナダに変えると証券や投資信託の取引が続けられなくなるといった、投資サービスについての注意もあります。米国の発行体の証券などを持っている場合は、新しい住所を書いた米国の税務書類（W-8BEN）の提出も求められています。
+また、変更届には、住所を米国やカナダに変えると証券や投資信託の取引が続けられなくなるといった、投資サービスについての注意もあります。米国の会社などが発行した証券を持っている場合は、新しい住所を書いた米国の税務書類（W-8BEN：米国の居住者でないことを示す書類）の提出も求められています。
 
 ## 新しい住所には、何が届くの？
 

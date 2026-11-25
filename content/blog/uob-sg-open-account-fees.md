@@ -2,12 +2,13 @@
 title: "日本に住んでいてもUOB（シンガポール）の口座は開ける？口座の種類と最低残高・手数料は？"
 description: "UOB（シンガポール）は、UOBと取引のない外国人に支店での口座開設を求め、パスポート原本、住所の証明、就労ビザなどを持参するよう案内しています。主な口座の最低預け入れ額と、残高が下回ったときの手数料を公式の料金表で整理します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["UOB（シンガポール）", "シンガポール", "口座開設", "口座維持手数料", "海外口座"]
 summary:
   - "UOBのFAQでは、UOBと取引のない外国人はシンガポールの支店に行き、パスポート・住所の証明・就労ビザなどの原本を見せて口座を開くよう案内されている。"
   - "UOB One Accountは最低預け入れ額S$1,000で、月の平均残高がS$1,000を下回ると月S$5の手数料がかかると料金表に書かれている。"
-  - "外貨のGlobal Currency Accountは、日本円ならJPY150,000が最低残高で、下回るとJPY1,500の手数料がかかり、非居住者の開設には紹介者が必要とされている。"
+  - "外貨預金の口座（Global Currency Account）は、日本円ならJPY150,000が最低残高で、下回るとJPY1,500の手数料がかかり、非居住者（シンガポールに住んでいない人）の開設には紹介者が必要とされている。"
 faq:
   - q: "日本からオンラインでUOBの口座を開けますか？"
     a: "UOBのFAQでは、オンライン開設はシンガポール国民・永住者と、すでにUOBの取引がある人向けとされています。UOBと取引のない外国人は、支店に行くよう案内されています。日本に住む人がどう扱われるかは、UOBに確認が必要です。"
@@ -47,8 +48,8 @@ faq:
 | UOB One Account | S$1,000 | 平均残高がS$1,000未満 | S$5 |
 | Stash Account | S$1,000 | 平均残高がS$1,000未満 | S$2 |
 | Uniplus Account | S$1,000（シンガポール国民・永住者以外） | 平均残高がS$500未満 | S$2 |
-| Passbook Savings Account | S$1,000（シンガポール国民・永住者以外） | 平均残高がS$500未満 | S$2 |
-| Current Account | S$1,000 | 平均残高がS$3,000未満 | S$7.50 |
+| Passbook Savings Account（通帳式の普通預金） | S$1,000（シンガポール国民・永住者以外） | 平均残高がS$500未満 | S$2 |
+| Current Account（当座預金） | S$1,000 | 平均残高がS$3,000未満 | S$7.50 |
 | Privilege Account | S$350,000 | — | なし |
 
 出典は[料金表](https://www.uob.com.sg/web-resources/personal/pdf/personal/save/chequeing/one-account/fees-and-charges.pdf)の「Account Charges」の欄です。平均残高は、その月の毎日の残高の平均（average daily balance）で判定されます。
@@ -66,7 +67,7 @@ Global Currency Accountは、外貨のまま預けられる口座です。日本
 | 香港ドル | HKD7,800 | HKD80 |
 | ユーロ | EUR900 | EUR9 |
 
-[Global Currency Accountの紹介ページ](https://www.uob.com.sg/personal/save/foreign-currency-accounts/global-currency-account.page)によると、対象は21歳以上です。非居住者が開く場合は紹介者（introducer）が必要で、申し込みは支店で行うと書かれています。紹介者の条件は、公式の資料では確認できませんでした。
+[Global Currency Accountの紹介ページ](https://www.uob.com.sg/personal/save/foreign-currency-accounts/global-currency-account.page)によると、対象は21歳以上です。非居住者（シンガポールに住んでいない人）が開く場合は紹介者（introducer）が必要で、申し込みは支店で行うと書かれています。紹介者の条件は、公式の資料では確認できませんでした。
 
 ## ほかに、よくかかる手数料は？
 
@@ -83,7 +84,7 @@ Global Currency Accountは、外貨のまま預けられる口座です。日本
 
 ## まとめ
 
-UOB（シンガポール）は、取引のない外国人に支店での口座開設を求めており、日本に住んだまま開けるかは公式の資料では確認できませんでした。口座を持つと、One Accountなら平均残高S$1,000未満で月S$5など、残高に応じた手数料がかかります。本記事の確認時点（2026年11月）の料金表をもとにしているため、最新の金額はUOBの資料で確認してください。海外の預金の利息にかかる日本の税金は[海外の預金の利息にも日本の税金はかかる？](/blog/hsbc-hk-tax-japan)、口座の情報が日本に届く仕組みは[CRSの解説](/blog/crs-explained)をご覧ください。
+UOB（シンガポール）は、取引のない外国人に支店での口座開設を求めており、日本に住んだまま開けるかは公式の資料では確認できませんでした。口座を持つと、One Accountなら平均残高S$1,000未満で月S$5など、残高に応じた手数料がかかります。本記事の確認時点（2026年11月）の料金表をもとにしているため、最新の金額はUOBの資料で確認してください。海外の預金の利息にかかる日本の税金は[海外の預金の利息にも日本の税金はかかる？](/blog/hsbc-hk-tax-japan)、口座の情報が日本に届く仕組みは[CRS（海外の口座情報を、各国の税務当局が自動で交換する仕組み）の解説](/blog/crs-explained)をご覧ください。
 
 口座の扱いを整理したい方は[AIチャット](/chat)を、個別に相談したい方は[お問い合わせ](/contact)をご利用ください。
 

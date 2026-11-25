@@ -2,6 +2,7 @@
 title: "香港HSBCの口座が休眠口座になったら？復活の手続きと、放っておくとどうなるか"
 description: "香港HSBCの口座は、一定期間お客さま自身の取引がないと「休眠（inactive）」になり、利用が制限されることがあります。復活はオンラインバンキング、電話、香港の支店で行えます。期間の考え方、制限の内容、日本からの手続き、長く放置した場合を公式資料に沿って解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["HSBC", "香港", "休眠口座", "手続き", "海外口座"]
 summary:
@@ -24,11 +25,11 @@ faq:
 
 一定期間、お客さま自身が始めた取引がないと休眠になります。その期間はHSBCが決め、口座の種類によって違います。
 
-HSBCの[総合口座の規約（Integrated Account Terms and Conditions）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/personal-integrated/terms-and-conditions.pdf)の「Inactive Account」の項には、HSBCが決めた期間取引のない口座について、利用を制限したり条件を付けたりできると書かれています。期間は口座の種類で異なり、求めれば詳しく案内するとされています。[一般の規約（General Terms and Conditions）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/terms-and-conditions.pdf)にも同じ内容があります。
+HSBCの[総合口座（預金などを1つにまとめた口座）の規約（Integrated Account Terms and Conditions）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/personal-integrated/terms-and-conditions.pdf)の「Inactive Account」（休眠口座）の項には、HSBCが決めた期間取引のない口座について、利用を制限したり条件を付けたりできると書かれています。期間は口座の種類で異なり、求めれば詳しく案内するとされています。[一般の規約（General Terms and Conditions）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/terms-and-conditions.pdf)にも同じ内容があります。
 
 本記事の確認時点（2026年11月）では、口座の種類ごとの具体的な月数を、取得できた公式ページでは確認できませんでした。自分の口座の期間は、HSBCに確認してください。
 
-「取引」の数え方については、HKMAの案内資料「[Understanding Dormant Accounts](https://www.hkma.gov.hk/media/eng/doc/key-functions/banking-stability/consumer-corner/english/6-Understanding_Dormant_Accounts-English.pdf)」が参考になります。多くの銀行は、利息の入金や手数料の引き落としのように銀行側が行う取引しかない状態が一定期間（一般に6か月以上）続くと、休眠として扱う、と説明されています。つまり、利息がついているだけでは「使っている」ことにならないのが一般的です。
+「取引」の数え方については、HKMAの案内資料「[Understanding Dormant Accounts](https://www.hkma.gov.hk/media/eng/doc/key-functions/banking-stability/consumer-corner/english/6-Understanding_Dormant_Accounts-English.pdf)」（休眠口座について知る）が参考になります。多くの銀行は、利息の入金や手数料の引き落としのように銀行側が行う取引しかない状態が一定期間（一般に6か月以上）続くと、休眠として扱う、と説明されています。つまり、利息がついているだけでは「使っている」ことにならないのが一般的です。
 
 ## 休眠になると、何が変わるの？
 
@@ -43,7 +44,7 @@ HSBCの[総合口座の規約（Integrated Account Terms and Conditions）](http
 
 HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)では、投資口座について、休眠を防いで売買の制限を避けるには通知の期日までに売買をする必要がある、と書かれています。
 
-手数料について、HSBCの[個人向け手数料表（2026年11月1日適用）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/ways-to-bank/bank-tariff/20261101-guide.pdf)には、休眠口座だけにかかる手数料の項目は見当たりませんでした。一方で、口座の種類や残高に応じた月ごとの手数料（Below balance fee）や、紙の明細書の年会費などは定められています。こうした手数料が休眠中にどう扱われるかは確認できませんでした。手数料の全体は[香港HSBCの手数料と最低残高](/blog/hsbc-hk-fees-minimum-balance)で整理しています。
+手数料について、HSBCの[個人向け手数料表（2026年11月1日適用）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/ways-to-bank/bank-tariff/20261101-guide.pdf)には、休眠口座だけにかかる手数料の項目は見当たりませんでした。一方で、口座の種類や残高に応じた月ごとの手数料（Below balance fee：残高が基準を下回ったときの手数料）や、紙の明細書の年会費などは定められています。こうした手数料が休眠中にどう扱われるかは確認できませんでした。手数料の全体は[香港HSBCの手数料と最低残高](/blog/hsbc-hk-fees-minimum-balance)で整理しています。
 
 ## 日本から、休眠口座を復活させるには？
 
@@ -53,13 +54,13 @@ HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)に書かれて
 
 | 方法 | 内容 |
 | --- | --- |
-| オンラインバンキング | セキュリティデバイスか、HSBC HKアプリで作ったセキュリティコードでログインし、画面の案内に沿って手続きする |
+| オンラインバンキング | 確認用の番号を出す小さな機器（セキュリティデバイス）か、HSBC HKアプリで作ったセキュリティコード（ログイン用の確認の番号）でログインし、画面の案内に沿って手続きする |
 | 電話・支店 | HSBCに電話するか、香港の支店に行って手続きする |
 | 海外の支店 | 近くのHSBCの支店で香港HSBCへの連絡を手伝ってもらうか、指定の支店で予約して書類の署名の確認を受ける |
 
 手続きの途中で、HSBCから登録情報の更新を求められることがあります。住所が変わっている場合は[住所が変わったときの手続き](/blog/change-of-address)を、本人確認書類を求められた場合は[本人確認・住所証明の提出を求められたら](/blog/kyc-documents)を参考にしてください。
 
-FAQに載っている電話番号は、HSBC Premier Eliteとプライベートバンキングの方が (852) 2233 3033、HSBC Premierの方が (852) 2233 3322、それ以外の方が (852) 2233 3000 です。投資口座は、有効な電話バンキングのPINかATMのPINを使って電話するか、香港の支店で本人確認と書類の記入をすると書かれています。
+FAQに載っている電話番号は口座の種類によって分かれていて、HSBC Premier Eliteとプライベートバンキングの方が (852) 2233 3033、HSBC Premierの方が (852) 2233 3322、それ以外の方が (852) 2233 3000 です。投資口座は、有効な電話バンキングの暗証番号（PIN）かATMの暗証番号を使って電話するか、香港の支店で本人確認と書類の記入をすると書かれています。
 
 海外の支店での手続きについて、HSBCの[海外の支店で書類の認証を受けるための案内](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/customer-information-sheet.pdf)には、規制により書類の認証を扱えない支店があり、例として日本と台湾が挙げられています。ログインできない場合は[香港HSBCにログインできないときは？](/blog/hsbc-hk-cannot-login)もご覧ください。
 
@@ -67,7 +68,7 @@ FAQに載っている電話番号は、HSBC Premier Eliteとプライベート�
 
 通知に書かれた期日までに、口座から引き出しか振替をすれば、休眠を防げるとHSBCは案内しています。
 
-HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)では、残高があれば引き出すか他の口座へ振り替える、残高がゼロなら入金してから引き出すか振り替える、とされています。方法は、オンラインバンキング・アプリ、香港のATM（有効なPINが必要）、香港の支店です。
+HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)では、残高があれば引き出すか他の口座へ振り替える、残高がゼロなら入金してから引き出すか振り替える、とされています。方法は、オンラインバンキング・アプリ、香港のATM（有効な暗証番号が必要）、香港の支店です。
 
 HSBC Premierの方向けの[HSBCの案内ページ](https://retailbank.hsbc.com.hk/hp/en/)では、次のどれかを期日までに行うよう書かれています。
 

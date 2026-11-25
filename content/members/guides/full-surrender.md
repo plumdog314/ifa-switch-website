@@ -56,7 +56,7 @@ order: 6
 
 - [英文レター：解約（全額）の依頼](/members/letters/full-surrender-request)
 - [英文レター：証券・契約書類と評価額の請求](/members/letters/policy-documents-request)
-- [海外積み立てを解約する前に必ず確認すべき5つのこと](/blog/before-surrender)
+- [海外積み立てを解約する前に確認しておきたい5つのこと](/blog/before-surrender)
 - [海外積み立てを解約したときの確定申告の考え方](/blog/tax-on-surrender)
 
 ※本記事は一般的な情報提供を目的としたもので、特定の金融商品の売買を推奨するものではありません。

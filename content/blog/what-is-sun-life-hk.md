@@ -2,19 +2,20 @@
 title: "サンライフ香港（Sun Life Hong Kong）ってどんな会社？"
 description: "サンライフ香港（Sun Life Hong Kong Limited）は、カナダのサンライフ・グループに属する香港の生命保険会社です。親会社、香港保険業監管局による監督、旧社名の経緯、主な貯蓄型保険と「保証されない」ボーナスの仕組みを、公式資料に沿って整理します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "products"
 tags: ["サンライフ香港", "Sun Life Hong Kong", "香港", "貯蓄型保険", "保険会社"]
 summary:
   - "サンライフ香港（Sun Life Hong Kong Limited）はバミューダで設立された有限責任会社で、カナダのSun Life Assurance Company of Canadaが100%保有する子会社である。"
-  - "公式資料によると、サンライフ香港は香港保険業監管局（Insurance Authority）の健全性規制を受けており、香港での歴史は1892年までさかのぼる。"
-  - "主な貯蓄型保険は有配当（ボーナス付き）の終身保険で、解約返戻金のうち保証されるのは保証現金価値だけで、リバーショナリー・ボーナスとターミナル・ボーナスは保証されない。"
+  - "公式資料によると、サンライフ香港は香港の保険業監管局（IA）の健全性規制（会社の財務が健全かどうかの規制）を受けており、香港での歴史は1892年までさかのぼる。"
+  - "主な貯蓄型保険は有配当（ボーナス付き）の終身保険で、解約返戻金（解約したときに戻ってくるお金）のうち保証されるのは保証現金価値だけで、リバーショナリー・ボーナス（毎年積み上がるボーナス）とターミナル・ボーナス（解約時などに上乗せされるボーナス）は保証されない。"
 faq:
   - q: "サンライフ香港とSun Life Financialは同じ会社ですか？"
     a: "同じグループですが、別の会社です。サンライフ香港の発表文によると、Sun Life Financial Inc.はSun Life Assurance Company of Canadaの持株会社で、サンライフ香港はSun Life Assurance Company of Canadaの100%子会社です。契約の相手方は、証券に書かれている会社名で確認してください。"
   - q: "古い証券に「CMG Asia」や「Sun Life Financial (Hong Kong)」と書かれています。別の会社の契約ですか？"
     a: "サンライフ香港の公式サイトでは、CMG Asia Limitedは現在のSun Life Hong Kong Limitedの旧称とされています。また、Sun Life Financial (Hong Kong) Limitedが発行した契約や、そこへ移された契約は、2006年にSun Life Hong Kong Limitedへ移されたと説明されています。"
   - q: "ボーナスは必ずもらえますか？"
-    a: "保証されていません。商品パンフレットには、リバーショナリー・ボーナスとターミナル・ボーナスは保証されず、実際の金額は例示より高くも低くもなり、ゼロになる場合もあると書かれています。"
+    a: "保証されていません。商品パンフレットには、リバーショナリー・ボーナス（毎年積み上がるボーナス）とターミナル・ボーナス（解約時などに上乗せされるボーナス）は保証されず、実際の金額は例示より高くも低くもなり、ゼロになる場合もあると書かれています。"
 ---
 「香港で入ったサンライフの貯蓄保険を持っているが、どんな会社なのかよく知らない」という方は少なくありません。結論から言うと、サンライフ香港は、カナダのサンライフ・グループに属する香港の生命保険会社です。この記事では、公式資料で確認できる事実だけを整理します。内容は本記事の確認時点（2026年11月）のものです。
 
@@ -36,7 +37,7 @@ faq:
 親会社はカナダのSun Life Assurance Company of Canadaです。サンライフ香港の[2023年の発表文](https://www.sunlife.com.hk/en/about-us/newsroom/news-releases/2023/sun-life-hong-kong-receives-hkia-s-approval-on--early-adoption/)には、次のように書かれています。
 
 - Sun Life Financial Inc.は、Sun Life Assurance Company of Canadaの持株会社である
-- Sun Life Financial Inc.は、トロント、ニューヨーク、フィリピンの証券取引所に上場している（ティッカーはSLF）
+- Sun Life Financial Inc.は、トロント、ニューヨーク、フィリピンの証券取引所に上場している（銘柄記号はSLF）
 - サンライフ香港は、Sun Life Assurance Company of Canadaの100%子会社である
 
 商品パンフレットの裏表紙にも、サンライフ・グループの一員で、本社はカナダのトロントと記載されています。
@@ -55,9 +56,9 @@ faq:
 
 ## どの当局に監督されているの？
 
-香港保険業監管局（Insurance Authority、略してIA）です。商品の[重要事項説明書](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/SunFortune_PB_KFS_EN.pdf)には、サンライフ香港はIAの健全性規制を受けていると書かれています。ただし、IAは個別の保険商品を承認しているわけではない、とも明記されています。
+香港の保険業監管局（IA、Insurance Authority）です。商品の[重要事項説明書](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/SunFortune_PB_KFS_EN.pdf)には、サンライフ香港はIAの健全性規制（会社の財務が健全かどうかの規制）を受けていると書かれています。ただし、IAは個別の保険商品を承認しているわけではない、とも明記されています。
 
-2023年には、IAから新しい資本規制（リスクベース資本制度）の早期適用の承認を受けたと[発表](https://www.sunlife.com.hk/en/about-us/newsroom/news-releases/2023/sun-life-hong-kong-receives-hkia-s-approval-on--early-adoption/)しています。保険会社が破綻したときの考え方は[海外の生命保険会社は破綻しない？投資家保護の仕組み](/blog/provider-insolvency-protection)で解説しています。
+2023年には、IAから新しい資本規制（リスクベース資本制度：抱えるリスクの大きさに応じて必要な資本を決める仕組み）の早期適用の承認を受けたと[発表](https://www.sunlife.com.hk/en/about-us/newsroom/news-releases/2023/sun-life-hong-kong-receives-hkia-s-approval-on--early-adoption/)しています。保険会社が破綻したときの考え方は[海外の生命保険会社は破綻しない？投資家保護の仕組み](/blog/provider-insolvency-protection)で解説しています。
 
 ## 主な貯蓄型保険はどんな商品？
 
@@ -74,7 +75,7 @@ faq:
 
 ## ボーナスはどこまで保証されているの？
 
-保証されているのは「保証現金価値」で、ボーナスは保証されていません。[SunJoy Global Insurance Plan IIのパンフレット](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/sunjoyglobal-ii-pb-en.pdf)では、解約返戻金は次の合計から借入金を引いた額とされています。
+保証されているのは「保証現金価値」で、ボーナスは保証されていません。[SunJoy Global Insurance Plan IIのパンフレット](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/sunjoyglobal-ii-pb-en.pdf)では、解約返戻金（解約したときに戻ってくるお金）は次の合計から借入金を引いた額とされています。
 
 | 構成 | 保証の有無 |
 | --- | --- |
@@ -83,7 +84,7 @@ faq:
 | ターミナル・ボーナス（解約時などに上乗せされるボーナス）の現金価値 | 保証なし |
 | バリュー・ロックイン口座の金額 | 利率は保証なし |
 
-同じパンフレットには、ボーナスは主に運用成績で変わり、ゼロになることもあると書かれています。早く解約すると、払った保険料の合計を大きく下回る場合があるとも記載されています。過去のボーナスの実績は、公式サイトの[実現率のページ](https://www.sunlife.com.hk/en/insurance/fulfillment-ratios-of-respective-products/)で公表されています。仕組みは商品や発行時期で違うため、ご自身の証券で確認してください。
+同じパンフレットには、ボーナスは主に運用成績で変わり、ゼロになることもあると書かれています。早く解約すると、払った保険料の合計を大きく下回る場合があるとも記載されています。過去のボーナスの実績は、公式サイトの[実現率（例示したボーナスに対して実際に払われた割合）のページ](https://www.sunlife.com.hk/en/insurance/fulfillment-ratios-of-respective-products/)で公表されています。仕組みは商品や発行時期で違うため、ご自身の証券で確認してください。
 
 ## 日本に住んでいる人とサンライフ香港の関係は？
 

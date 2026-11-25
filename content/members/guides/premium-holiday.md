@@ -61,7 +61,7 @@ order: 4
 ## 関連するひな形と記事
 
 - [英文レター：保険料の減額・一時停止の依頼](/members/letters/premium-holiday-request)
-- [積み立てを減額したいときの手続きとデメリット](/blog/reduce-contributions)
+- [積み立てを減額したいときの手続きと注意点](/blog/reduce-contributions)
 - [積み立てを一時停止したいときの手続きと注意点](/blog/pause-contributions)
 
 ※本記事は一般的な情報提供を目的としたもので、特定の金融商品の売買を推奨するものではありません。

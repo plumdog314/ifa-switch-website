@@ -1,28 +1,29 @@
 ---
 title: "スタンダードライフの積み立ては、減額や一時停止ができる？"
-description: "結論から言うと、香港の恒安標準人壽（亞洲）の積み立ては、減額は「Change in Contribution Form」、一時停止は「Policy Alteration Form B」で申し込みます。Harvest 101などの停止には最低評価額と初期払込期間の条件があります。条件と影響を公式書式で解説します。"
+description: "結論から言うと、香港の恒安標準人壽（亞洲）（旧スタンダードライフ・アジア）の積み立ては、減額は「Change in Contribution Form」（積立額の変更の書式）、一時停止は「Policy Alteration Form B」（契約内容の変更の書式B）で申し込みます。同社の積み立て商品Harvest 101などの停止には最低評価額と初期払込期間（契約の最初に決められた払い込みの期間）の条件があります。条件と影響を公式書式で解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["スタンダードライフ", "恒安標準人壽", "減額", "払込停止", "Harvest 101"]
 summary:
-  - "香港の恒安標準人壽（亞洲）では、積み立て額の減額は「Change in Contribution Form」の減額欄、払い込みの停止と再開は「Policy Alteration Form B」で申し込み、どちらも原本を香港の本社に郵送する。"
-  - "Form Bによると、Harvest 101・Harvest Elite・Harvest Supreme・Harvest Wealthで払い込みを止められるのは、契約が最低評価額の条件を満たし、最後の初期払込期間が終わっている場合に限られる。"
+  - "香港の恒安標準人壽（亞洲）（旧スタンダードライフ・アジア）では、積み立て額の減額は「Change in Contribution Form」（積立額の変更の書式）の減額欄、払い込みの停止と再開は「Policy Alteration Form B」（契約内容の変更の書式B）で申し込み、どちらも原本を香港の本社に郵送する。"
+  - "Form Bによると、同社の積み立て商品であるHarvest 101・Harvest Elite・Harvest Supreme・Harvest Wealthで払い込みを止められるのは、契約が最低評価額の条件を満たし、最後の初期払込期間（契約の最初に決められた払い込みの期間）が終わっている場合に限られる。"
   - "同社の書式と商品資料では、減額や停止によって元本を大きく失うことがあり、停止中も費用は差し引かれ続け、評価額が低くなると契約が自動的に終わることがあると説明されている。"
 faq:
   - q: "払い込みを止めると、すぐに解約控除がかかりますか？"
-    a: "同社の解約申請書の宣言文には、早期解約や引き出しのほか、払い込みの停止などの場合にも解約控除にあたる費用が差し引かれることがあると書かれています。どの場合にいくらかかるかは商品と約款によるため、申し込み前に同社に確認してください。"
+    a: "同社の解約申請書の宣言文（申し込む人が内容を理解したと確認する文）には、早期解約や引き出しのほか、払い込みの停止などの場合にも解約控除（早く解約したときに差し引かれる費用）にあたる費用が差し引かれることがあると書かれています。どの場合にいくらかかるかは商品と約款によるため、申し込み前に同社に確認してください。"
   - q: "一度止めた払い込みは、あとで再開できますか？"
     a: "Form Bには、払い込みの再開を申し込む欄があります。再開するときは、新しい口座引き落としの依頼書か、クレジットカード払いの依頼書も一緒に出すよう書かれています。"
   - q: "アイルランドのStandard Life Internationalの契約も、同じ書式で手続きできますか？"
     a: "できません。香港の会社とアイルランドの会社は別の会社で、書式も窓口も違います。アイルランドの会社の積み立ての減額や停止の条件は、本記事の確認時点（2026年11月）の公開資料では確認できませんでした。"
 ---
-「スタンダードライフの積み立てを続けるのが苦しいが、解約まではしたくない」。そんなとき気になるのが、減額や一時停止です。結論から言うと、香港の恒安標準人壽（亞洲）の積み立ては、減額と払い込みの停止のそれぞれに専用の書式があります。ただし停止には条件があり、契約の価値が大きく減ることがあると公式資料に書かれています。
+「スタンダードライフの積み立てを続けるのが苦しいが、解約まではしたくない」。そんなとき気になるのが、減額や一時停止です。結論から言うと、香港の恒安標準人壽（亞洲）（旧スタンダードライフ・アジア）の積み立ては、減額と払い込みの停止のそれぞれに専用の書式があります。ただし停止には条件があり、契約の価値が大きく減ることがあると公式資料に書かれています。
 
 この記事は手続きと公式資料の内容の説明で、減額や停止を勧めるものではありません。契約先の確認は[スタンダードライフってどんな会社？](/blog/what-is-standard-life)をご覧ください。
 
 ## 減額と停止は、どの書式で申し込むの？
 
-減額は「Change in Contribution Form」、停止と再開は「Policy Alteration Form B」です。どちらも同社の[書式ダウンロードのページ](https://www.hengansl.com.hk/en/help-and-support/download-hub)にあります。
+減額は「Change in Contribution Form」（積立額の変更の書式）、停止と再開は「Policy Alteration Form B」（契約内容の変更の書式B）です。どちらも同社の[書式ダウンロードのページ](https://www.hengansl.com.hk/en/help-and-support/download-hub)にあります。
 
 | やりたいこと | 書式 | 書式の中の欄 |
 | --- | --- | --- |
@@ -30,7 +31,7 @@ faq:
 | 払い込みを止める・再開する | [Policy Alteration Form B](https://www.hengansl.com.hk/cspubpdf/HASL_Policy%20Alteration%20Form%20B_May%202023.pdf) | 1. Stop/Resume Paying Contribution |
 | 払い込みの頻度を変える | [Policy Alteration Form A](https://www.hengansl.com.hk/cspubpdf/HASL_Policy_Alteration_Form_A_Feb2026_%28003%29.pdf) | 1. Change of Payment Frequency |
 
-どの書式も、記入した原本を香港の本社（12/F, Lincoln House, Taikoo Place, 979 King's Road, Quarry Bay, Hong Kong）に返送するよう書かれています。問い合わせ先はカスタマーサービス（(852) 2169 0300）です。
+どの書式も、記入した原本を香港の本社（12/F, Lincoln House, Taikoo Place, 979 King's Road, Quarry Bay, Hong Kong）に返送するよう書かれています。問い合わせ先はお客様窓口（(852) 2169 0300）です。
 
 ## 減額は、どう申し込むの？
 
@@ -38,14 +39,14 @@ Change in Contribution Formの減額欄で、理由を選び、減額後の積�
 
 書式のチェックリストは主に増額のためのもので、減額だけの場合に添付する書類ははっきり書かれていません。身分証明書のコピーなどが必要かどうかは、送る前に同社に確認してください。
 
-宣言文には、減額すると元本やボーナスを大きく失うことがあり、解約返戻金や死亡保障が払込額を大きく下回ることがある、と書かれています。くわしくは商品パンフレットや商品概要に載っているとされています。減額の一般的な考え方は[積み立て額を減らすとどうなる？](/blog/reduce-contributions)で解説しています。
+宣言文（申し込む人が内容を理解したと確認する文）には、減額すると元本やボーナスを大きく失うことがあり、解約返戻金（解約したときに戻ってくるお金）や死亡保障が払込額を大きく下回ることがある、と書かれています。くわしくは商品パンフレットや商品概要に載っているとされています。減額の一般的な考え方は[積み立て額を減らすとどうなる？](/blog/reduce-contributions)で解説しています。
 
 ## 払い込みの停止には、どんな条件があるの？
 
-Harvest 101、Harvest Elite、Harvest Supreme、Harvest Wealthでは、次の2つを満たす場合に限り、払い込みを止められます（Form Bの注意書き）。
+同社の積み立て商品であるHarvest 101、Harvest Elite、Harvest Supreme、Harvest Wealthでは、次の2つを満たす場合に限り、払い込みを止められます（Form Bの注意書き）。
 
 1. 契約が、会社の定める最低評価額の条件を満たしていること
-2. 最後の初期払込期間（Initial Contribution Period）が終わっていること
+2. 最後の初期払込期間（Initial Contribution Period：契約の最初に決められた払い込みの期間）が終わっていること
 
 最低評価額の具体的な金額は、書式には書かれていません。各商品の約款で確認するよう案内されています。ほかの商品は、それぞれの商品パンフレットを見るよう書かれています。
 
@@ -60,7 +61,7 @@ Form Bでは、停止を「すぐに」か「指定する年月から」のど�
 | 元本やボーナスを大きく失い、解約返戻金などが払込額を大きく下回ることがある | Form Bの宣言文 |
 | 停止中も費用は評価額から差し引かれ続け、価値が大きく減ることがある | [Harvest 101の重要事項説明書](https://www.hengansl.com.hk/cspubpdf/HASL_Harvest%20101%20IFS_Sep20.pdf) |
 | 評価額がとても低くなると、契約が自動的に終わり、払い込んだお金を失うことがある | 同上 |
-| 払い込みの停止などでも、解約控除にあたる費用が差し引かれることがある | [解約申請書](https://www.hengansl.com.hk/cspubpdf/Partial%20Withdrawal_Regular_Withdrawal_Surrender_Form_Feb2026.pdf)の宣言文 |
+| 払い込みの停止などでも、解約控除（早く解約したときに差し引かれる費用）にあたる費用が差し引かれることがある | [解約申請書](https://www.hengansl.com.hk/cspubpdf/Partial%20Withdrawal_Regular_Withdrawal_Surrender_Form_Feb2026.pdf)の宣言文 |
 
 Harvest 101の資料では、払い込みの停止は一時的なもので、初期の期間だけ払えばよいという意味ではない、とも説明されています。費用の仕組みは[海外積み立ての手数料の仕組み](/blog/offshore-plan-fees-explained)で整理しています。
 
@@ -72,7 +73,7 @@ Harvest 101の資料では、払い込みの停止は一時的なもので、初
 
 ## アイルランドの会社の契約はどうなの？
 
-アイルランドのStandard Life International dacの国際ボンドでは、一時払いの追加と定期的な払い込みができると[商品ページ](https://www.standardlife.co.uk/adviser/investment-bonds/offshore-bond)に書かれています。ただし、定期的な払い込みの減額や停止の条件は、公開資料では確認できませんでした。同社の[手続き案内](https://www.standardlife.co.uk/adviser/help/international-bond-servicing)にある窓口で確認してください。
+アイルランドのStandard Life International dacの国際ボンド（一括で払い込む投資型の保険）では、一時払いの追加と定期的な払い込みができると[商品ページ](https://www.standardlife.co.uk/adviser/investment-bonds/offshore-bond)に書かれています。ただし、定期的な払い込みの減額や停止の条件は、公開資料では確認できませんでした。同社の[手続き案内](https://www.standardlife.co.uk/adviser/help/international-bond-servicing)にある窓口で確認してください。
 
 ## まとめ
 

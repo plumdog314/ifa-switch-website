@@ -1,22 +1,23 @@
 ---
 title: "RL360の担当IFA（代理店）を変えるには、どんな手続きが必要？"
-description: "RL360の担当IFAの変更は、公式の書式「Appointment of Financial Adviser（RL269）」に新しいIFAの情報を書き、契約者全員が署名してRL360に送るのが基本です。手続き後、RL360は前のIFAに通知します。書式の内容、送り先、運用担当（投資アドバイザー）との違いを解説します。"
+description: "RL360の担当IFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）の変更は、公式の書式「Appointment of Financial Adviser（RL269）」（担当アドバイザーの任命）に新しいIFAの情報を書き、契約者全員が署名してRL360に送るのが基本です。手続き後、RL360は前のIFAに通知します。書式の内容、送り先、運用担当（投資アドバイザー）との違いを解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["RL360", "IFA変更", "代理店変更", "手続き", "クォンタム"]
 summary:
-  - "RL360の担当IFAの変更は、公式の書式集にある「Appointment of Financial Adviser（RL269）」に、新しいIFAの会社名やRL360の代理店番号を書き、契約者全員が署名して送るのが基本の流れである。"
+  - "RL360の担当IFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）の変更は、公式の書式集にある「Appointment of Financial Adviser（RL269）」（担当アドバイザーの任命）に、新しいIFAの会社名やRL360の代理店番号を書き、契約者全員が署名して送るのが基本の流れである。"
   - "新しいIFAが登録されると、RL360は前のIFAに、担当から外れて契約の情報を受け取る権限がなくなったことを書面で知らせると書式に書かれている。"
   - "前のIFAが運用担当（投資アドバイザー）も兼ねていた場合は、そちらも外れるため、新しいIFAに運用担当も任せるには別の書式（RL142）が必要になる。"
 faq:
-  - q: "前のIFAの同意がなくても、担当を変えられますか？"
-    a: "RL360の書式（RL269）の署名欄は契約者・受託者・譲受人のもので、前のIFAの署名欄はありません。書式には、変更後にRL360が前のIFAへ通知すると書かれています。"
+  - q: "前のIFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）の同意がなくても、担当を変えられますか？"
+    a: "RL360の書式（RL269）の署名欄は契約者・受託者（信託で財産を預かる人）・譲受人（契約を譲り受けた人）のもので、前のIFAの署名欄はありません。書式には、変更後にRL360が前のIFAへ通知すると書かれています。"
   - q: "新しいIFAは、どこの会社でもいいのですか？"
     a: "書式には、新しいIFAのRL360代理店番号（RL360 adviser number）を書く欄があり、番号はRL360の地域事務所で確認できると書かれています。つまり、RL360に番号を持つ会社を指定する形です。"
   - q: "担当IFAを変えると、手数料や解約控除は変わりますか？"
-    a: "RL360の書式や約款には、担当の変更で初期口座の手数料や解約控除が変わるという記載は見当たりませんでした。新しいIFAとの間で別の報酬を取り決める場合もあるため、変更前に内容を確認してください。"
+    a: "RL360の書式や約款には、担当の変更で初期口座（イニシャルユニット：最初の期間に払った分。手数料が重い）の手数料や解約控除（早く解約したときに差し引かれる費用）が変わるという記載は見当たりませんでした。新しいIFAとの間で別の報酬を取り決める場合もあるため、変更前に内容を確認してください。"
 ---
-「RL360の担当IFAと連絡が取れない」「別のIFAに担当を替えたい」。こうした悩みを持つ方は少なくありません。結論から言うと、RL360の担当IFAの変更は、公式の書式「Appointment of Financial Adviser（RL269）」に記入し、契約者全員が署名してRL360に送るのが基本です。前のIFAの署名はいりません。
+「RL360の担当IFA（保険会社の商品を販売し、契約の窓口になる独立系の担当者）と連絡が取れない」「別のIFAに担当を替えたい」。こうした悩みを持つ方は少なくありません。結論から言うと、RL360の担当IFAの変更は、公式の書式「Appointment of Financial Adviser（RL269）」（担当アドバイザーの任命）に記入し、契約者全員が署名してRL360に送るのが基本です。前のIFAの署名はいりません。
 
 この記事は、RL360の公式資料に書かれている手続きの説明に絞っています。IFAを変えるかどうかを勧めるものではありません。一般的な流れは[IFAを変更する方法](/blog/how-to-change-ifa)で解説しています。
 
@@ -40,7 +41,7 @@ RL360の[公式の書式集](https://rl360.com/row/downloads/forms.htm)にある
 | Online services username | オンラインサービスの利用者名（登録している場合） |
 | Telephone / Email | 新しいIFAの電話番号とメールアドレス |
 | FCA number | 英国の金融行為規制機構の登録番号（該当する場合） |
-| 署名 | 契約者・受託者・譲受人の全員の氏名・署名・日付 |
+| 署名 | 契約者・受託者（信託で財産を預かる人）・譲受人（契約を譲り受けた人）の全員の氏名・署名・日付 |
 
 代理店番号は、RL360の地域事務所で確認できると書式に書かれています。新しいIFAに番号を聞いて記入するのが一般的です。
 
@@ -59,7 +60,7 @@ RL360が書面で知らせます。書式の注意事項には、新しいIFAが
 - 今の運用担当が、外れるIFAと同じなら、運用担当からも外れる
 - 新しいIFAを運用担当にもしたい場合は、別の書式で任命する必要がある
 
-積み立て型の商品の運用担当の任命には「[Investment adviser appointment - RP（RL142）](https://www.rl360.com/generic/downloads/rl142-Investment-Adviser-Appointment-RP.pdf)」を使います。この書式では、運用担当に契約者への確認なしで売買を任せる（一任）か、確認してから売買する（非一任）かを選びます。運用担当への報酬を契約から払う場合の割合も書く欄があり、クォンタム（2010年4月以降の契約）やRegular Savings Planでは年1％までとされています。
+積み立て型の商品の運用担当の任命には「[Investment adviser appointment - RP（RL142）](https://www.rl360.com/generic/downloads/rl142-Investment-Adviser-Appointment-RP.pdf)」（運用担当の任命）を使います。この書式では、運用担当に契約者への確認なしで売買を任せる（一任）か、確認してから売買する（非一任）かを選びます。運用担当への報酬を契約から払う場合の割合も書く欄があり、RL360の積み立て商品「クォンタム」（2010年4月以降の契約）や「Regular Savings Plan」では年1％までとされています。
 
 ## 書式は、どこに送るの？
 
@@ -69,15 +70,15 @@ RL360が書面で知らせます。書式の注意事項には、新しいIFAが
 | --- | --- |
 | メール（スキャン） | alterations@rl360.com |
 | 郵送 | Alterations Team, RL360, International House, Cooil Road, Douglas, Isle of Man, IM2 2SP, British Isles |
-| 記入の相談 | カスタマーサポート +44 (0)1624 681681 |
+| 記入の相談 | お客様窓口 +44 (0)1624 681681 |
 
 運用担当の書式（RL142）は、香港で契約した場合は香港の事務所（A122, 16/F, Tower 5, The Gateway, Harbour City, Tsim Sha Tsui, Kowloon, Hong Kong）に送るよう書かれています。それ以外はマン島本社の変更手続きの窓口です。
 
 ## 担当IFAを変えると、契約の条件は変わるの？
 
-RL360の書式や約款には、担当の変更で手数料や解約控除が変わるという記載は見当たりませんでした。クォンタムの[約款](https://www.rl360.com/generic/downloads/rl360-quantum-terms-and-conditions.pdf)には、契約者は担当者（Servicing Agent）を変えたらRL360に知らせる、とだけ書かれています。
+RL360の書式や約款には、担当の変更で手数料や解約控除（早く解約したときに差し引かれる費用）が変わるという記載は見当たりませんでした。クォンタムの[約款](https://www.rl360.com/generic/downloads/rl360-quantum-terms-and-conditions.pdf)には、契約者は担当者（Servicing Agent）を変えたらRL360に知らせる、とだけ書かれています。
 
-Regular Savings Planの[約款](https://www.rl360.com/generic/downloads/rsl02-regular-savings-plan-life-assurance-t&cs.pdf)には、IFAはRL360の代理人ではなく、契約者が任命するものだと書かれています。IFAへの報酬を契約から払う形（Financial adviser fee）がある場合は、新しいIFAとの取り決めを確認してください。初期口座期間中の変更の注意点は[初期口座期間中にIFAを変えるとどうなる？](/blog/change-ifa-during-initial-period)と[IFAを変えるとペナルティはある？](/blog/ifa-transfer-penalty)で整理しています。
+Regular Savings Planの[約款](https://www.rl360.com/generic/downloads/rsl02-regular-savings-plan-life-assurance-t&cs.pdf)には、IFAはRL360の代理人ではなく、契約者が任命するものだと書かれています。IFAへの報酬を契約から払う形（Financial adviser fee）がある場合は、新しいIFAとの取り決めを確認してください。初期口座（イニシャルユニット：最初の期間に払った分。手数料が重い）の期間中の変更の注意点は[初期口座期間中にIFAを変えるとどうなる？](/blog/change-ifa-during-initial-period)と[IFAを変えるとペナルティはある？](/blog/ifa-transfer-penalty)で整理しています。
 
 ## まとめ
 

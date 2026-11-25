@@ -2,27 +2,28 @@
 title: "チューリッヒ・インターナショナルの積み立ては、減額や一時停止ができる？"
 description: "チューリッヒ・インターナショナルの積み立ては、書式で保険料の減額を申し込め、契約によっては払い込みを一時的に止められると公式書類に書かれています。ただしVistaの初期期間中の減額には手数料がかかるなどの条件があります。公式資料で影響を整理します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["チューリッヒ・インターナショナル", "減額", "払い込み停止", "Vista", "手続き"]
 summary:
-  - "香港発行の契約は「Contribution decrease request form」で保険料の減額を申し込め、Vistaは初期の払込期間（ICP）中に減額すると手数料がかかると書式に書かれている。"
+  - "香港発行の契約は「Contribution decrease request form（保険料の減額の申込書）」で保険料の減額を申し込め、Vistaは初期の払込期間（ICP：手数料の重い初期ユニットに充てられる最初の期間）中に減額すると手数料がかかると書式に書かれている。"
   - "公式の書式には、契約によっては手数料なしで一定期間払い込みを休めるとあるが、保障を続けるには契約に十分な価値が残っている必要がある。"
-  - "公開されている中東向けVistaの約款では、払い込みを止めると払済（Paid-Up）となって手数料がかかり、解約返戻金がゼロになると契約が失効すると定められている。"
+  - "公開されている中東向けVistaの約款では、払い込みを止めると払済（Paid-Up：払い込みをやめ、それまでの積立だけで契約を続ける状態）となって手数料がかかり、解約返戻金（解約したときに戻ってくるお金）がゼロになると契約が失効（効力がなくなること）すると定められている。"
 faq:
   - q: "チューリッヒ・インターナショナルの積み立ては、オンラインで減額できますか？"
-    a: "公式ページでは、減額や払い込み再開は書式で申し込む形で案内されています。オンラインのZIOで減額できるという記載は確認できませんでした。"
+    a: "公式ページでは、減額や払い込み再開は書式で申し込む形で案内されています。契約者向けのオンラインサービスZIOで減額できるという記載は確認できませんでした。"
   - q: "払い込みを止めたあと、再開できますか？"
-    a: "再開の書式（香港版はPremium change/reinstatement form、マン島版はRestart my policy payments）で申し込めます。香港の手順書には、不備がなければ通常15営業日以内に手続きが終わると書かれています。保障の付いた契約では健康状態の質問票を求められることがあります。"
+    a: "再開の書式（香港版はPremium change/reinstatement form（保険料の変更・再開の書式）、マン島版はRestart my policy payments（払い込みの再開の書式））で申し込めます。香港の手順書には、不備がなければ通常15営業日以内に手続きが終わると書かれています。保障の付いた契約では健康状態の質問票を求められることがあります。"
   - q: "減額すると、契約時にもらった将来の見込み額はどうなりますか？"
     a: "香港版の減額の書式には、減額すると以前の見込み額の説明（満期時の見込み額）は使えなくなると書かれています。新しい見込みは会社に問い合わせて確認します。"
 ---
 「毎月の積み立てが負担になってきた。解約せずに金額を下げたり、しばらく止めたりできないだろうか」。そう考える方は多いと思います。結論から言うと、チューリッヒ・インターナショナルの積み立ては書式で減額を申し込め、契約によっては払い込みを一時的に休めると公式書類に書かれています。ただし、商品や時期によって手数料やボーナスへの影響があります。
 
-この記事は仕組みと手続きを説明するもので、減額や停止を勧めるものではありません。一般的な考え方は[積み立てを減額したいときの手続きとデメリット](/blog/reduce-contributions)と[積み立てを一時停止したいときの手続きと注意点](/blog/pause-contributions)もご覧ください。
+この記事は仕組みと手続きを説明するもので、減額や停止を勧めるものではありません。一般的な考え方は[積み立てを減額したいときの手続きと注意点](/blog/reduce-contributions)と[積み立てを一時停止したいときの手続きと注意点](/blog/pause-contributions)もご覧ください。
 
 ## 保険料の減額はどの書式で申し込むの？
 
-香港で発行された契約は、[Contribution decrease request form](https://edge.sitecorecloud.io/zurichinsurf8c0-zwpshared-prod-d824/media/project/zurich-headless/hongkong/docs/customer-services/life-policy-service/zurich-international-life/useful-forms/0622/hk00101-0622contribution-decrease-request-forml.pdf)（2022年6月版）を使います。保険仲介業者に渡す、登録済みのメールから helppoint.hk@hk.zurich.com に送る、香港のオフィスに郵送する、の3つの方法が案内されています。
+香港で発行された契約は、保険料の減額の申込書[Contribution decrease request form](https://edge.sitecorecloud.io/zurichinsurf8c0-zwpshared-prod-d824/media/project/zurich-headless/hongkong/docs/customer-services/life-policy-service/zurich-international-life/useful-forms/0622/hk00101-0622contribution-decrease-request-forml.pdf)（2022年6月版）を使います。保険仲介業者に渡す、登録済みのメールから helppoint.hk@hk.zurich.com に送る、香港のオフィスに郵送する、の3つの方法が案内されています。
 
 マン島の[個人向け契約のページ](https://www.zurichinternational.com/im/products/funds/individual-investment-policy)には、増額、払込回数の変更、払い込み再開の書式は載っていますが、減額専用の書式は見当たりませんでした。マン島発行の契約で減額したい場合は、マン島の窓口（helppoint.iom@zurich.com、+44 1624 662266）に方法を確認してください。
 
@@ -36,10 +37,10 @@ faq:
 | 払い方 | 減額後も、同じ払込回数・同じ支払い方法で払い続ける前提 |
 | 会社の確認 | 減額後も契約期間の最後まで保障を保てるか、会社が確認する |
 | Vista | 初期の払込期間（ICP）中に減額すると手数料がかかる |
-| 2005年より前のVista | ボーナスユニットが付いてから18か月以内に減額すると、そのユニットは取り消される |
+| 2005年より前のVista | ボーナスユニット（ボーナスとして上乗せされた持ち分）が付いてから18か月以内に減額すると、そのユニットは取り消される |
 | Pacific | 初期の払込期間（36か月）中は減額できない |
 
-ICP（Initial Contribution Period）とは、払い込んだお金が「初期ユニット」に充てられる最初の期間のことです。初期ユニットの仕組みは[「初期口座」と「貯蓄口座」の違い](/blog/initial-vs-accumulation-units)で解説しています。米国に住んでいる契約者は、保険料を変更できないとも書かれています。
+ICP（Initial Contribution Period）とは、払い込んだお金が「初期ユニット」（初期口座。手数料が重い）に充てられる最初の期間のことです。初期ユニットの仕組みは[「初期口座」と「積立口座」の違い](/blog/initial-vs-accumulation-units)で解説しています。米国に住んでいる契約者は、保険料を変更できないとも書かれています。
 
 ## 払い込みを一時的に止めることはできるの？
 
@@ -54,10 +55,10 @@ ICP（Initial Contribution Period）とは、払い込んだお金が「初期�
 | 状況 | 約款に書かれている内容 |
 | --- | --- |
 | ICP中に減額 | 減額分は未払いとみなされ、減額の手数料がかかる |
-| 払い込みを止める | 積立ユニットに価値があれば払済（Paid-Up）となり、払済の手数料がかかる |
-| 払済のあいだ | 払込免除と災害死亡の保障は止まり、ほかの手数料は引かれ続ける |
-| ボーナス | 当初の保険料を下回ると、ロイヤルティボーナスや満期ボーナスは支払われない |
-| 失効 | 解約返戻金がゼロになると契約は失効し、保障はすべて止まる |
+| 払い込みを止める | 積立ユニット（積立口座：初期口座の後に払った分）に価値があれば払済（Paid-Up：払い込みをやめ、それまでの積立だけで契約を続ける状態）となり、払済の手数料がかかる |
+| 払済のあいだ | 払込免除（決められた場合に以後の保険料の払い込みが免除される保障）と災害死亡の保障は止まり、ほかの手数料は引かれ続ける |
+| ボーナス | 当初の保険料を下回ると、長く続けた人への上乗せ（ロイヤルティボーナス）や満期ボーナスは支払われない |
+| 失効 | 解約返戻金（解約したときに戻ってくるお金）がゼロになると契約は失効し、保障はすべて止まる |
 
 香港の[払い込み再開の手順書](https://edge.sitecorecloud.io/zurichinsurf8c0-zwpshared-prod-d824/media/project/zurich-headless/hongkong/docs/customer-services/life-policy-service/zurich-international-life/useful-forms/hk00436-reinstatement-procedure.pdf)には、2005年1月以降に発行されたVistaについて、再開の手続き中に休眠手数料（dormancy charges）が先に引かれることがあり、期限の数日前までに書類が届いていれば後で戻される、と書かれています。
 
@@ -65,10 +66,10 @@ ICP（Initial Contribution Period）とは、払い込んだお金が「初期�
 
 再開用の書式で申し込みます。
 
-- 香港：Premium change/reinstatement form と、支払い方法の書式を、登録済みのメールか郵送で送る。手順書には、不備がなければ通常15営業日以内に手続きが終わると書かれている
-- マン島：[Restart my policy payments](https://edge.sitecorecloud.io/zurichinsurf8c0-zwpshared-prod-d824/media/project/zurich-headless/zint/iom-retail/msp13874-restart-my-policy-payments.pdf) に、再開する月や保険料、支払い方法、資金の出どころなどを書いて送る
+- 香港：Premium change/reinstatement form（保険料の変更・再開の書式）と、支払い方法の書式を、登録済みのメールか郵送で送る。手順書には、不備がなければ通常15営業日以内に手続きが終わると書かれている
+- マン島：[Restart my policy payments](https://edge.sitecorecloud.io/zurichinsurf8c0-zwpshared-prod-d824/media/project/zurich-headless/zint/iom-retail/msp13874-restart-my-policy-payments.pdf)（払い込みの再開の書式）に、再開する月や保険料、支払い方法、資金の出どころなどを書いて送る
 
-マン島版の書式には、失効した契約の資金は自動的にマネー・マーケット・ファンドに移されると書かれています。保障の付いた契約では、健康状態の質問票を求められることもあります。止めていた分の扱いは[停止していた積み立てを再開したら「まとめて払え」と言われた](/blog/lump-payment-after-pause)も参考にしてください。
+マン島版の書式には、失効した契約の資金は自動的にマネー・マーケット・ファンド（短期の預金や債券などで運用する、値動きの小さいファンド）に移されると書かれています。保障の付いた契約では、健康状態の質問票を求められることもあります。止めていた分の扱いは[停止していた積み立てを再開したら「まとめて払え」と言われた](/blog/lump-payment-after-pause)も参考にしてください。
 
 ## まとめ
 

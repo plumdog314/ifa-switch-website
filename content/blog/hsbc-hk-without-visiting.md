@@ -2,6 +2,7 @@
 title: "香港HSBCの手続きは、香港に行かずにどこまでできる？"
 description: "住所変更や休眠口座の復活、カードの再発行などは、アプリ・オンライン・電話・郵送で手続きできると公式に案内されています。口座開設は香港の支店が基本で、日本のHSBCでは署名確認を受けられない場合があります。手続きごとの方法を整理します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["HSBC", "香港", "手続き", "郵送", "海外口座"]
 summary:
@@ -44,9 +45,9 @@ faq:
 HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)によると、住所や連絡先の変更の方法は次のとおりです。
 
 - アプリ：電話番号やメールの変更はすぐに反映される。住所の変更には、有効な電話番号かメールの登録が必要
-- オンラインバンキング：セキュリティデバイスかアプリで作ったコードでログインして変更する
+- オンラインバンキング：確認用の番号を出す小さな機器（セキュリティデバイス）かアプリで作ったコードでログインして変更する
 - 電話：電話バンキングのPIN（暗証番号）を使う
-- 郵送：「[Change of Address and/or Customer Information Instruction Form](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/change-customer-info.pdf)」を送る。署名の確認後、通常7営業日以内に処理される
+- 郵送：「[Change of Address and/or Customer Information Instruction Form](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/change-customer-info.pdf)」（住所・お客さま情報の変更の依頼書）を送る。署名の確認後、通常7営業日以内に処理される
 
 同じFAQには、休眠口座はオンラインバンキングにログインして案内に沿うか、電話か支店で復活できるとも書かれています。詳しくは[香港HSBCの口座が休眠口座になったら？](/blog/hsbc-hk-dormant-account)で解説しています。
 
@@ -56,9 +57,9 @@ HSBCの[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)によると、
 
 送金限度額の変更は、アプリかオンラインバンキングで行います。クレジットカードの紛失・再発行は、アプリ、オンラインバンキング、電話でできます。
 
-[送金限度額のページ](https://www.hsbc.com.hk/transfer-payments/limits/)では、設定はアプリとオンラインバンキングでできるとされています。海外への送金の限度額（cross-border master limit）を設定するには、アプリの認証機能「Mobile Security Key」を有効にしているか、物理的なセキュリティデバイスを持っている必要があります。この限度額は初めは0香港ドルなので、設定しないと海外へ送金できません。日本への送金は[香港HSBCから日本の口座に送金するには？](/blog/hsbc-hk-transfer-to-japan)を参考にしてください。
+[送金限度額のページ](https://www.hsbc.com.hk/transfer-payments/limits/)では、設定はアプリとオンラインバンキングでできるとされています。海外への送金の限度額（cross-border master limit）を設定するには、アプリの認証機能「Mobile Security Key」を有効にしているか、セキュリティデバイスを持っている必要があります。この限度額は初めは0香港ドルなので、設定しないと海外へ送金できません。日本への送金は[香港HSBCから日本の口座に送金するには？](/blog/hsbc-hk-transfer-to-japan)を参考にしてください。
 
-クレジットカードは、[紛失・盗難のページ](https://www.hsbc.com.hk/help/card-support/lost-or-stolen/)で、アプリの「Cards」から「Report and replace lost card」を選ぶ方法、オンラインバンキング、電話の3つが案内されています。デビットカードやATMカードの再発行の方法と、新しいカードを海外の住所へ送ってもらえるかは、公式ページでは確認できませんでした。
+クレジットカードは、[紛失・盗難のページ](https://www.hsbc.com.hk/help/card-support/lost-or-stolen/)で、アプリの「Cards」から「Report and replace lost card（紛失したカードの報告と再発行）」を選ぶ方法、オンラインバンキング、電話の3つが案内されています。デビットカードやATMカードの再発行の方法と、新しいカードを海外の住所へ送ってもらえるかは、公式ページでは確認できませんでした。
 
 ## アプリは、日本にいても使い始められる？
 
@@ -76,13 +77,13 @@ HSBCの書式に載っている宛先は、九龍の私書箱です。住所の�
 
 > The Hongkong and Shanghai Banking Corporation Limited, P O Box 72677, Kowloon Central Post Office, Kowloon, Hong Kong
 
-FAQには、郵送する書類は内容を正確に記入し、登録した署名と同じ署名をするよう書かれています。口座の解約では、署名が登録と合わないと解約されないと明記されています。解約の書式は[Close Account Request Form](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/close-account-request-form.pdf)です。
+FAQには、郵送する書類は内容を正確に記入し、登録した署名と同じ署名をするよう書かれています。口座の解約では、署名が登録と合わないと解約されないと明記されています。解約の書式は[Close Account Request Form](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/close-account-request-form.pdf)（口座解約の依頼書）です。
 
 ## 海外のHSBC支店で署名の確認を受けられる？日本では？
 
 登録した署名を忘れた場合などは、海外のHSBC支店で署名の確認を受ける方法があります。ただし、日本の支店は対応できない場合があるとHSBCの書式に書かれています。
 
-[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)では、海外の支店の職員が本人確認書類の原本を確認してコピーを取り、目の前で署名するのを確認すると説明されています。その手順は「[Customer Information Sheet](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/customer-information-sheet.pdf)」にまとめられています。持っていくものは次のとおりです。
+[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)では、海外の支店の職員が本人確認書類の原本を確認してコピーを取り、目の前で署名するのを確認すると説明されています。その手順は「[Customer Information Sheet](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/accounts/customer-information-sheet.pdf)」（署名確認の案内書）にまとめられています。持っていくものは次のとおりです。
 
 - 本人確認書類の原本（パスポートなど）
 - 口座の持ち主であることが分かるもの（カード、小切手帳、明細書など）
@@ -99,7 +100,7 @@ FAQには、郵送する書類は内容を正確に記入し、登録した署�
 
 本記事の確認時点（2026年11月）では、アプリで口座を開ける対象の国・地域に日本は入っていません。香港の非居住者は、香港の支店で原本の書類を出して申し込むのが基本です。詳しくは[日本に住んだまま、香港HSBCの口座は今でも開ける？](/blog/hsbc-hk-open-account-from-japan)をご覧ください。
 
-本人確認書類の番号の変更は、往来港澳通行証や対応するパスポートならアプリでできますが、それ以外は新しい書類を支店に持っていくよう[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)に書かれています。情報の更新（Information Review）は、[HSBC Safeguardのページ](https://www.hsbc.com.hk/help/cybersecurity-and-fraud/safeguard/)によると、アプリ、専用の電話 (852) 2233 3059（月〜金9時〜18時、土9時〜13時、香港時間）、担当者、支店で対応しています。更新しないと口座やカードの利用が制限されることがあるとされています。求められる書類は[本人確認・住所証明の提出を求められたら](/blog/kyc-documents)も参考にしてください。
+本人確認書類の番号の変更は、往来港澳通行証（中国本土の人が香港・マカオに行くための通行証）や対応するパスポートならアプリでできますが、それ以外は新しい書類を支店に持っていくよう[口座のFAQ](https://www.hsbc.com.hk/help/faq/accounts/)に書かれています。情報の更新（Information Review）は、[HSBC Safeguardのページ](https://www.hsbc.com.hk/help/cybersecurity-and-fraud/safeguard/)によると、アプリ、専用の電話 (852) 2233 3059（月〜金9時〜18時、土9時〜13時、香港時間）、担当者、支店で対応しています。更新しないと口座やカードの利用が制限されることがあるとされています。求められる書類は[本人確認・住所証明の提出を求められたら](/blog/kyc-documents)も参考にしてください。
 
 ## まとめ
 

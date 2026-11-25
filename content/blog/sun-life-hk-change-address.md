@@ -2,6 +2,7 @@
 title: "サンライフ香港の住所や連絡先は、海外からどうやって変更する？"
 description: "サンライフ香港の住所・メール・電話番号は、オンラインのMy Sunlife Hong Kongで書式や署名なしに変更できます。書式で出す場合はファクスかメールで送れます。居住国を変えるときは別の書式が必要です。手順と注意点を公式の案内に沿って解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["サンライフ香港", "住所変更", "連絡先", "My Sunlife Hong Kong", "海外在住"]
 summary:
@@ -14,7 +15,7 @@ faq:
   - q: "住所を変えると、すべての契約に反映されますか？"
     a: "書式では、反映先を「自分が契約者のすべての契約」か「書式に書いた契約だけ」から選びます。どちらも選ばないと、契約者になっているすべての契約に新しい住所が使われると書かれています。"
   - q: "メールアドレスや携帯番号の変更は、すぐに反映されますか？"
-    a: "My Sunlife Hong Kongの案内では、個人保険の連絡先を変更すると契約に自動で反映され、本人確認用の連絡先としてもすぐに有効になると説明されています。MPFの連絡先は別の仕組みで変更します。"
+    a: "My Sunlife Hong Kongの案内では、個人保険の連絡先を変更すると契約に自動で反映され、本人確認用の連絡先としてもすぐに有効になると説明されています。香港の強制積立年金（MPF）の連絡先は別の仕組みで変更します。"
 ---
 「香港を離れたのに、サンライフに登録した住所が古いまま」という方は少なくありません。古い住所のままだと、保険料の通知や大切な書類が届かなくなります。結論から言うと、サンライフ香港の住所や連絡先は、海外からでもオンラインか書式で変更できます。この記事では、両方の手順と注意点を公式の案内に沿って解説します。内容は本記事の確認時点（2026年11月）のものです。
 
@@ -22,7 +23,7 @@ faq:
 
 新しい住所をサンライフ香港に知らせます。契約を移す必要はありません。[FAQ](https://www.sunlife.com.hk/en/client-support/faq/)には、契約は世界中で保障されるので海外の拠点に移す必要はなく、新しい住所を担当のアドバイザーかサンライフ香港に知らせるよう書かれています。
 
-また、[契約内容の変更の書式](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/request-for-policy-change_202611_final_ban%28editable%29.pdf)には、香港保険業監管局のマネーロンダリング対策の指針に沿って、住所や国籍、職業などの変更を早めに知らせるよう書かれています。住所変更の一般的な注意点は[住所が変わったら？海外積み立ての住所変更手続きと英語表記](/blog/change-of-address)でも解説しています。
+また、[契約内容の変更の書式](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/request-for-policy-change_202611_final_ban%28editable%29.pdf)には、香港の保険業監管局（IA）の資金洗浄（マネーロンダリング）対策の指針に沿って、住所や国籍、職業などの変更を早めに知らせるよう書かれています。住所変更の一般的な注意点は[住所が変わったら？海外積み立ての住所変更手続きと英語表記](/blog/change-of-address)でも解説しています。
 
 ## オンラインではどうやって変更するの？
 
@@ -30,10 +31,10 @@ faq:
 
 | 手順 | やること |
 | --- | --- |
-| 1 | 「Profile」タブで「Personal information」を選ぶ |
-| 2 | メールや携帯番号の横の編集アイコンを押す。住所は契約ごとに「Update address」を選ぶ |
-| 3 | 新しい連絡先を入れて「Continue」を押す |
-| 4 | 確認画面で内容を見直し「Confirm」を押す |
+| 1 | 「Profile（プロフィール）」タブで「Personal information（個人情報）」を選ぶ |
+| 2 | メールや携帯番号の横の編集アイコンを押す。住所は契約ごとに「Update address（住所を更新）」を選ぶ |
+| 3 | 新しい連絡先を入れて「Continue（次へ）」を押す |
+| 4 | 確認画面で内容を見直し「Confirm（確定）」を押す |
 | 5 | 完了の画面が表示される |
 
 同じページには、個人保険の連絡先を変えると契約に自動で反映され、本人確認用の連絡先としてもすぐに有効になると書かれています。MPF（香港の強制積立年金）の連絡先は、eMPFという別の仕組みで変更します。
@@ -42,7 +43,7 @@ faq:
 
 ## 書式で変更するには、どうすればいいの？
 
-「[Change of Address & Contact Information](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/change-of-address-and-contact-information_202611_ban%28editable%29.pdf)」の書式に記入して送ります。書式には、ファクス（852-2103-8938）かメール（hk_csd@sunlife.com）で返送できると書かれています。
+「[Change of Address & Contact Information](https://www.sunlife.com.hk/content/dam/sunlife/regional/hong-kong/documents/change-of-address-and-contact-information_202611_ban%28editable%29.pdf)（住所・連絡先の変更）」の書式に記入して送ります。書式には、ファクス（852-2103-8938）かメール（hk_csd@sunlife.com）で返送できると書かれています。
 
 書式の主な記入項目と注意点は次のとおりです。
 
@@ -51,10 +52,10 @@ faq:
 - 私書箱を通信先にする場合などは、居住地の住所も別に書く
 - 電話番号は1つ以上。国番号を書かないと香港（852）として扱われる
 - 反映先を「すべての契約」か「書いた契約だけ」から選ぶ
-- 税務上の居住地と納税者番号（TIN）
+- 税務上の居住地と納税者番号（TIN。日本ではマイナンバー）
 - 契約者の署名と日付
 
-書式の最後には、署名した日から30日以内に一式を返送するよう書かれています。複数ページの書式は全ページにイニシャルが必要だと、[書式集のページ](https://www.sunlife.com.hk/en/client-support/find-a-form/)に注意書きがあります。
+書式の最後には、署名した日から30日以内に一式を返送するよう書かれています。複数ページの書式は全ページにイニシャル（名前の頭文字）の署名が必要だと、[書式集のページ](https://www.sunlife.com.hk/en/client-support/find-a-form/)に注意書きがあります。
 
 ## 税務上の居住地の欄は、なぜあるの？
 
@@ -64,7 +65,7 @@ faq:
 
 ## 居住国を変えるときは、同じ書式でいいの？
 
-住所変更の書式だけでは足りません。書式の冒頭に、居住地（residency）を変更する場合は「Request for Policy Change (with Personal Certificate of Insurability)」を出すよう書かれています。この書式は公開の書式集では見つからなかったため、顧客サービスに問い合わせてください。
+住所変更の書式だけでは足りません。書式の冒頭に、居住地（residency）を変更する場合は「Request for Policy Change (with Personal Certificate of Insurability)」（契約内容の変更の申込書。健康状態などの申告書付き）を出すよう書かれています。この書式は公開の書式集では見つからなかったため、顧客サービスに問い合わせてください。
 
 | 窓口 | 内容 |
 | --- | --- |
@@ -72,7 +73,7 @@ faq:
 | ファクス | (852) 2103 8938 |
 | メール | hk_csd@sunlife.com |
 
-窓口の情報は[顧客サポートのページ](https://www.sunlife.com.hk/en/client-support/)によるものです。氏名などの個人情報の変更には、書式集に「Change of Personal Particulars」という別の書式があります。返事が来にくいときのコツは[保険会社にメールしても返事が来ないときの連絡のコツ](/blog/provider-not-responding)を参考にしてください。
+窓口の情報は[顧客サポートのページ](https://www.sunlife.com.hk/en/client-support/)によるものです。氏名などの個人情報の変更には、書式集に「Change of Personal Particulars」（個人情報の変更）という別の書式があります。返事が来にくいときのコツは[保険会社にメールしても返事が来ないときの連絡のコツ](/blog/provider-not-responding)を参考にしてください。
 
 ## まとめ
 

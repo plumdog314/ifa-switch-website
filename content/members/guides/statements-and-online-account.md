@@ -38,7 +38,7 @@ order: 3
 | Policy Value / Current Value | 評価額。今の時価で計算した、保有ファンドの合計 |
 | Surrender Value / Cash-in Value | 解約返戻金。いま解約した場合に戻る金額。評価額より少ないことが多い |
 | Initial Units / Initial Account | 初期口座。契約の最初の期間に払ったお金が入る部分 |
-| Accumulation Units / Accumulation Account | 貯蓄口座。初期口座の期間のあとに払ったお金が入る部分 |
+| Accumulation Units / Accumulation Account | 積立口座。初期口座の期間のあとに払ったお金が入る部分 |
 | Premiums Paid / Total Contributions | これまでに払い込んだ保険料の合計 |
 | Fund / Unit Price / Units Held | 保有しているファンド名、1口あたりの価格、保有口数 |
 | Charges / Fees | 差し引かれた手数料 |
@@ -63,6 +63,6 @@ order: 3
 
 - [英文レター：運用明細の請求](/members/letters/statement-request)
 - [英文レター：証券・契約書類と評価額の請求](/members/letters/policy-documents-request)
-- [今さら聞けない「初期口座」と「貯蓄口座」の違い](/blog/initial-vs-accumulation-units)
+- [今さら聞けない「初期口座」と「積立口座」の違い](/blog/initial-vs-accumulation-units)
 
 ※本記事は一般的な情報提供を目的としたもので、特定の金融商品の売買を推奨するものではありません。

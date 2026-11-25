@@ -2,7 +2,7 @@
 title: "Utmost（アトモスト）ってどんな会社？ジェネラリやスカンディアの積み立てとの関係は？"
 description: "Utmost（アトモスト）は、旧ジェネラリ・ワールドワイド（ガーンジー島）と旧スカンディア・旧クィルター（マン島）を引き継いだ保険グループです。社名の変遷、監督当局、契約者保護、自分の契約がどの会社かの見分け方を公式資料で整理します。"
 date: "2026-11-22"
-updated: "2026-11-22"
+updated: "2026-11-25"
 category: "products"
 tags: ["Utmost", "アトモスト", "ジェネラリ", "スカンディア", "マン島"]
 summary:
@@ -42,12 +42,12 @@ faq:
 
 | 年 | 出来事 | 出典 |
 | --- | --- | --- |
-| 2006年 | オールド・ミューチュアルがスカンディアを買収。マン島ではRoyal Skandiaとして営業していた | [Quilter plcの2018年目論見書](https://plc.quilter.com/siteassets/documents/prospectus/2018-04-09-quilter-plc-prospectus.pdf) |
+| 2006年 | オールド・ミューチュアルがスカンディアを買収。マン島ではRoyal Skandiaとして営業していた | [Quilter plcの2018年目論見書（株式を売り出すときの説明書）](https://plc.quilter.com/siteassets/documents/prospectus/2018-04-09-quilter-plc-prospectus.pdf) |
 | 2018年 | マン島の会社名はOld Mutual International Isle of Man Limited | 同上 |
 | 2020年 | 国際事業の名称がQuilter Internationalに変わる | [Quilterの沿革](https://www.quilter.com/help-and-support/due-diligence-made-easy/provide-a-brief-history-of-your-company/) |
 | 2021年11月30日 | UtmostグループがQuilter Internationalの買収を完了 | [Utmostの発表](https://www.utmostgroup.com/wp-content/uploads/2021/11/Quilter-Intl-Completion.pdf) |
 | 2022年10月24日 | マン島の会社がUtmost International Isle of Man Limitedに改名 | [Utmostの発表](https://www.utmostgroup.com/utmost-international-news/completion-of-quilter-international-rebrand-to-utmost-international) |
-| 2022年11月30日 | 同じマン島のUtmost Limitedの契約を移管して1社に統合 | [Utmostの発表](https://www.utmostgroup.com/utmost-international-news/utmost-group-completes-the-merger-of-its-two-isle-of-man-insurance-entities) |
+| 2022年11月30日 | 同じマン島のUtmost Limitedの契約を移して1社に統合 | [Utmostの発表](https://www.utmostgroup.com/utmost-international-news/utmost-group-completes-the-merger-of-its-two-isle-of-man-insurance-entities) |
 
 統合前の[契約者向けの説明書](https://www.utmostgroup.com/wp-content/uploads/2022/09/IOM-PH-Circular_QI_v1.1.pdf)では、旧クィルターの契約はもともと同じ会社が提供しており、統合後もそのまま残る、連絡の仕方も変わらないと説明されています。
 
@@ -55,7 +55,7 @@ faq:
 
 Utmost Worldwideはガーンジー金融サービス委員会（GFSC）、Utmost International Isle of Manはマン島金融サービス庁（IOMFSA）の監督を受けています。
 
-GFSCの[登録情報](https://www.gfsc.gg/commission/regulated-entities/65645)には、Utmost Worldwide Limitedが保険業の免許を持つ会社として載っています。2025年版SFCRによると、香港の保険業監管局（Insurance Authority）やシンガポール金融管理局からも認可を受け、香港・シンガポール・スイスに支店があります。マン島の会社は、書式の記載によるとマン島金融サービス庁が認可した保険会社（登録番号024916C）です。
+GFSCの[登録情報](https://www.gfsc.gg/commission/regulated-entities/65645)には、Utmost Worldwide Limitedが保険業の免許を持つ会社として載っています。2025年版SFCRによると、香港の保険業監管局（IA）やシンガポール金融管理局からも認可を受け、香港・シンガポール・スイスに支店があります。マン島の会社は、書式の記載によるとマン島金融サービス庁が認可した保険会社（登録番号024916C）です。
 
 ## 契約者を守る仕組みはどうなっているの？
 
@@ -63,7 +63,7 @@ GFSCの[登録情報](https://www.gfsc.gg/commission/regulated-entities/65645)�
 
 | 項目 | ガーンジー島（Utmost Worldwide） | マン島（Utmost International Isle of Man） |
 | --- | --- | --- |
-| 主な仕組み | 生命保険会社は、独立した受託者（トラスティ）が契約者向け負債の90%以上に当たる資産を保有する体制を設ける | 保険会社が破綻したとき、保護対象の契約の価値の90%を上限に補償する制度がある |
+| 主な仕組み | 生命保険会社は、独立した受託者（トラスティ：資産を預かって管理する第三者）が、契約者に払うべきお金（負債）の90%以上に当たる資産を保有する体制を設ける | 保険会社が破綻したとき、保護対象の契約の価値の90%を上限に補償する制度がある |
 | 出典 | [GFSCの免許条件の説明](https://www.gfsc.gg/licensing-insurers) | [IOMFSAの補償制度の説明](https://www.iomfsa.im/consumer-material/compensation-scheme-life-assurance) |
 
 マン島の制度は、ほかの保険会社が破綻後に負担金を出して補償する仕組みで、支払いまで数年かかることがあるとされています。また、マン島以外の保険会社で始めて、あとからマン島の会社に移された契約は対象外です。ガーンジー島について、マン島と同じような補償制度があるかは、公開資料では確認できませんでした。一般的な考え方は[海外の生命保険会社は破綻しない？投資家保護の仕組み](/blog/provider-insolvency-protection)で解説しています。
@@ -76,7 +76,7 @@ GFSCの[登録情報](https://www.gfsc.gg/commission/regulated-entities/65645)�
 | --- | --- |
 | Vision（ビジョン）、Choice（チョイス）、Focus、Professional Portfolio | Utmost Worldwide Limited |
 | Managed Savings Account、Managed Capital Account、Executive Wealthbuilder Account、Royal Skandia Care Account | Utmost International Isle of Man Limited（旧クィルターの積み立て型） |
-| Executive Investment Accountなどのポートフォリオ・ボンド | Utmost International Isle of Man Limited（旧クィルターの一括型） |
+| Executive Investment Accountなどのポートフォリオ・ボンド（一括で払い込む投資型の保険） | Utmost International Isle of Man Limited（旧クィルターの一括型） |
 
 なお、同じログインのページには、フィンランド向けの別の商品群にも「Vision」という名前が載っています。名前だけで決めず、必ず発行会社名を確かめてください。
 

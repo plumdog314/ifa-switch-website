@@ -2,11 +2,11 @@
 title: "Utmost（アトモスト）の積み立ては、減額や一時停止ができる？"
 description: "Utmostの積み立ての減額は、マン島の旧スカンディア系なら公開の変更申込書で手続きでき、再開（復活）の欄もあります。旧ジェネラリのビジョンは、減額しても管理手数料は下がらないと公式書式に書かれています。一時停止の条件は公開資料では確認しきれず、契約条件の確認が必要です。"
 date: "2026-11-22"
-updated: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["Utmost", "アトモスト", "減額", "払込停止", "ビジョン"]
 summary:
-  - "マン島の旧スカンディア・旧クィルター系の積み立て（Managed Savings Accountなど）は、「Unit-Linked Policies Premium Amendment」で積み立て額の増額・減額、払込頻度の変更、契約の復活を申し込める。"
+  - "マン島の旧スカンディア・旧クィルター系の積み立て（Managed Savings Accountなど）は、「Unit-Linked Policies Premium Amendment」（積み立て額などの変更申込書）で積み立て額の増額・減額、払込頻度の変更、契約の復活を申し込める。"
   - "旧ジェネラリのビジョン（Vision）は、管理手数料が約束した積み立て額の最高水準で計算され、その後に減額しても手数料は下がらないと公式の申込書に書かれている。"
   - "一時停止（プレミアム・ホリデー）の条件や、払込を止めたときの扱いは、本記事の確認時点では公開資料で確認しきれず、各契約の約款や保険会社への問い合わせで確かめる必要がある。"
 faq:
@@ -19,7 +19,7 @@ faq:
 ---
 「Utmostの積み立てを続けるのが苦しい。減らしたり、しばらく止めたりできるの？」。結論から言うと、マン島の旧スカンディア・旧クィルター系の積み立てには、減額や再開を申し込む公開の書式があります。一方、旧ジェネラリのビジョンは、減額しても管理手数料が下がらないと公式書式に書かれています。一時停止の条件は、公開資料では確認しきれませんでした。
 
-この記事は、手続きと公式資料に書かれている影響の説明に絞っています。減額や停止を勧めるものではありません。一般的な考え方は[積み立てを減額したいときの手続きとデメリット](/blog/reduce-contributions)と[積み立てを一時停止したいときの手続きと注意点](/blog/pause-contributions)で解説しています。
+この記事は、手続きと公式資料に書かれている影響の説明に絞っています。減額や停止を勧めるものではありません。一般的な考え方は[積み立てを減額したいときの手続きと注意点](/blog/reduce-contributions)と[積み立てを一時停止したいときの手続きと注意点](/blog/pause-contributions)で解説しています。
 
 ## まず、自分の契約はどちらの会社？
 
@@ -34,7 +34,7 @@ Utmostでは、会社によって書式も条件も違います。証券（契�
 
 ## マン島の積み立ては、どの書類で減額するの？
 
-「[Unit-Linked Policies Premium Amendment](https://www.utmostwealthdocs.com/mb/EHaEch)」（個人向け、2025年5月版）を使います。この書式1枚で、次の手続きができると書かれています。
+「[Unit-Linked Policies Premium Amendment](https://www.utmostwealthdocs.com/mb/EHaEch)」（積み立て額などの変更申込書。個人向け、2025年5月版）を使います。この書式1枚で、次の手続きができると書かれています。
 
 - 積み立て額の増額・減額
 - 追加の一括払込（トップアップ）
@@ -53,7 +53,7 @@ Utmostでは、会社によって書式も条件も違います。証券（契�
 
 申込書によると、電子署名またはスキャンした書類は IOMnewbusinessheritage@utmostgroup.com にメールで送れます。紙の書類は、ファイナンシャルアドバイザーを通じて、マン島の King Edward Bay House（King Edward Road, Onchan, Isle of Man, IM99 1NU）に返送するよう書かれています。
 
-銀行の自動送金で払っている場合、払込の指図はご自身の銀行で設定されています。[銀行口座の変更届](https://www.utmostwealthdocs.com/mb/EUpTQs)には、前の指図は銀行で変更か取り消しをする必要があると書かれています。問い合わせ先は、[積み立て型の契約者向けページ](https://www.utmostgroup.com/wealth-solutions/customer-support/managed-capital-account-policies)にある IOMaskheritage@utmostgroup.com、+44 (0)20 3868 5300 です。
+銀行の自動送金で払っている場合、払込の指示はご自身の銀行で設定されています。[銀行口座の変更届](https://www.utmostwealthdocs.com/mb/EUpTQs)には、前の指示は銀行で変更か取り消しをする必要があると書かれています。問い合わせ先は、[積み立て型の契約者向けページ](https://www.utmostgroup.com/wealth-solutions/customer-support/managed-capital-account-policies)にある IOMaskheritage@utmostgroup.com、+44 (0)20 3868 5300 です。
 
 ## ガーンジー島のビジョンは、減額するとどうなるの？
 
@@ -67,7 +67,7 @@ Utmostでは、会社によって書式も条件も違います。証券（契�
 | 払込をやめたとき | 払込期間の途中で積み立てをやめると、大きな費用が生じる可能性が高い |
 | 増額できる時期 | 払込期間の最終年が始まる前まで |
 
-なお、この申込書は増額と追加払込のためのものです。国際版（International）のビジョン・チョイスの減額申込書は、本記事の確認時点（2026年11月）では公式の書式集に見当たりませんでした。シンガポール支店向けには「[Regular Premium Reduction Request](https://www.utmostwealthdocs.com/mb/MQoaN)」があり、未払い分について「プレミアム・ホリデー（払込の一時休止）」を申し込む選択肢が載っていますが、これはシンガポール支店の契約向けの書式です。
+なお、この申込書は増額と追加払込のためのものです。国際版（International）のビジョン・チョイスの減額申込書は、本記事の確認時点（2026年11月）では公式の書式集に見当たりませんでした。シンガポール支店向けには「[Regular Premium Reduction Request](https://www.utmostwealthdocs.com/mb/MQoaN)」（積み立て額の減額申込書）があり、未払い分について「プレミアム・ホリデー（払込の一時休止）」を申し込む選択肢が載っていますが、これはシンガポール支店の契約向けの書式です。
 
 国際版の契約は、[ビジョン・チョイスの契約者向けページ](https://www.utmostgroup.com/wealth-solutions/customer-support/focus-choice-vision-or-professional-portfolio-if-your-plan-was-signed-in-the-rest-of-the-world)の窓口（UWCustomerService@utmostworldwide.com、+44 (0)20 3868 5300）に、減額・一時停止の書式と条件を確認してください。
 
@@ -77,10 +77,10 @@ Utmostでは、会社によって書式も条件も違います。証券（契�
 
 1. 契約している会社と商品名、証券番号
 2. 現在の積み立て額、通貨、払込方法（カードか銀行送金か）
-3. 約款に書かれた最低積み立て額と、払込期間・初期期間
-4. 減額や停止で手数料や解約時の控除がどう変わるか
+3. 約款に書かれた最低積み立て額と、払込期間・初期期間（最初の一定期間。この間に払った分は初期口座〔イニシャルユニット〕になり、手数料が重い）
+4. 減額や停止で手数料や解約控除（早く解約したときに差し引かれる費用）がどう変わるか
 
-初期期間の仕組みは[「初期口座」と「貯蓄口座」の違い](/blog/initial-vs-accumulation-units)で、手数料の一般的な仕組みは[海外積み立て商品の手数料の仕組み](/blog/offshore-plan-fees-explained)で解説しています。
+初期期間の仕組みは[「初期口座」と「積立口座」の違い](/blog/initial-vs-accumulation-units)で、手数料の一般的な仕組みは[海外積み立て商品の手数料の仕組み](/blog/offshore-plan-fees-explained)で解説しています。
 
 ## まとめ
 

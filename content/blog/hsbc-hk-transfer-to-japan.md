@@ -1,13 +1,14 @@
 ---
 title: "香港HSBCから日本の銀行口座に送金するには？手数料と受け取りの注意点"
-description: "香港HSBCから日本の銀行へは、アプリかオンラインバンキングの電信送金（TT）で送るのが基本です。HSBC側の手数料はオンラインで1件HK$70（本記事の確認時点）で、日本の銀行でも受取手数料がかかります。必要な情報、通貨、受け取りの確認を公式資料で解説します。"
+description: "香港HSBCから日本の銀行へは、アプリかオンラインバンキングの海外への電信送金（TT）で送るのが基本です。HSBC側の手数料はオンラインで1件HK$70（本記事の確認時点）で、日本の銀行でも受取手数料がかかります。必要な情報、通貨、受け取りの確認を公式資料で解説します。"
 date: "2026-11-22"
+updated: "2026-11-25"
 category: "procedures"
 tags: ["HSBC", "香港", "海外送金", "手数料", "国外送金等調書"]
 summary:
-  - "香港HSBCから日本の銀行口座へ送るときは電信送金（TT）を使い、HSBCのGlobal Transfersは日本向けの対象国・地域の一覧に入っていない。"
+  - "香港HSBCから日本の銀行口座へ送るときは海外への電信送金（TT）を使い、HSBCのGlobal Transfers（HSBCの口座どうしの送金サービス）は日本向けの対象国・地域の一覧に入っていない。"
   - "HSBC側の手数料はオンラインやアプリで他行宛てなら1件HK$70（上位の口座は条件により無料）で、これとは別に、途中の銀行や日本の受取銀行の手数料がかかることがある。"
-  - "日本の銀行は受け取りのときに送金の目的やマイナンバーを確認することがあり、100万円を超える送金は金融機関が税務署に国外送金等調書を提出する。"
+  - "日本の銀行は受け取りのときに送金の目的やマイナンバーを確認することがあり、100万円を超える送金は金融機関が税務署に国外送金等調書（海外との送金の内容を税務署に知らせる書類）を提出する。"
 faq:
   - q: "HSBCのGlobal Transfersで日本の銀行に送れますか？"
     a: "本記事の確認時点では、Global TransfersはHSBCの口座どうしの送金サービスで、対象の国・地域に日本は入っていません。日本の銀行口座へは、通常の電信送金（TT）を使います。最新の対象国はHSBCのサイトかアプリでご確認ください。"
@@ -24,7 +25,7 @@ faq:
 
 電信送金（TT）を使います。TTとは、SWIFT（世界の銀行をつなぐ送金ネットワーク）を通じて海外の銀行へ送る方法です。HSBCの[国際送金のページ](https://www.hsbc.com.hk/transfer-payments/products/international/)では、TTで200以上の国・地域へ、40以上の通貨で送れるとされています。アプリ、オンラインバンキング、支店で申し込めます。
 
-HSBCには「Global Transfers」というサービスもあります。ただし、これは世界のHSBC口座どうしで送るサービスです。[Global Transfersのページ](https://www.hsbc.com.hk/transfer-payments/products/international/global-transfers/)の対象国・地域の一覧に、本記事の確認時点（2026年11月）で日本は入っていませんでした。アプリ限定の「Send like a local」の[案内ページ](https://www.hsbc.com.hk/transfer-payments/products/international/global-transfers-to-other-banks/)にも、日本は載っていません。
+HSBCには「Global Transfers」というサービスもあります。ただし、これは世界のHSBC口座どうしで送るサービスです。[Global Transfersのページ](https://www.hsbc.com.hk/transfer-payments/products/international/global-transfers/)の対象国・地域の一覧に、本記事の確認時点（2026年11月）で日本は入っていませんでした。アプリ限定の「Send like a local」（一部の国の銀行口座へ送るサービス）の[案内ページ](https://www.hsbc.com.hk/transfer-payments/products/international/global-transfers-to-other-banks/)にも、日本は載っていません。
 
 | 方法 | 送り先 | 日本の銀行口座への送金 |
 | --- | --- | --- |
@@ -56,11 +57,11 @@ HSBCには「Global Transfers」というサービスもあります。ただし
 | 登録済みの受取人への送金 | 1受取口座あたり最大HK$3,000,000 |
 | 未登録の受取人への送金 | 最大HK$400,000 |
 
-上限の変更には、有効なモバイルセキュリティキー（またはセキュリティ機器）と、銀行に登録したメールアドレス・携帯電話番号が必要です。新しい受取人の登録では、6桁のPINや顔認証などで本人確認をすると[よくある質問](https://www.hsbc.com.hk/help/faq/transfers-and-payments/)に書かれています。ログインできない場合は[香港HSBCにログインできないときは？](/blog/hsbc-hk-cannot-login)をご覧ください。
+上限の変更には、有効なモバイルセキュリティキー（スマホのアプリで確認用の番号を出す仕組み）か、確認用の番号を出す小さな機器（セキュリティデバイス）と、銀行に登録したメールアドレス・携帯電話番号が必要です。新しい受取人の登録では、6桁のPIN（暗証番号）や顔認証などで本人確認をすると[よくある質問](https://www.hsbc.com.hk/help/faq/transfers-and-payments/)に書かれています。ログインできない場合は[香港HSBCにログインできないときは？](/blog/hsbc-hk-cannot-login)をご覧ください。
 
 ## HSBC側の手数料はいくら？
 
-オンラインかアプリで他行宛てに送る場合、1件HK$70です。HSBCの[手数料表（2026年11月1日適用）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/ways-to-bank/bank-tariff/20261101-guide.pdf)の「C3. Global outward payments」によると、主な料金は次のとおりです。
+オンラインかアプリで他行宛てに送る場合、1件HK$70です。HSBCの[手数料表（2026年11月1日適用）](https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/ways-to-bank/bank-tariff/20261101-guide.pdf)の「C3. Global outward payments（海外への送金）」によると、主な料金は次のとおりです。
 
 | 項目 | 料金（本記事の確認時点） |
 | --- | --- |
@@ -69,13 +70,13 @@ HSBCには「Global Transfers」というサービスもあります。ただし
 | 海外のHSBCが中継などで取る手数料を前払いする定額料金 | HK$100（オンライン・アプリ）、それ以外はHK$150。Premier以上は無料 |
 | 送金の訂正・照会・取消し・返金 | HK$275＋海外の銀行の手数料 |
 
-定額料金は任意で、日本も対象国に入っています。ただし、海外のHSBCが最初にかける手数料だけが対象です。その後の中継銀行や受取銀行の手数料は含まれません。手数料表には、送金の手数料に海外の銀行の手数料は含まれない、とも書かれています。口座ごとの維持手数料は[香港HSBCの手数料と最低残高](/blog/hsbc-hk-fees-minimum-balance)で整理しています。
+定額料金を払うかどうかは選べ、日本も対象国に入っています。ただし、海外のHSBCが最初にかける手数料だけが対象です。その後の中継銀行や受取銀行の手数料は含まれません。手数料表には、送金の手数料に海外の銀行の手数料は含まれない、とも書かれています。口座ごとの維持手数料は[香港HSBCの手数料と最低残高](/blog/hsbc-hk-fees-minimum-balance)で整理しています。
 
 ## 日本の銀行では、どんな手数料がかかるの？
 
 受け取る日本の銀行で、受取手数料（被仕向送金手数料）がかかるのが一般的です。金額は銀行ごとに違います。途中の銀行（中継銀行）の手数料が、送金額から差し引かれることもあります。
 
-例として三菱UFJ銀行の[外為手数料のページ](https://www.bk.mufg.jp/tesuuryou/gaitame.html)では、受取手数料に加えて、円建ての送金を円口座で受け取る場合は為替取扱手数料がかかると示されています。同ページには、受取の手数料を2026年10月1日と12月14日に改定すると書かれているため、最新の金額は直接ご確認ください。
+例として三菱UFJ銀行の[外為手数料のページ](https://www.bk.mufg.jp/tesuuryou/gaitame.html)では、受取手数料に加えて、円建ての送金を円口座で受け取る場合は為替取扱手数料がかかると示されています。同ページには、受取の手数料を2026年10月1日と12月14日に変更すると書かれているため、最新の金額は直接ご確認ください。
 
 送金のとき、HSBCでは途中や受取側の銀行の手数料を誰が払うかを選べます。ただし[よくある質問](https://www.hsbc.com.hk/help/faq/transfers-and-payments/)では、最終的な手数料は海外の銀行しだいとされています。
 
@@ -95,7 +96,7 @@ HSBCには「Global Transfers」というサービスもあります。ただし
 
 あります。三菱UFJ銀行の[受け取りのページ](https://www.bk.mufg.jp/tsukau/kaigai/soukin/hishimuke.html)には、本人確認書類の提示や、取引の背景・詳細の確認を求めることがあり、応じないと入金できないこともある、と書かれています。外国送金にはマイナンバーの届出も必要です。
 
-100万円を超える国外からの送金を受け取ると、金融機関が税務署に「国外送金等調書」を出します。国税庁の[国税庁レポート2024](https://www.nta.go.jp/about/introduction/torikumi/report/2024/04_4.htm)によると、送金者・受取人の氏名や住所、金額などを記載するものです。調書の[記載要領](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/pdf/r08/kisai_chousho57.pdf)には、送金の原因を書く欄があります。マイナンバーの扱いは[海外積み立てとマイナンバー](/blog/my-number-and-offshore)を、各国の口座情報の交換は[CRSとは？](/blog/crs-explained)をご覧ください。
+100万円を超える国外からの送金を受け取ると、金融機関が税務署に「国外送金等調書」（海外との送金の内容を知らせる書類）を出します。国税庁の[国税庁レポート2024](https://www.nta.go.jp/about/introduction/torikumi/report/2024/04_4.htm)によると、送金者・受取人の氏名や住所、金額などを記載するものです。調書の[書き方の説明（記載要領）](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/pdf/r08/kisai_chousho57.pdf)には、送金の原因を書く欄があります。マイナンバーの扱いは[海外積み立てとマイナンバー](/blog/my-number-and-offshore)を、各国の口座情報の交換は[CRSとは？](/blog/crs-explained)をご覧ください。
 
 ## 日本に送金すると、税金はかかるの？
 
